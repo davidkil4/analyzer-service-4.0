@@ -1,0 +1,938 @@
+{
+  "modules": [
+    {
+      "module_id": "verb_tense_1",
+      "source_utterance_info": {
+        "original": "Ur. Now, I'm living  XXX05, XXX06 XXX06, urr XXX07",
+        "corrected": "Now I live in XXX05, XXX06, and XXX07",
+        "priority_score": 0.554,
+        "metrics": {
+          "C": 0.43,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Verb Tense",
+            "severity": "moderate",
+            "description": "Use of present continuous 'I'm living' instead of simple present 'I live' to describe a state of residence.",
+            "correction": "I live"
+          }
+        ],
+        "clauses": [
+          {
+            "text": "I'm living XXX05, XXX06 XXX06, XXX07",
+            "corrected_segment": "Now I live in XXX05, XXX06, and XXX07",
+            "errors": [
+              {
+                "category": "Verb Tense",
+                "severity": "moderate",
+                "error": "Use of present continuous 'I'm living' instead of simple present 'I live' to describe a state of residence.",
+                "correction": "I live"
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Indicating current residence",
+            "category": "Frame",
+            "component": "live in [location]",
+            "frequency": 4.7,
+            "context": "Very common in introductions, casual conversations, and providing personal information.",
+            "note": "High frequency due to its basic communicative function."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original uses the present continuous tense incorrectly, where the simple present is needed. This presents a good learning opportunity related to tense usage.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "LOW",
+          "approach_reason": "The error is a simple tense issue ('I'm living' vs 'I live'). A quick explanation should suffice."
+        }
+      },
+      "explanations": {
+        "introduction": "You said 'I'm living' when talking about where you live. Let's look at why we usually say 'I live' instead.",
+        "main": "We use the simple present tense ('I live') to talk about things that are generally true or permanent, like where you live. The present continuous tense ('I'm living') is used for actions happening right now or temporary situations. Since your place of residence is usually a more permanent situation, 'I live' is the better choice.",
+        "recap": "Use 'I live' for permanent situations like where you live, and 'I'm living' for temporary or ongoing actions!"
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which sentence is grammatically correct when talking about your permanent residence?",
+          "options": [
+            "I'm living in London.",
+            "I live in London.",
+            "I am live in London."
+          ],
+          "feedback": [
+            {
+              "option_text": "I'm living in London.",
+              "is_correct": false,
+              "explanation": "This uses the present continuous tense, which is typically used for temporary situations or actions happening now. While you might be living somewhere temporarily, 'I live' is better for a more permanent residence."
+            },
+            {
+              "option_text": "I live in London.",
+              "is_correct": true,
+              "explanation": "This uses the simple present tense, which is correct for describing a permanent or general state of residence."
+            },
+            {
+              "option_text": "I am live in London.",
+              "is_correct": false,
+              "explanation": "This is grammatically incorrect. The correct structure is 'I live'."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "I _______ in Paris. I like it there.",
+          "options": [
+            "living",
+            "live",
+            "am live"
+          ],
+          "feedback": [
+            {
+              "option_text": "living",
+              "is_correct": false,
+              "explanation": "'Living' is a verb form that needs a helping verb (like 'am') to form a complete tense. It doesn't work on its own in this context."
+            },
+            {
+              "option_text": "live",
+              "is_correct": true,
+              "explanation": "'Live' is the correct simple present tense verb to describe your permanent residence."
+            },
+            {
+              "option_text": "am live",
+              "is_correct": false,
+              "explanation": "This is grammatically incorrect. You don't need 'am' before 'live' in the simple present tense."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the sentence:",
+          "target_text": "I live in a small town."
+        }
+      ],
+      "help_context": "Simple Present vs Present Continuous for states (e.g., 'live'). Original error: 'Use of present continuous 'I'm living' instead of simple present 'I live' to describe a state of residence.'. Concepts: permanent vs temporary actions."
+    },
+    {
+      "module_id": "articles/prepositions/pluralization_2",
+      "source_utterance_info": {
+        "original": "So, now, I use the many times",
+        "corrected": "So now, I use it frequently.",
+        "priority_score": 0.5,
+        "metrics": {
+          "C": 0.4,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Articles/Prepositions/Pluralization",
+            "severity": "moderate",
+            "description": "Missing 'it' after 'use'.",
+            "correction": "I use it"
+          }
+        ],
+        "clauses": [
+          {
+            "text": "I use the many times",
+            "corrected_segment": "I use it frequently",
+            "errors": [
+              {
+                "category": "Articles/Prepositions/Pluralization",
+                "severity": "moderate",
+                "error": "Missing 'it' after 'use'.",
+                "correction": "I use it"
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Expressing frequency",
+            "category": "Frame",
+            "component": "I [verb] it frequently",
+            "frequency": 3.8,
+            "context": "Describing how often an action is performed, common in explanations and descriptions.",
+            "note": "The word 'frequently' makes it less common than 'I use it all the time', but still relatively frequent."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original sentence is missing 'it' after 'use', which is a significant error impacting the sentence's clarity. The corrected sentence clarifies the intended meaning.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "LOW",
+          "approach_reason": "The error involves a missing 'it.' This can be addressed with a brief explanation during a conversation."
+        }
+      },
+      "explanations": {
+        "introduction": "You said, 'So, now, I use the many times.' To make that clearer, we need to add 'it' to show what you're using.",
+        "main": "The verb 'use' often needs an object – something that receives the action. In this case, you're using 'it.' Saying 'I use it' tells us what you're doing. Adding a word like 'frequently' further clarifies how often you use 'it'. Without 'it,' the sentence is incomplete and a bit confusing.",
+        "recap": "Remember to include 'it' after 'use' when you want to show what you're using!"
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which sentence is grammatically correct?",
+          "options": [
+            "I use frequently.",
+            "I use it frequently.",
+            "I use frequent."
+          ],
+          "feedback": [
+            {
+              "option_text": "I use frequently.",
+              "is_correct": false,
+              "explanation": "This is incorrect because 'use' needs an object (what you are using). It's missing 'it'."
+            },
+            {
+              "option_text": "I use it frequently.",
+              "is_correct": true,
+              "explanation": "This is correct! 'It' is the object of the verb 'use', and 'frequently' describes how often you use 'it'."
+            },
+            {
+              "option_text": "I use frequent.",
+              "is_correct": false,
+              "explanation": "'Frequent' is an adjective, not a noun. It doesn't work as the object of 'use'."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "I _______ it when I need to.",
+          "options": [
+            "use",
+            "using",
+            "used"
+          ],
+          "feedback": [
+            {
+              "option_text": "use",
+              "is_correct": true,
+              "explanation": "Correct! 'Use' is the base form of the verb and fits the sentence structure."
+            },
+            {
+              "option_text": "using",
+              "is_correct": false,
+              "explanation": "'Using' would need a helping verb before it (e.g., 'I am using')."
+            },
+            {
+              "option_text": "used",
+              "is_correct": false,
+              "explanation": "'Used' implies a past action, which doesn't fit the context of 'when I need to'."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the sentence:",
+          "target_text": "I use it daily."
+        }
+      ],
+      "help_context": "User error: Missing 'it' after 'use'. Concept: object of the verb 'use' when referring to frequency of use."
+    },
+    {
+      "module_id": "sentence_structure_3",
+      "source_utterance_info": {
+        "original": "This is tennis elbow by bad golf.",
+        "corrected": "this tennis elbow is from playing golf badly.",
+        "priority_score": 0.482,
+        "metrics": {
+          "C": 0.45,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Sentence Structure",
+            "severity": "moderate",
+            "description": "Missing verb 'is' to connect 'tennis elbow' to the cause.",
+            "correction": "this tennis elbow is from playing golf badly."
+          }
+        ],
+        "clauses": [
+          {
+            "text": "This is tennis elbow by bad golf",
+            "corrected_segment": "this tennis elbow is from playing golf badly.",
+            "errors": [
+              {
+                "category": "Sentence Structure",
+                "severity": "moderate",
+                "error": "Missing verb 'is' to connect 'tennis elbow' to the cause.",
+                "correction": "this tennis elbow is from playing golf badly."
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Identifying cause of injury/problem",
+            "category": "Frame",
+            "component": "from [activity] [manner]",
+            "frequency": 3.5,
+            "context": "Explaining the origin of an injury or problem, often in a casual conversation.",
+            "note": "The 'from' phrase is the formulaic part, indicating causation in a common way."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original sentence has a missing verb, leading to an incomplete and grammatically incorrect statement. The corrected sentence provides a grammatically sound alternative.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "MEDIUM",
+          "approach_reason": "The sentence requires restructuring to be grammatically correct. Conversational correction and rephrasing would be suitable."
+        }
+      },
+      "explanations": {
+        "introduction": "You were close to explaining how you got tennis elbow! Let's look at how to connect the injury to the cause using the correct sentence structure.",
+        "main": "The problem with 'This is tennis elbow by bad golf' is that it doesn't clearly link the injury to the *cause*. To do this, we need a verb to connect 'tennis elbow' to the activity causing it, and the preposition 'from' to show the origin. The corrected sentence, 'this tennis elbow is from playing golf badly,' uses the verb 'is' to link the two parts and 'from' to clearly show causation, making it grammatically correct and understandable.",
+        "recap": "Remember to use a verb like 'is' and the word 'from' to clearly show the cause of a problem or injury!"
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which sentence correctly explains the cause of a problem or injury using 'from'?",
+          "options": [
+            "Headache by stress.",
+            "This headache is from stress.",
+            "Stress this headache."
+          ],
+          "feedback": [
+            {
+              "option_text": "Headache by stress.",
+              "is_correct": false,
+              "explanation": "This sentence is missing a verb and doesn't clearly show the cause."
+            },
+            {
+              "option_text": "This headache is from stress.",
+              "is_correct": true,
+              "explanation": "Correct! This sentence uses 'is' to connect the headache to its cause and 'from' to show the origin."
+            },
+            {
+              "option_text": "Stress this headache.",
+              "is_correct": false,
+              "explanation": "This sentence doesn't make sense grammatically and doesn't use 'from' to indicate causation."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "My sore throat is _______ singing too loudly.",
+          "options": [
+            "by",
+            "from",
+            "because"
+          ],
+          "feedback": [
+            {
+              "option_text": "by",
+              "is_correct": false,
+              "explanation": "'By' can indicate cause, but 'from' is a more direct and natural way to express the origin of a problem in this context."
+            },
+            {
+              "option_text": "from",
+              "is_correct": true,
+              "explanation": "Correct! 'From' clearly indicates the cause or origin of the sore throat."
+            },
+            {
+              "option_text": "because",
+              "is_correct": false,
+              "explanation": "While 'because' can indicate cause, it typically introduces a clause (e.g., 'because I was singing'). 'From' is better here."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the following sentence:",
+          "target_text": "The back pain is from lifting boxes improperly."
+        }
+      ],
+      "help_context": "User is working on Sentence Structure to explain causation (injury from activity). Original error: Missing verb 'is' to connect 'tennis elbow' to the cause. Concepts: linking verb, causation with 'from'."
+    },
+    {
+      "module_id": "articles/prepositions/pluralization_4",
+      "source_utterance_info": {
+        "original": "I like very I I like very much.",
+        "corrected": "I like it very, very much.",
+        "priority_score": 0.56,
+        "metrics": {
+          "C": 0.48,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Articles/Prepositions/Pluralization",
+            "severity": "moderate",
+            "description": "Missing 'it' after 'like'.",
+            "correction": "I like it very, very much."
+          }
+        ],
+        "clauses": [
+          {
+            "text": "I like very I I like very much",
+            "corrected_segment": "I like it very, very much.",
+            "errors": [
+              {
+                "category": "Articles/Prepositions/Pluralization",
+                "severity": "moderate",
+                "error": "Missing 'it' after 'like'.",
+                "correction": "I like it very, very much."
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Expressing strong positive evaluation",
+            "category": "Polyword",
+            "component": "very, very much",
+            "frequency": 4.1,
+            "context": "Used to intensify expressions of liking or appreciation, common in informal conversation",
+            "note": "The repetition of 'very' increases the intensity of the expression."
+          },
+          {
+            "intention": "Expressing liking",
+            "category": "Sentence_Stem",
+            "component": "I like it",
+            "frequency": 4.8,
+            "context": "A basic expression of preference or enjoyment, used in a wide range of contexts",
+            "note": "Very common and versatile expression."
+          },
+          {
+            "intention": "Expressing strong positive evaluation",
+            "category": "Polyword",
+            "component": "like it very, very much",
+            "frequency": 3.9,
+            "context": "Used to intensify expressions of liking or appreciation, common in informal conversation",
+            "note": "The repetition of 'very' increases the intensity of the expression."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original sentence is missing 'it', which is a significant error impacting the sentence's clarity. The corrected sentence clarifies the intended meaning.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "LOW",
+          "approach_reason": "The missing 'it' after 'like' can be quickly addressed conversationally."
+        }
+      },
+      "explanations": {
+        "introduction": "You were trying to say you liked something a lot! The phrase 'like' often needs an object, something you are liking.",
+        "main": "The verb 'like' usually needs an object after it to say what you are liking. In this case, the object is 'it'. Saying 'I like it' is much clearer than just 'I like'. Adding 'it' makes sure your sentence makes sense to others. Repeating 'very' is a great way to show how much you like it!",
+        "recap": "'Like' often needs an object (like 'it') to say what you enjoy!"
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which sentence is grammatically correct and expresses a strong liking?",
+          "options": [
+            "I like very much.",
+            "I like it very, very much.",
+            "I like very, very."
+          ],
+          "feedback": [
+            {
+              "option_text": "I like very much.",
+              "is_correct": false,
+              "explanation": "This sentence is missing the object 'it' after 'like'. It's unclear what you like."
+            },
+            {
+              "option_text": "I like it very, very much.",
+              "is_correct": true,
+              "explanation": "This sentence is correct! 'It' is the object, and 'very, very much' shows strong liking."
+            },
+            {
+              "option_text": "I like very, very.",
+              "is_correct": false,
+              "explanation": "This sentence is missing an object and the word 'much'. It doesn't make complete sense."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "I _______ the movie very much.",
+          "options": [
+            "like",
+            "likes",
+            "liking"
+          ],
+          "feedback": [
+            {
+              "option_text": "like",
+              "is_correct": true,
+              "explanation": "Correct! 'like' is the correct verb form in this sentence because the subject is 'I'."
+            },
+            {
+              "option_text": "likes",
+              "is_correct": false,
+              "explanation": "'likes' is used with singular subjects like 'he', 'she', or 'it'. 'I like' is correct."
+            },
+            {
+              "option_text": "liking",
+              "is_correct": false,
+              "explanation": "'liking' requires a helping verb like 'am', 'is', or 'are'. For example, 'I am liking the movie'."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the sentence:",
+          "target_text": "I like it very, very much."
+        }
+      ],
+      "help_context": "User is working on object usage with the verb 'like'. Original error: Missing 'it' after 'like'. Concepts: Verb objects, expressing preference."
+    },
+    {
+      "module_id": "adjective/adverb_usage_5",
+      "source_utterance_info": {
+        "original": "So, many times, urr  she urr invite her dog or cat in her room and speak.",
+        "corrected": "So, she often invites her dog or cat into her room and talks to them.",
+        "priority_score": 0.56,
+        "metrics": {
+          "C": 0.58,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Adjective/Adverb Usage",
+            "severity": "moderate",
+            "description": "The adverb 'many times' is used incorrectly. 'Often' is a better choice to indicate frequency.",
+            "correction": "often"
+          }
+        ],
+        "clauses": [
+          {
+            "text": "So, many times, she invite her dog or cat in her room and speak.",
+            "corrected_segment": "So, she often invites her dog or cat into her room and talks to them.",
+            "errors": [
+              {
+                "category": "Adjective/Adverb Usage",
+                "severity": "moderate",
+                "error": "The adverb 'many times' is used incorrectly. 'Often' is a better choice to indicate frequency.",
+                "correction": "often"
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Describing habitual action",
+            "category": "Pattern",
+            "component": "[Subject] often [Verb]",
+            "frequency": 4.5,
+            "context": "Common in describing routines, habits, and typical behaviors",
+            "note": "Fairly common way to describe habits."
+          },
+          {
+            "intention": "Describing inclusion or addition",
+            "category": "Polyword",
+            "component": "[X] or [Y]",
+            "frequency": 4.8,
+            "context": "Used to present alternatives or options in a wide range of contexts.",
+            "note": "Very common, basic conjunction."
+          },
+          {
+            "intention": "Describing an action directed towards someone/something",
+            "category": "Pattern",
+            "component": "[Verb] to [Noun/Pronoun]",
+            "frequency": 4.6,
+            "context": "Used to describe actions involving communication or interaction with a specific recipient.",
+            "note": "Common and versatile pattern."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original uses an incorrect adverb, affecting the naturalness and accuracy of the sentence. The corrected sentence provides a better and more appropriate adverb.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "MEDIUM",
+          "approach_reason": "The error involves choosing the right adverb. A quick explanation of frequency adverbs will be adequate."
+        }
+      },
+      "explanations": {
+        "introduction": "In your sentence, 'So, many times, she urr invite her dog or cat in her room and speak,' the phrase 'many times' isn't quite the best fit. We can improve it by using a different adverb of frequency.",
+        "main": "'Many times' is grammatically correct, but 'often' is a more natural and concise way to express that something happens frequently. 'Often' directly conveys the idea of a repeated action. 'Many times' can sound a bit clunky in this context. So, instead of 'many times,' using 'often' makes the sentence flow better and sound more natural: 'So, she often invites her dog or cat into her room and talks to them.'",
+        "recap": "Use 'often' instead of 'many times' when you want a smoother way to say something happens frequently."
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which of the following adverbs best replaces 'many times' to describe a frequent action in a more natural way?",
+          "options": [
+            "Occasionally",
+            "Often",
+            "Seldom"
+          ],
+          "feedback": [
+            {
+              "option_text": "Occasionally",
+              "is_correct": false,
+              "explanation": "Occasionally means something happens sometimes, but not frequently. It is not the best replacement for 'many times'."
+            },
+            {
+              "option_text": "Often",
+              "is_correct": true,
+              "explanation": "'Often' is a more natural and concise way to express that something happens frequently compared to 'many times'."
+            },
+            {
+              "option_text": "Seldom",
+              "is_correct": false,
+              "explanation": "Seldom means something happens rarely. This is the opposite of what 'many times' implies."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "She _______ visits her grandmother on Sundays.",
+          "options": [
+            "many times",
+            "often",
+            "sometimes"
+          ],
+          "feedback": [
+            {
+              "option_text": "many times",
+              "is_correct": false,
+              "explanation": "'Many times' is grammatically correct, but 'often' sounds more natural in this context."
+            },
+            {
+              "option_text": "often",
+              "is_correct": true,
+              "explanation": "'Often' is the best choice here because it's a concise and natural way to express that she frequently visits her grandmother."
+            },
+            {
+              "option_text": "sometimes",
+              "is_correct": false,
+              "explanation": "'Sometimes' implies that it doesn't happen frequently, whereas the prompt implies a frequent action."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the following sentence:",
+          "target_text": "She often invites her dog into her room and talks to him."
+        }
+      ],
+      "help_context": "User is working on Adverb Usage (frequency). Original error: 'The adverb 'many times' is used incorrectly. 'Often' is a better choice to indicate frequency.'. Concepts: Choosing appropriate adverbs to describe frequency."
+    },
+    {
+      "module_id": "sentence_structure_6",
+      "source_utterance_info": {
+        "original": ".  Umm.  First reason is  I said   near here, and ummm  my very silent ur place  I like my mansion",
+        "corrected": ". The first reason is, as I said, it's near here, and I like my quiet apartment",
+        "priority_score": 0.649,
+        "metrics": {
+          "C": 0.75,
+          "A": 0.62,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Sentence Structure",
+            "severity": "moderate",
+            "description": "Missing 'that' or equivalent to introduce the subordinate clause after 'reason is'.",
+            "correction": "The first reason is, as I said, it's near here"
+          },
+          {
+            "type": "Word Order",
+            "severity": "moderate",
+            "description": "The word order is non-standard and sounds unnatural.",
+            "correction": "I like my quiet apartment"
+          }
+        ],
+        "clauses": [
+          {
+            "text": "First reason is I said near here",
+            "corrected_segment": "The first reason is, as I said, it's near here",
+            "errors": [
+              {
+                "category": "Sentence Structure",
+                "severity": "moderate",
+                "error": "Missing 'that' or equivalent to introduce the subordinate clause after 'reason is'.",
+                "correction": "The first reason is, as I said, it's near here"
+              }
+            ]
+          },
+          {
+            "text": "my very silent place I like my mansion",
+            "corrected_segment": "and I like my quiet apartment",
+            "errors": [
+              {
+                "category": "Word Order",
+                "severity": "moderate",
+                "error": "The word order is non-standard and sounds unnatural.",
+                "correction": "I like my quiet apartment"
+              }
+            ]
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Introducing a reason",
+            "category": "Sentence_Stem",
+            "component": "The first reason is",
+            "frequency": 4.1,
+            "context": "Common in argumentative or explanatory discourse, both formal and informal",
+            "note": "More formal than other options like 'because' but still quite common."
+          },
+          {
+            "intention": "Referring to a previous statement",
+            "category": "Frame",
+            "component": "as I said",
+            "frequency": 4.5,
+            "context": "Used to reiterate or emphasize a point previously made in the conversation",
+            "note": "Very common in spoken discourse for emphasis and coherence."
+          },
+          {
+            "intention": "Expressing location",
+            "category": "Polyword",
+            "component": "near here",
+            "frequency": 3.8,
+            "context": "Used to describe proximity to the speaker or a specific location under discussion",
+            "note": "Common in everyday conversation when discussing locations."
+          },
+          {
+            "intention": "Expressing personal preference",
+            "category": "Sentence_Stem",
+            "component": "I like [noun phrase]",
+            "frequency": 4.9,
+            "context": "Extremely common in expressing personal preferences and opinions",
+            "note": "One of the most frequent and versatile formulaic sequences for stating likes."
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original sentence suffers from awkward word order and missing words. The corrected sentence presents a more natural and grammatically correct structure.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "MEDIUM",
+          "approach_reason": "The issues are word order and the insertion of a clause. This can be corrected with explanation and rephrasing."
+        }
+      },
+      "explanations": {
+        "introduction": "You were explaining reasons and preferences, but there were a couple of spots where the sentence structure and word order could be improved to sound more natural.",
+        "main": "When introducing a reason after phrases like 'The first reason is...', it often sounds better to include 'that' or a similar connector (like 'as I said, it's'). Also, in English, adjectives usually come *before* the noun they describe. So, instead of 'very silent place', it's more common to say 'quiet apartment'. This order makes your sentences flow more smoothly and sound more natural to native English speakers.",
+        "recap": "Remember to use connecting words like 'that' when introducing clauses after 'reason is' and put adjectives before nouns!"
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which of the following sentences uses the best word order and connector to introduce a reason?",
+          "options": [
+            "The first reason is I like it here.",
+            "The first reason is that I like it here.",
+            "First reason is I like it here."
+          ],
+          "feedback": [
+            {
+              "option_text": "The first reason is I like it here.",
+              "is_correct": false,
+              "explanation": "While understandable, this option is missing a connector like 'that' to smoothly introduce the reason."
+            },
+            {
+              "option_text": "The first reason is that I like it here.",
+              "is_correct": true,
+              "explanation": "This is the best option. It includes 'that' to introduce the reason, making the sentence flow more naturally."
+            },
+            {
+              "option_text": "First reason is I like it here.",
+              "is_correct": false,
+              "explanation": "This option is missing both the 'the' at the beginning and a connector like 'that'. It sounds incomplete."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "I prefer a _______ apartment because it's quieter.",
+          "options": [
+            "silent",
+            "quiet",
+            "very silent"
+          ],
+          "feedback": [
+            {
+              "option_text": "silent",
+              "is_correct": false,
+              "explanation": "While 'silent' can work, 'quiet' is a more common and natural adjective to describe an apartment."
+            },
+            {
+              "option_text": "quiet",
+              "is_correct": true,
+              "explanation": "'Quiet' is the most natural and common adjective to use in this context. Adjectives usually come before the noun."
+            },
+            {
+              "option_text": "very silent",
+              "is_correct": false,
+              "explanation": "'Very silent' isn't wrong, but 'quiet' is simpler and more commonly used in this context."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the following sentence:",
+          "target_text": "The first reason is, as I said, it's near here."
+        }
+      ],
+      "help_context": "User is working on sentence structure after 'reason is' and adjective word order. Original error: 'Missing 'that' or equivalent to introduce the subordinate clause after 'reason is'. The word order is non-standard and sounds unnatural.'"
+    },
+    {
+      "module_id": "auxiliary/modal_verbs_7",
+      "source_utterance_info": {
+        "original": "Now, she er she must urr  er study hard for  examination for university, but she is very dislike urr studying.",
+        "corrected": "She should be studying hard for her university entrance exams, but she really dislikes studying.",
+        "priority_score": 0.542,
+        "metrics": {
+          "C": 0.72,
+          "A": 0.79,
+          "F": 0.0
+        },
+        "errors": [
+          {
+            "type": "Auxiliary/Modal Verbs",
+            "severity": "moderate",
+            "description": "Use of 'must' is not the most natural choice here. 'Should be' is more appropriate to convey advice or expectation.",
+            "correction": "She should be studying hard for her university entrance exams"
+          }
+        ],
+        "clauses": [
+          {
+            "text": "Now, she must study hard for examination for university",
+            "corrected_segment": "She should be studying hard for her university entrance exams",
+            "errors": [
+              {
+                "category": "Auxiliary/Modal Verbs",
+                "severity": "moderate",
+                "error": "Use of 'must' is not the most natural choice here. 'Should be' is more appropriate to convey advice or expectation.",
+                "correction": "She should be studying hard for her university entrance exams"
+              }
+            ]
+          },
+          {
+            "text": "she very dislike studying.",
+            "errors": []
+          }
+        ],
+        "pattern_analysis": [
+          {
+            "intention": "Expressing obligation/necessity",
+            "category": "Sentence_Stem",
+            "component": "She should be [verb-ing]",
+            "frequency": 4.5,
+            "context": "Giving advice, stating expectations, or expressing a sense of duty",
+            "note": "Common way to express obligation"
+          },
+          {
+            "intention": "Describing effort/intensity",
+            "category": "Polyword",
+            "component": "[verb] hard",
+            "frequency": 4.2,
+            "context": "Describing the intensity of an action or effort",
+            "note": "Fairly common, especially in academic contexts"
+          },
+          {
+            "intention": "Expressing dislike",
+            "category": "Sentence_Stem",
+            "component": "She really dislikes [activity]",
+            "frequency": 3.8,
+            "context": "Expressing a strong aversion or lack of interest",
+            "note": "Common way to express dislike, 'really' adds emphasis"
+          }
+        ],
+        "filtering_metadata": {
+          "decision": "KEEP",
+          "reason": "The original uses 'must' in a way that's less natural than 'should be'. The corrected sentence provides a more suitable modal verb and improves the overall flow.",
+          "teaching_approach": "CONVERSATIONAL_TEACHING",
+          "priority_level": "MEDIUM",
+          "approach_reason": "The utterance contains a modal verb error. The difference between 'must' and 'should' can be explained effectively in context."
+        }
+      },
+      "explanations": {
+        "introduction": "In your sentence, you used 'must' to talk about studying. While understandable, 'should be' is often a more natural choice when giving advice or stating expectations.",
+        "main": "'Must' expresses a strong obligation or necessity. 'Should' expresses a recommendation, expectation, or advice. In this case, saying 'She should be studying hard' implies that it's a good idea or expected that she's studying, whereas 'must' implies it's absolutely essential and leaves less room for choice. 'Should be' is more appropriate in this context because it expresses a strong recommendation or expectation, rather than an absolute obligation. Also, using 'should be studying' indicates an ongoing action.",
+        "recap": "Use 'should' to give advice or express expectations, and 'must' for strong obligations."
+      },
+      "problems": [
+        {
+          "problem_id": "mcq_01",
+          "type": "MCQ",
+          "question": "Which sentence best expresses a strong recommendation or expectation about someone's current activity?",
+          "options": [
+            "She must be finishing her homework now.",
+            "She should be finishing her homework now.",
+            "She is finishing her homework now."
+          ],
+          "feedback": [
+            {
+              "option_text": "She must be finishing her homework now.",
+              "is_correct": false,
+              "explanation": "'Must' implies a strong obligation, leaving little choice. While grammatically correct, it's a stronger statement than is usually needed."
+            },
+            {
+              "option_text": "She should be finishing her homework now.",
+              "is_correct": true,
+              "explanation": "'Should' expresses a recommendation or expectation, making it the most appropriate choice in this context."
+            },
+            {
+              "option_text": "She is finishing her homework now.",
+              "is_correct": false,
+              "explanation": "This sentence simply states a fact. It doesn't convey the sense of recommendation or expectation that 'should' provides."
+            }
+          ]
+        },
+        {
+          "problem_id": "fill_01",
+          "type": "FillBlankChoice",
+          "question_template": "You _______ arrive on time for the interview, but it's highly recommended.",
+          "options": [
+            "must",
+            "should",
+            "will"
+          ],
+          "feedback": [
+            {
+              "option_text": "must",
+              "is_correct": false,
+              "explanation": "'Must' implies a strong obligation. 'Should' is more appropriate when giving a strong recommendation."
+            },
+            {
+              "option_text": "should",
+              "is_correct": true,
+              "explanation": "'Should' is the best choice here because it expresses a strong recommendation without the force of 'must'."
+            },
+            {
+              "option_text": "will",
+              "is_correct": false,
+              "explanation": "'Will' expresses future intent, not a recommendation or obligation."
+            }
+          ]
+        },
+        {
+          "problem_id": "dict_01",
+          "type": "Dictation",
+          "prompt_text": "Listen and type the following sentence:",
+          "target_text": "He should be practicing his presentation skills."
+        }
+      ],
+      "help_context": "User is working on modal verbs ('must' vs. 'should'). Original error: 'Use of 'must' is not the most natural choice here. 'Should be' is more appropriate to convey advice or expectation.'. Concepts: expressing obligation/necessity vs. advice/expectation."
+    }
+  ]
+}

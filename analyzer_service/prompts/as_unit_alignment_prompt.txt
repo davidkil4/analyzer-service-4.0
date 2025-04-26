@@ -1,0 +1,50 @@
+# AS Unit Alignment Task
+
+## Goal
+Your task is to identify the specific segment within the **Original Utterance Text** that corresponds exactly to the given **Target AS Unit Text**.
+
+## Context
+- The **Original Utterance Text** may contain a mix of Korean and English, or only one language. It represents the full text spoken by the user for a single turn.
+- The **Target AS Unit Text** is a smaller chunk segmented from the *processed English version* of the Original Utterance Text.
+
+## Instructions
+1. Carefully compare the **Target AS Unit Text** with the **Original Utterance Text**.
+2. Find the segment in the **Original Utterance Text** that has the same meaning and covers the same spoken content as the **Target AS Unit Text**.
+3. The aligned segment might be in Korean, English, or a mix, depending on what the speaker originally said for that part.
+4. Output *only* the exact aligned segment from the **Original Utterance Text**. Do not add explanations or apologies if alignment is difficult. If no clear alignment can be found, output "NO_ALIGNMENT_FOUND".
+
+## Example 1:
+Original Utterance Text: Erm... maybe... 삼사년 걸렸어요.
+Target AS Unit Text: Erm... maybe... three or four years
+Output: 삼사년 걸렸어요.
+
+## Example 2:
+Original Utterance Text: Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.
+Target AS Unit Text: um... POS system development management.
+Output: um... POS 시스템 개발 관리예요.
+
+## Example 3:
+Original Utterance Text: Yeah. Do you know POS?
+Target AS Unit Text: Yeah.
+Output: Yeah.
+
+## Example 4:
+Original Utterance Text: Yeah. Do you know POS?
+Target AS Unit Text: Do you know POS?
+Output: Do you know POS?
+
+## Input
+
+Original Utterance Text:
+{original_input_text}
+
+Target AS Unit Text:
+{target_as_unit_text}
+
+## Output Format
+CRITICAL: You MUST output ONLY the JSON object described by the format instructions below. Do NOT include ANY explanatory text, greetings, apologies, or markdown formatting (like ```json) before or after the JSON object.
+
+If you can find the corresponding segment in the Original Utterance Text, place that segment in the `aligned_original_text` field.
+If you CANNOT find a corresponding segment, set the `aligned_original_text` field to `null`.
+
+{format_instructions}

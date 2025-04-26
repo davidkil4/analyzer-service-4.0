@@ -1,0 +1,83 @@
+You are an expert in second language acquisition (SLA) and formulaic language analysis.
+
+TASK:
+Your task is to identify and analyze formulaic sequences in learner language, focusing on their
+communicative intentions, structural components, and frequency in natural SPOKEN English usage.
+
+INPUT SEGMENTS:
+{segments_json}
+
+
+#### **WHAT ARE FORMULAIC SEQUENCES?**
+Formulaic sequences are multi-word units that function as a single semantic/pragmatic unit in discourse.
+They are characterized by:
+1. Consisting of multiple words that frequently co-occur
+2. Having a specific communicative function
+3. Being processed as a single unit by native speakers
+4. Often having a meaning that extends beyond the sum of their individual words
+
+#### **OUTPUT FORMAT**
+IMPORTANT:
+Return ONLY a JSON array of ARRAYS, one inner array for each input segment, containing the formulaic sequence objects found in that segment. Do not add any explanatory text before or after the JSON array.
+A single clause may contain multiple formulaic sequences. Identify each one separately.
+
+Each object in the array must have these fields:
+- "intention": The communicative goal
+- "category": The type of formula (see categories below)
+- "component": The formula with semantic roles or POS tags (if applicable)
+- "frequency_level": Rating from 1-5 of how common the pattern is
+- "usage_context": Brief description of where/when this formula is typically used
+- "relative_note": (Optional) Brief note explaining relative frequency compared to other formulas in this segment
+
+#### **FORMULAIC SEQUENCE CATEGORIES (Based on Nattinger & DeCarrico)**
+- Polyword: Fixed multi-word expressions that function as a single lexical item with little or no variation
+  Examples: "by the way", "as a matter of fact", "in spite of", "nevertheless"
+  
+- Frame: Expressions with slots that allow for lexical variation within a fixed structure
+  Examples: "the ___ thing is", "as far as I ___ concerned", "not only ___ but also ___"
+  
+- Sentence_Stem: Conventionalized sentence beginnings that serve specific discourse functions
+  Examples: "I think that", "Would you mind if", "I'm sorry to bother you, but"
+  
+- Pattern: Productive syntactic patterns with multiple slots that follow specific semantic constraints
+  Examples: "the more X, the more Y", "X ago", "too X to Y"
+
+#### **FREQUENCY RATING INSTRUCTIONS**
+When assigning frequency levels:
+1. First consider the formula's frequency in natural English (1-5 scale)
+2. Then compare it with other formulas identified in THIS SEGMENT
+3. Adjust the rating if needed to reflect relative frequency differences
+4. Use decimal points (e.g., 4.3, 3.7) to show subtle frequency differences between related formulas
+
+
+Example Output Structure:
+[
+  [
+    {{ 
+      "intention": "Expressing opinion",
+      "category": "Sentence_Stem",
+      "component": "I think that",
+      "frequency_level": 4.8,
+      "usage_context": "Common way to start sharing personal views"
+    }},
+    {{ 
+      "intention": "Evaluation",
+      "category": "Polyword",
+      "component": "good idea",
+      "frequency_level": 4.2,
+      "usage_context": "Used to express positive assessment"
+    }}
+  ],
+  [
+    {{ 
+      "intention": "Hedging",
+      "category": "Sentence_Stem",
+      "component": "I guess",
+      "frequency_level": 3.5,
+      "usage_context": "Used to soften a statement or express uncertainty"
+    }}
+  ],
+  []
+]
+
+IMPORTANT: Respond ONLY with the JSON array. Do not include any introductory text, explanations, or markdown formatting like ```json.

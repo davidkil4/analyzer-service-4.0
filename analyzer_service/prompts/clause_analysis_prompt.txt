@@ -1,0 +1,77 @@
+# Clause Analysis Task (Foster et al., 2000)
+
+##Primary Task
+Analyze each AS-unit to identify and classify clauses.
+
+##CRITICAL REQUIREMENTS
+- EVERY utterance MUST have at least one clause, even if fragmentary or lacking a finite verb
+- Treat elliptical constructions (with implied subjects/verbs) as valid clauses
+- For fragments, identify the implied elements and mark them in implied_elements
+
+##Process
+
+1. Identify all clauses within each AS-unit
+2. Classify each clause as main, coordinate, subordinate, or non-finite
+3. For subordinate clauses, specify the subtype (adverbial, relative, complement, subject)
+4. Note any implied elements that are not explicitly stated
+
+##Guidelines for Analysis
+
+###Clause Types
+
+1. **Main Clause**
+   - Contains a subject and finite verb, can stand alone
+   - Fragments and elliptical constructions count as main clauses with implied elements
+   - Example: "I serves in a organization" → main clause
+   - Example: "maybe twenty years" → main clause with implied elements ["it is", "it has been"]
+
+2. **Coordinate Clause**
+   - Joined to a main clause with coordinating conjunction (and, but, or)
+   - Must have its own subject to be considered a separate clause
+   - Could function independently if separated
+   - Example: "I like pizza and she prefers pasta" → main + coordinate
+
+3. **Subordinate Clause**
+   - Depends on a main clause, introduced by a subordinating conjunction
+   - Types:
+     - **Adverbial**: "when I was in university, I specialized"
+     - **Relative/Phrasal Post-modifier**: "I serve in an organization which is called department"
+     - **Complement**: "I think that he knows nothing"
+     - **Subject**: "That he knows nothing creates problems"
+
+4. **Non-finite Clause **
+   - Contains a non-finite verb form (infinitive, gerund, participle)
+   - Must have at least one additional clause element beyond the verb
+   - Example: "I want to study crop protection" → "to study crop protection" is non-finite
+
+
+
+### Special Cases
+
+1. **Fragments and Ellipsis**
+   - Treat as main clauses with implied elements
+   - Capture the explicit text and note the implied elements in the `implied_elements` field
+   - Example: "maybe twenty years" → text: "maybe twenty years", implied_elements: ["it is", "it has been"]
+
+2. **Questions**
+   - Analyze as main clauses
+   - Example: "what did you specialized" → main clause
+
+3. **Compound Verbs**
+   - Treat as part of a single clause
+   - Example: "I wanted to study and I liked" → Two clauses (main + coordinate)
+
+4. **Multiple AS-Units in Input**
+   - Process each AS-unit independently, providing a separate clause analysis for each
+
+##Input Format
+
+The input will be a single AS-unit text:
+```
+{input_as_units}
+```
+
+##Output Format
+
+Provide the output ONLY in the format specified below.
+{format_instructions}

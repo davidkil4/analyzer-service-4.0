@@ -1,0 +1,139 @@
+Correct these EFL learner utterances with only NECESSARY changes to create natural, fluent English.
+
+STEP 1: UNDERSTAND EFL LEARNER INTENT
+
+For EACH input, analyze the utterance by:
+1. COMPARING PRUNED AND ORIGINAL FORMS
+   • Read the pruned version first for clear meaning
+   • Reference original version to understand:
+     - Self-correction attempts
+     - Word search patterns
+     - Communication strategies
+
+2. ANALYZING LEARNER INTENT through:
+   • Previous 3 utterances in context
+   • Question-answer relationships
+   • Topic development
+   • Communication goals
+
+3. IDENTIFYING KOREAN-ENGLISH SPECIFIC PATTERNS:
+   • Subject omission (common in Korean)
+   • Direct translation of Korean sentence structures
+   • Literal word-for-word translations that sound unnatural
+   • Topic-prominent structures instead of subject-prominent
+   • Verb positioning at the end of clauses
+   • Article/preposition challenges specific to Korean speakers
+
+# ACTIVE CONTEXT PROCESSING
+{% for item in batch %}
+---
+ITEM {{ item.n }} CONTEXT:
+{% for ctx in item.context %}- {{ ctx }}
+{% endfor %}
+INPUT: {{ item.text }}
+{% endfor %}
+
+STEP 2: MAKE GRAMMATICAL CORRECTIONS
+After understanding the intent, perform the following steps:
+
+1. Grammatical Corrections
+- Correct **all clear grammatical errors** in:
+  • Verb tense/aspect • Articles • Prepositions
+  • Noun number • Pronoun reference
+  • Quantifiers ("minimum three" → "a minimum of three")
+  • Parallel structure ("knowledge and skill of..." → "knowledge of... and skills in")
+  • Subject-verb agreement
+  • Word order in questions and statements
+
+2. Natural Expression Transformations
+- Transform awkward but grammatically correct phrases:
+  • "My problem is only one" → "I have only one problem"
+  • "This is tennis elbow by bad golf" → "This tennis elbow is from playing golf badly"
+  • "So, now, I use the many times" → "So now, I use it frequently"
+- When the original structure is fundamentally unnatural but grammatical, reconstruct the sentence
+- Pay special attention to sentence structures that follow Korean patterns rather than English ones
+
+STEP 3: APPLY FORMULAIC LANGUAGE PATTERNS
+If the utterance remains unclear or non-native-like after grammatical corrections:
+
+1. Identify Appropriate Formulaic Sequences
+- Apply common formulaic sequences including:
+  • Polywords (e.g., "by the way", "of course", "as well as")
+  • Collocations (e.g., "make a decision", "strong opinion", "take responsibility")
+  • Institutionalized phrases (e.g., "if you don't mind", "in other words", "to be honest")
+  • Lexical bundles (e.g., "as a result of", "on the other hand", "in terms of")
+  • Greetings and discourse markers: "Well", "You know", "I mean"
+  • Fixed expressions: "as a matter of fact", "to tell you the truth"
+
+2. Apply Pattern-Based Corrections
+- Replace non-native expressions with equivalent formulaic sequences
+- Maintain the learner's intended meaning and vocabulary level
+- Only add sequences that are contextually appropriate
+- Consider what a native speaker would naturally say in the same context
+
+IMPORTANT NOTE ON APPROPRIATE CORRECTION:
+- The goal is to create natural, fluent English that preserves the learner's intended meaning
+- Use conversation context to resolve ambiguities and determine implied meanings
+- When the literal translation is awkward but grammatically correct, prioritize creating a response that fits naturally in the conversation flow
+
+# COMPREHENSIVE EXAMPLES
+
+## Example 1: Intent Analysis & Basic Grammar
+Original: "Ummm. Urr. First, urr relax I can feel relax and good for my health err and spent my boring time."
+Pruned: "First, relax I can feel relax and good for my health and spent my boring time."
+Context: [
+    "I see. What is so good about playing golf?",
+    "Pardon?",
+    "What is good about playing golf?"
+]
+Analysis:
+- Question requires listing benefits of golf
+- Pruned version shows three main points: relaxation, health, free time
+- Korean pattern: subject omission, direct translation
+Correction: "First, I can relax, which is good for my health, and it helps me spend my free time."
+
+## Example 2: Awkward But Grammatical Transformation
+Original: "Ur. Fine, thank you. Urr. It it my problem is only one. Er."
+Pruned: "Fine, thank you. It my problem is only one."
+Context: [
+    "Nice to meet you, too. May I ask your name?",
+    "Yeah. Urr. My name is XXX02.",
+    "O K. How are you today, Mister XXX02?"
+]
+Analysis:
+- Responding to "how are you" with health status
+- Grammatically problematic but intent is clear
+- Korean pattern: topic-prominent structure "my problem is only one"
+Correction: "Fine, thank you. I have only one problem."
+
+## Example 3: Context-Informed Correction
+Original: "Ummm. Long time. Maybe, twenty years or more."
+Pruned: "Long time. Maybe, twenty years or more."
+Context: [
+    "I see.",
+    "I like very I I like very much.",
+    "How long have you been playing golf?"
+]
+Analysis:
+- Answering "how long" question with time period
+- Missing subject and verb based on context
+- Requires adding implied subject from context
+Correction: "I've been playing for a long time, maybe twenty years or more."
+
+## Example 4: Combined Correction (Grammar + Formulaic)
+Original: "Um... if possible I hoping change my schedule because I having important thing"
+Pruned: "if possible I hoping change my schedule because I having important thing"
+Context: [
+    "So, next Tuesday at 2 PM?",
+    "Yes, the team meeting.",
+    "Is that time okay?"
+]
+Analysis:
+- Professional request context
+- Needs both grammar correction and formal request pattern
+- Shows both verb form issues and lack of formal expression
+Correction: "If possible, I would like to reschedule as I have an important commitment"
+
+# OUTPUT INSTRUCTIONS
+Only return a JSON array with objects containing:
+[ {"n": "14", "correct": "Grammar-fixed and naturalized sentence"} ]

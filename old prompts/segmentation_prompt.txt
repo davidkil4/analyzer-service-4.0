@@ -1,0 +1,103 @@
+# AS-unit Segmentation Task (Foster et al., 2000)
+
+## Primary Task
+Segment each utterance into AS-units (Analysis of Speech Units). An AS-unit is a single speaker's utterance consisting of an independent clause or a sub-clausal unit, together with any subordinate clause(s) associated with it.
+
+## CRITICAL REQUIREMENTS
+- EVERY utterance MUST be segmented into at least one AS-unit
+- Treat elliptical constructions (with implied subjects/verbs) as valid AS-units
+- For fragments, identify the implied elements and mark them in implied_elements
+
+## Process
+1. FIRST segment the 'correct' field into AS-units following Foster's framework
+2. THEN identify corresponding segments in 'original', 'translated', and 'pruned' fields 
+3. Format the output as specified below
+
+## Guidelines for Segmentation
+
+### Core Rules
+1. **Independent Clause + Optional Subordinates**
+   - Each AS-unit must contain a main clause with a subject (explicit or recoverable) and a finite verb
+   - Include coordinated verb phrases with shared subjects (e.g., "I went to the store and bought milk")
+   - Include all subordinate clauses (e.g., "because" clauses)
+
+2. **Sub-Clausal Unit with Communicative Value**
+   - No finite verb but meaningful in context (e.g., responses to questions)
+   - Example: "Last summer" (as answer to "When did you visit?")
+
+3. **Minor Utterance**
+   - One-word responses or fixed expressions with communicative value (not simple echoes)
+   - Example: "Yes" (as a substantive response)
+
+### Special Cases
+- **Separate AS-units:** Independent clauses with different subjects
+  Example: "I went to the store" + "he bought milk" = 2 AS-units
+  
+- **One AS-unit:** Coordinated verbs sharing a subject, self-corrections within same structure
+  Example: "I went to the store and bought milk" = 1 AS-unit
+
+### Exclusion Criteria
+- False starts without meaning
+- Empty fillers (um, uh)
+- Simple echo responses
+- Direct repetitions
+
+### Verification
+- Each AS-unit must be grammatically complete (if applicable)
+- Each AS-unit must have communicative value
+- There should be no overlap between AS-units
+
+## Input Format
+{input_format}
+
+## Output Format
+CRITICAL: Your final output MUST be a single JSON object containing exactly one key: "items". 
+The value associated with the "items" key MUST be a JSON list containing the segmented results for ALL input utterances, where each element in the list follows the format described below.
+Example structure: {{ "items": [ {{result for utterance 1}}, {{result for utterance 2}}, ... ] }}
+Each object representing an AS-unit within the `as_units` list MUST contain the fields: `pruned`, `original`, `translated`, `correct`, and `clauses`.
+{output_format}
+
+## Examples
+Example 1:
+Input:
+```json
+{{
+  "original": "mm yes. uh I like sports uh very much. mm but cannot play well.",
+  "translated": "mm yes. uh I like sports uh very much. mm but cannot play well.",
+  "pruned": "yes. I like sports very much. but cannot play well",
+  "correct": "Yes. I like sports very much. But I cannot play well."
+}}
+```
+
+Expected Output:
+```json
+{{
+  "n": 1,
+  "as_units": [
+    {{
+      "pruned": "yes",
+      "original": "mm yes",
+      "translated": "mm yes",
+      "correct": "Yes",
+      "clauses": []
+    }},
+    {{
+      "pruned": "I like sports very much",
+      "original": "uh I like sports uh very much",
+      "translated": "uh I like sports uh very much",
+      "correct": "I like sports very much",
+      "clauses": []
+    }},
+    {{
+      "pruned": "but cannot play well",
+      "original": "mm but cannot play well",
+      "translated": "mm but cannot play well",
+      "correct": "But I cannot play well",
+      "clauses": []
+    }}
+  ]
+}}
+```
+
+## Input Utterances
+{input_utterances}

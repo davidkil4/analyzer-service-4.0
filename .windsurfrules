@@ -1,0 +1,88 @@
+# Global Rule 
+
+Always be >95% certain before you write code. If you are not >95% certain, verify by researching the codebase THOROUGHLY. IF you're not >95% certain after, verify with me.
+
+# Analyzer Service - Core Data Requirements for Chain Output
+
+This document outlines the essential data fields that the main LangChain analysis pipeline MUST produce for each analyzed AS unit. These requirements are based on the needs of the downstream clustering analysis scripts ([ZPD_analyzer.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_analyzer.py:0:0-0:0), [ZPD_regions.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_regions.py:0:0-0:0), etc.).
+
+**Guiding Principle:** The LangChain pipeline should output these core fields directly in a clean structure defined by Pydantic schemas (`schemas.py`). The downstream clustering scripts will be slightly adapted to read this new structure, rather than forcing the LangChain pipeline to exactly mimic the old, complex JSON format (`MODEL_OUTPUT.json`).
+
+## Required Fields per Analyzed AS Unit:
+
+1.  **Identifier:**
+    *   A unique ID for the AS unit (e.g., `as_unit_id: "u70-as2"`).
+
+2.  **Text:**
+    *   `original_text`: The original text of the AS unit (English, post-preprocessing).
+    *   `corrected_text` (Optional): The corrected version of the AS unit text, if applicable.
+    *   *Note:* Include aligned Korean text (`aligned_korean_as_unit`, `aligned_korean_clause`) if needed, based on final pre-processing schema.
+
+3.  **Scores:**
+    *   `complexity_score`: Float representing the calculated complexity.
+    *   `accuracy_score`: Float representing the calculated accuracy.
+
+4.  **Clauses:**
+    *   `clauses`: A list of dictionaries, where each dictionary represents a single clause within the AS unit.
+    *   **Required per Clause:**
+        *   `clause_text`: The text of the clause (English).
+        *   `corrected_clause_text` (Optional): Corrected text for the clause.
+        *   `errors_found`: A list of dictionaries, where each dictionary represents a specific error found in the clause.
+            *   **Required per Error:**
+                *   `category`: String (e.g., "Sentence Structure", "Vocabulary").
+                *   `severity`: String - MUST be one of `'critical'`, `'moderate'`, or `'minor'` (case-insensitive input, but consistent output preferred). This is directly used by [ZPD_analyzer.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_analyzer.py:0:0-0:0) for feature calculation.
+                *   [error](cci:1://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_analyzer.py:278:4-297:61): String describing the error message.
+                *   `correction`: String suggesting the correction.
+        *   `clause_pattern_analysis` (Optional): Pattern analysis dictionary specifically for this clause. (Structure TBD based on pattern analysis prompt output).
+
+5.  **Pattern Analysis (AS Unit Level):**
+    *   `as_unit_pattern_analysis` (Optional): Pattern analysis dictionary for the entire AS unit. (Structure TBD).
+    *   *Note:* Based on Memory[898997fd] and [ZPD_regions.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_regions.py:0:0-0:0), pattern analysis might exist at the clause level OR the AS unit level. The schema should accommodate storing it where it's generated. [ZPD_regions.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_regions.py:0:0-0:0) specifically checks both levels.
+
+## Notes on Downstream Script Adaptation (`clustering_analysis/`):
+
+*   [ZPD_analyzer.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_analyzer.py:0:0-0:0): Will be adapted to read `complexity_score`, `accuracy_score`, and iterate through `clauses[...].errors_found` to get `severity` for its feature calculation. It no longer needs to rely on a pre-calculated `accuracy.breakdown.severity_counts` structure from the input. It will also read `pattern_analysis` for metadata.
+*   [ZPD_regions.py](cci:7://file:///Users/davidkil/projects/analyzer_service%204.0/analyzer_service/clustering_analysis/ZPD_regions.py:0:0-0:0): Will be adapted to read scores, text, full error details (`errors_found`), and pattern analysis directly from the new structure for its reporting and analysis, rather than relying on intermediate structures like a `metrics` dictionary for calculated error rates.
+
+By adhering to this output structure from the LangChain pipeline, we ensure the necessary data is available for the final clustering analysis while maintaining a cleaner, more manageable data flow.
+
+
+# Pipeline Architecture Notes
+
+*   **Batch Processing:** The entire pipeline (pre-processing and main analysis) MUST support batch processing of utterances for efficiency, as implemented in `main.py`. Input data is loaded and processed in configurable batches.
+
+# Global Rule
+
+Always be >95% certain before you write code. If you are not >95% certain, verify by researching the codebase THOROUGHLY. IF you're not >95% certain after, verify with me.
+
+## Testing Plan for Analyzer Service Chains
+
+**1. Guiding Principles:**
+   - Test Incrementally (Preprocessing -> Analysis -> Teaching).
+   - Schema-Driven Validation (Pydantic).
+   - Isolate Logic (Unit Tests for helpers, Integration Tests for chains).
+   - Balance Mocked LLM (deterministic) vs. Real LLM (qualitative) tests.
+   - Use diverse Test Data (common cases, edge cases).
+
+**2. Setup & Tools:**
+   - Framework: `pytest`
+   - Structure: `tests/` dir with `tests/test_data/`.
+   - Utilities: `pytest.mark.parametrize`, `pytest-mock`, Pydantic.
+   - Optional: LangSmith.
+
+**3. Testing Strategy:**
+   - **A. Preprocessing Chain:**
+     - Goal: Verify translate, filter, segment, clause analysis, AS align, clause align (incl. `is_korean`, `original_clause_type`). Output: `PreprocessingOutput`.
+     - Tests: Unit tests for helpers/parsers. Integration tests invoking the chain with sample `InputUtterance`, asserting schema and key field values/plausibility.
+   - **B. Main Analysis Chain:**
+     - Goal: Verify scores, errors (category, severity, message, correction), pattern analysis. Output: `MainAnalysisOutput`.
+     - Tests: Unit tests for helpers/parsers. Integration tests using verified `PreprocessingOutput` as input, asserting schema, score ranges, error details (esp. severity), pattern structure.
+   - **C. Teaching Chain:**
+     - Goal: Verify relevant, formatted teaching content generation.
+     - Tests: Unit tests. Integration tests using verified `MainAnalysisOutput`, asserting output format and qualitative relevance.
+   - **D. End-to-End Pipeline:**
+     - Goal: Verify composed pipeline execution and coherence.
+     - Tests: Integration tests composing all chains, run with `InputUtterance` (real LLM likely), check for runtime errors, final output schema, qualitative coherence.
+
+**4. Workflow:**
+   - Implement Chain -> Test Chain (Unit & Integration) -> Refine -> Repeat for next chain -> Test End-to-End.

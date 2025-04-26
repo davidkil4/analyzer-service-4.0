@@ -1,0 +1,529 @@
+[
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u4-as2",
+                "original_utterance_id": "u4",
+                "original_input_text": "Ur. My name is XXX02.",
+                "as_unit_text": "My name is XXX02.",
+                "aligned_original_text": "My name is XXX02.",
+                "clauses": [
+                    {
+                        "clause_text": "My name is XXX02.",
+                        "aligned_original_clause_segment": "My name is XXX02.",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u8-as2",
+                "original_utterance_id": "u8",
+                "original_input_text": "Oh. I... 어... XXX03에 살아요.",
+                "as_unit_text": "I... 어... XXX03에 살아요.",
+                "aligned_original_text": "어... XXX03에 살아요",
+                "clauses": [
+                    {
+                        "clause_text": "I... 어... XXX03에 살아요",
+                        "aligned_original_clause_segment": "어... XXX03에 살아요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u22-as3",
+                "original_utterance_id": "u22",
+                "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+                "as_unit_text": "아내랑 아들 하나 딸 하나 있어요.",
+                "aligned_original_text": "아내랑 아들 하나 딸 하나 있어요",
+                "clauses": [
+                    {
+                        "clause_text": "아내랑 아들 하나 딸 하나 있어요",
+                        "aligned_original_clause_segment": "아내랑 아들 하나 딸 하나 있어요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u24-as3",
+                "original_utterance_id": "u24",
+                "original_input_text": "Yeah. Hm. He is 다섯 살이에요.",
+                "as_unit_text": "He is 다섯 살이에요.",
+                "aligned_original_text": "He is 다섯 살이에요.",
+                "clauses": [
+                    {
+                        "clause_text": "He is 다섯 살이에요",
+                        "aligned_original_clause_segment": "He is 다섯 살이에요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u26-as2",
+                "original_utterance_id": "u26",
+                "original_input_text": "Mm. She is 두 살이에요.",
+                "as_unit_text": "She is 두 살이에요.",
+                "aligned_original_text": "She is 두 살이에요.",
+                "clauses": [
+                    {
+                        "clause_text": "She is 두 살이에요",
+                        "aligned_original_clause_segment": "She is 두 살이에요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u28-as2",
+                "original_utterance_id": "u28",
+                "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+                "as_unit_text": "Last weekend... 어...",
+                "aligned_original_text": "Last weekend... 어...",
+                "clauses": [
+                    {
+                        "clause_text": "Last weekend...",
+                        "aligned_original_clause_segment": "Last weekend...",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    },
+                    {
+                        "clause_text": "어...",
+                        "aligned_original_clause_segment": "어...",
+                        "is_korean": true,
+                        "original_clause_type": "word"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u28-as3",
+                "original_utterance_id": "u28",
+                "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+                "as_unit_text": "Christmas present 사러 갔어요.",
+                "aligned_original_text": "Christmas present 사러 갔어요",
+                "clauses": [
+                    {
+                        "clause_text": "Christmas present 사러 갔어요.",
+                        "aligned_original_clause_segment": "Christmas present 사러 갔어요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u30-as3",
+                "original_utterance_id": "u30",
+                "original_input_text": "Oh... 어... TV 애니메이션 캐릭터 알아요?",
+                "as_unit_text": "TV 애니메이션 캐릭터 알아요?",
+                "aligned_original_text": "TV 애니메이션 캐릭터 알아요?",
+                "clauses": [
+                    {
+                        "clause_text": "TV 애니메이션 캐릭터 알아요?",
+                        "aligned_original_clause_segment": "TV 애니메이션 캐릭터 알아요?",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u32-as3",
+                "original_utterance_id": "u32",
+                "original_input_text": "Yeah... 그러니까... TV animation character.",
+                "as_unit_text": "TV animation character.",
+                "aligned_original_text": "TV animation character.",
+                "clauses": [
+                    {
+                        "clause_text": "TV animation character",
+                        "aligned_original_clause_segment": "TV animation character.",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u34-as1",
+                "original_utterance_id": "u34",
+                "original_input_text": "And 제 아들이... um... 그 캐릭터 피규어를 원해요.",
+                "as_unit_text": "And 제 아들이",
+                "aligned_original_text": "And 제 아들이",
+                "clauses": [
+                    {
+                        "clause_text": "And 제 아들이",
+                        "aligned_original_clause_segment": "제 아들이",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u34-as2",
+                "original_utterance_id": "u34",
+                "original_input_text": "And 제 아들이... um... 그 캐릭터 피규어를 원해요.",
+                "as_unit_text": "그 캐릭터 피규어를 원해요.",
+                "aligned_original_text": "그 캐릭터 피규어를 원해요",
+                "clauses": [
+                    {
+                        "clause_text": "그 캐릭터 피규어를 원해요",
+                        "aligned_original_clause_segment": "그 캐릭터 피규어를 원해요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u38-as1",
+                "original_utterance_id": "u38",
+                "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+                "as_unit_text": "And my daughter",
+                "aligned_original_text": "And my daughter...",
+                "clauses": [
+                    {
+                        "clause_text": "And my daughter",
+                        "aligned_original_clause_segment": "And my daughter...",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u38-as2",
+                "original_utterance_id": "u38",
+                "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+                "as_unit_text": "어... 푸우 캐릭터 냉장고 장난감 원해요.",
+                "aligned_original_text": "어... 푸우 캐릭터 냉장고 장난감 원해요",
+                "clauses": [
+                    {
+                        "clause_text": "어... 푸우 캐릭터 냉장고 장난감 원해요",
+                        "aligned_original_clause_segment": "어... 푸우 캐릭터 냉장고 장난감 원해요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u42-as2",
+                "original_utterance_id": "u42",
+                "original_input_text": "So... 지난주에 선물 샀어요.",
+                "as_unit_text": "지난주에 선물 샀어요.",
+                "aligned_original_text": "지난주에 선물 샀어요",
+                "clauses": [
+                    {
+                        "clause_text": "지난주에 선물 샀어요",
+                        "aligned_original_clause_segment": "지난주에 선물 샀어요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u46-as2",
+                "original_utterance_id": "u46",
+                "original_input_text": "No... 크리스마스 이브에 줄 거예요.",
+                "as_unit_text": "크리스마스 이브에 줄 거예요.",
+                "aligned_original_text": "크리스마스 이브에 줄 거예요.",
+                "clauses": [
+                    {
+                        "clause_text": "크리스마스 이브에 줄 거예요",
+                        "aligned_original_clause_segment": "크리스마스 이브에 줄 거예요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u48-as5",
+                "original_utterance_id": "u48",
+                "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+                "as_unit_text": "POS 시스템 개발 관리예요.",
+                "aligned_original_text": "POS 시스템 개발 관리예요",
+                "clauses": [
+                    {
+                        "clause_text": "POS 시스템 개발 관리예요",
+                        "aligned_original_clause_segment": "POS 시스템 개발 관리예요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u50-as2",
+                "original_utterance_id": "u50",
+                "original_input_text": "Yeah. Do you know POS?",
+                "as_unit_text": "Do you know POS?",
+                "aligned_original_text": "Do you know POS?",
+                "clauses": [
+                    {
+                        "clause_text": "Do you know POS?",
+                        "aligned_original_clause_segment": "Do you know POS?",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u54-as2",
+                "original_utterance_id": "u54",
+                "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+                "as_unit_text": "제가 하는 일은 XXX06 전자 계산대...",
+                "aligned_original_text": "제가 하는 일은 XXX06 전자 계산대...",
+                "clauses": [
+                    {
+                        "clause_text": "제가 하는 일은 XXX06 전자 계산대...",
+                        "aligned_original_clause_segment": "제가 하는 일은 XXX06 전자 계산대...",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u54-as3",
+                "original_utterance_id": "u54",
+                "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+                "as_unit_text": "electrical cash register요.",
+                "aligned_original_text": "electrical cash register요",
+                "clauses": [
+                    {
+                        "clause_text": "electrical cash register요",
+                        "aligned_original_clause_segment": "electrical cash register요",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u56-as2",
+                "original_utterance_id": "u56",
+                "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
+                "as_unit_text": "그냥 제 일이에요.",
+                "aligned_original_text": "그냥 제 일이에요",
+                "clauses": [
+                    {
+                        "clause_text": "그냥 제 일이에요",
+                        "aligned_original_clause_segment": "그냥 제 일이에요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u63-as2",
+                "original_utterance_id": "u63",
+                "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+                "as_unit_text": "children are playing ball...",
+                "aligned_original_text": "children are playing ball...",
+                "clauses": [
+                    {
+                        "clause_text": "children are playing ball",
+                        "aligned_original_clause_segment": "children are playing ball...",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u63-as3",
+                "original_utterance_id": "u63",
+                "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+                "as_unit_text": "그리고 한 남자가 길에서 뛰고 있어요.",
+                "aligned_original_text": "그리고 한 남자가 길에서 뛰고 있어요",
+                "clauses": [
+                    {
+                        "clause_text": "그리고 한 남자가 길에서 뛰고 있어요",
+                        "aligned_original_clause_segment": "그리고 한 남자가 길에서 뛰고 있어요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u63-as4",
+                "original_utterance_id": "u63",
+                "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+                "as_unit_text": "여자들은 길에서 얘기하고 있고...",
+                "aligned_original_text": "여자들은 길에서 얘기하고 있고...",
+                "clauses": [
+                    {
+                        "clause_text": "여자들은 길에서 얘기하고 있고",
+                        "aligned_original_clause_segment": "여자들은 길에서 얘기하고 있고",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u63-as6",
+                "original_utterance_id": "u63",
+                "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+                "as_unit_text": "there are three dogs and cat.",
+                "aligned_original_text": "there are three dogs and cat.",
+                "clauses": [
+                    {
+                        "clause_text": "there are three dogs",
+                        "aligned_original_clause_segment": "there are three dogs",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    },
+                    {
+                        "clause_text": "and cat",
+                        "aligned_original_clause_segment": "and cat",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u65-as2",
+                "original_utterance_id": "u65",
+                "original_input_text": "이 사진은... very peaceful해 보여요.",
+                "as_unit_text": "very peaceful해 보여요.",
+                "aligned_original_text": "very peaceful해 보여요",
+                "clauses": [
+                    {
+                        "clause_text": "very peaceful해 보여요",
+                        "aligned_original_clause_segment": "very peaceful해 보여요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u67-as1",
+                "original_utterance_id": "u67",
+                "original_input_text": "And I think... 좀 부자 동네 같아요.",
+                "as_unit_text": "And I think...",
+                "aligned_original_text": "And I think...",
+                "clauses": [
+                    {
+                        "clause_text": "And I think",
+                        "aligned_original_clause_segment": "And I think...",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u67-as2",
+                "original_utterance_id": "u67",
+                "original_input_text": "And I think... 좀 부자 동네 같아요.",
+                "as_unit_text": "좀 부자 동네 같아요.",
+                "aligned_original_text": "좀 부자 동네 같아요",
+                "clauses": [
+                    {
+                        "clause_text": "좀 부자 동네 같아요",
+                        "aligned_original_clause_segment": "좀 부자 동네 같아요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "processed_utterances": [
+            {
+                "as_unit_id": "u70-as2",
+                "original_utterance_id": "u70",
+                "original_input_text": "No... 저희 집은 아파트예요... not independent house.",
+                "as_unit_text": "저희 집은 아파트예요...",
+                "aligned_original_text": "저희 집은 아파트예요...",
+                "clauses": [
+                    {
+                        "clause_text": "저희 집은 아파트예요",
+                        "aligned_original_clause_segment": "저희 집은 아파트예요",
+                        "is_korean": true,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            },
+            {
+                "as_unit_id": "u70-as3",
+                "original_utterance_id": "u70",
+                "original_input_text": "No... 저희 집은 아파트예요... not independent house.",
+                "as_unit_text": "not independent house.",
+                "aligned_original_text": "not independent house.",
+                "clauses": [
+                    {
+                        "clause_text": "not independent house",
+                        "aligned_original_clause_segment": "not independent house.",
+                        "is_korean": false,
+                        "original_clause_type": "phrase"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,127 @@
+Analyze the provided BATCH of ORIGINAL-TRANSLATED utterance pairs for untranslated Korean vocabulary by examining translation patterns for EACH pair.
+
+INPUT FORMAT:
+The input variable {batch_utterances} contains a JSON array of utterance objects. Each object has an "index", "original" text, and "translated" text.
+Example Input (`{batch_utterances}`):
+[
+  {{
+    "index": 0,
+    "original": "Yeah he is 다섯 살이에요",
+    "translated": "Yeah he is five years old"
+  }},
+  {{
+    "index": 1,
+    "original": "I bought this 책",
+    "translated": "I bought this book"
+  }},
+  {{
+    "index": 2,
+    "original": "그는 말했어요 내일 올거라고",
+    "translated": "He said he will come tomorrow"
+  }}
+]
+
+IMPORTANT INSTRUCTIONS (Apply to EACH utterance in the batch):
+1. SKIP utterances without Korean.
+2. IGNORE common English hesitation markers and filler sounds (e.g., umm, uhh, err, urr).
+3. Output ONLY the final JSON batch response structure described below.
+4. No extra explanations or natural language outside the JSON.
+
+ANALYSIS (Apply to EACH utterance containing Korean):
+For each Korean segment found in the "original" text:
+
+1. First isolate the Korean text and locate its corresponding English translation in the "translated" text.
+2. Analyze what grammatical/semantic unit the English translation forms:
+
+   A. If the English translation forms a SINGLE PART OF SPEECH, even with grammatical endings:
+      - Single verb ("know", "went", "is")
+      - Single noun ("book", "student")
+      - Single adjective ("big", "red")
+      → Classify as "word"
+
+   B. If the English translation forms a FIXED MULTI-WORD UNIT that functions as one part of speech:
+      - Compound nouns ("TV animation character")
+      - Set expressions ("three years", "five years old")
+      - Fixed phrases ("Christmas present")
+      → Classify as "collocation"
+
+   C. If the English translation shows SUBJECT-PREDICATE RELATIONSHIP or COMPLETE VERBAL PHRASE:
+      - Full clauses ("I went to buy", "he said he will come")
+      - Complex verbal constructions ("went to buy")
+      → Classify as "phrase"
+
+Examples (for individual utterance analysis):
+ORIGINAL: "Yeah he is 다섯 살이에요"
+TRANSLATED: "Yeah he is five years old"
+→ "다섯 살이에요" maps to fixed expression "five years old" = collocation
+
+ORIGINAL: "I bought this 책"
+TRANSLATED: "I bought this book"
+→ "책" maps to single word "book" = word
+
+ORIGINAL: "그는 말했어요 내일 올거라고"
+TRANSLATED: "He said he will come tomorrow"
+→ "말했어요 내일 올거라고" maps to clause "said he will come tomorrow" = phrase
+
+OUTPUT FORMAT
+------------
+Return **ONLY** a single JSON object containing a "batch_errors" key. The value of "batch_errors" must be a JSON array. Each element in the "batch_errors" array corresponds to one utterance from the input batch (maintaining the original order/index) and must follow the structure below:
+{{
+  "batch_errors": [
+    {{
+      "index": <utterance_index_from_input>,
+      "errors": [
+        {{
+          "category": "korean_vocabulary",
+          "severity": "minor|moderate|critical", // Based on type: word=minor, collocation=moderate, phrase=critical
+          "error_type": "word|collocation|phrase", // The classification type
+          "error": "The Korean text found" // The actual Korean segment
+        }}
+        // ... more error objects if multiple Korean segments found in the same utterance
+      ]
+    }}
+    // ... one object per input utterance index
+  ]
+}}
+If an utterance has no Korean vocabulary, its corresponding element in the "batch_errors" array should have an empty "errors" list: {{"index": <index>, "errors": []}}.
+
+Example BATCH output for the example input above:
+{{
+  "batch_errors": [
+    {{ // Corresponds to index 0
+      "index": 0,
+      "errors": [
+        {{
+          "category": "korean_vocabulary",
+          "severity": "moderate",
+          "error_type": "collocation",
+          "error": "다섯 살이에요"
+        }}
+      ]
+    }},
+    {{ // Corresponds to index 1
+      "index": 1,
+      "errors": [
+        {{
+          "category": "korean_vocabulary",
+          "severity": "minor",
+          "error_type": "word",
+          "error": "책"
+        }}
+      ]
+    }},
+    {{ // Corresponds to index 2
+      "index": 2,
+      "errors": [
+        {{
+          "category": "korean_vocabulary",
+          "severity": "critical",
+          "error_type": "phrase",
+          "error": "말했어요 내일 올거라고"
+        }}
+      ]
+    }}
+  ]
+}}
+
+Now, analyze the provided batch {batch_utterances} and return the JSON response.

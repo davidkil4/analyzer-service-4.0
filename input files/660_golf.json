@@ -1,0 +1,592 @@
+{
+  "metadata": {
+    "title": "660 golf",
+    "date": "2025-03-14",
+    "language": "English",
+    "source": "conversations/660 golf.txt"
+  },
+  "utterances": [
+    {
+      "id": "u1",
+      "speaker": "interviewer",
+      "text": "My name is XXX01.",
+      "timestamp": 0
+    },
+    {
+      "id": "u2",
+      "speaker": "student",
+      "text": "Nice to meet you.",
+      "timestamp": 60
+    },
+    {
+      "id": "u3",
+      "speaker": "interviewer",
+      "text": "Nice to meet you, too. May I ask your name?",
+      "timestamp": 120
+    },
+    {
+      "id": "u4",
+      "speaker": "student",
+      "text": "Yeah. Urr. My name is XXX02.",
+      "timestamp": 180
+    },
+    {
+      "id": "u5",
+      "speaker": "interviewer",
+      "text": "O K. How are you today, Mister XXX02?",
+      "timestamp": 240
+    },
+    {
+      "id": "u6",
+      "speaker": "student",
+      "text": "Ur. Fine, thank you. Urr.  It it my problem is only one. Er.",
+      "timestamp": 300
+    },
+    {
+      "id": "u7",
+      "speaker": "interviewer",
+      "text": "I see. O K. So, what what's the problem ?",
+      "timestamp": 360
+    },
+    {
+      "id": "u8",
+      "speaker": "student",
+      "text": "Oh. This is tennis elbow by bad golf.",
+      "timestamp": 420
+    },
+    {
+      "id": "u9",
+      "speaker": "interviewer",
+      "text": "I see. Tennis elbow?",
+      "timestamp": 480
+    },
+    {
+      "id": "u10",
+      "speaker": "student",
+      "text": "Tennis elbow?",
+      "timestamp": 540
+    },
+    {
+      "id": "u11",
+      "speaker": "interviewer",
+      "text": "Uhu.",
+      "timestamp": 600
+    },
+    {
+      "id": "u12",
+      "speaker": "student",
+      "text": "Umm. But the reason is not tennis, ur but by playing golf .",
+      "timestamp": 660
+    },
+    {
+      "id": "u13",
+      "speaker": "interviewer",
+      "text": "Ah. You like playing golf.",
+      "timestamp": 720
+    },
+    {
+      "id": "u14",
+      "speaker": "student",
+      "text": "Yes.",
+      "timestamp": 780
+    },
+    {
+      "id": "u15",
+      "speaker": "interviewer",
+      "text": "I see.",
+      "timestamp": 840
+    },
+    {
+      "id": "u16",
+      "speaker": "student",
+      "text": "I like very I I like very much.",
+      "timestamp": 900
+    },
+    {
+      "id": "u17",
+      "speaker": "interviewer",
+      "text": "How long have you been playing golf?",
+      "timestamp": 960
+    },
+    {
+      "id": "u18",
+      "speaker": "student",
+      "text": "Ummm. Long time. Maybe, twenty years or more.",
+      "timestamp": 1020
+    },
+    {
+      "id": "u19",
+      "speaker": "interviewer",
+      "text": "I see. What is so good about playing golf?",
+      "timestamp": 1080
+    },
+    {
+      "id": "u20",
+      "speaker": "student",
+      "text": "Pardon?",
+      "timestamp": 1140
+    },
+    {
+      "id": "u21",
+      "speaker": "interviewer",
+      "text": "What is good about playing golf?",
+      "timestamp": 1200
+    },
+    {
+      "id": "u22",
+      "speaker": "student",
+      "text": "Ummm. Urr.  First, urr relax I can feel relax and   good for my health  err and   spent my boring time.",
+      "timestamp": 1260
+    },
+    {
+      "id": "u23",
+      "speaker": "interviewer",
+      "text": "Oh really?",
+      "timestamp": 1320
+    },
+    {
+      "id": "u24",
+      "speaker": "student",
+      "text": "Yeah.",
+      "timestamp": 1380
+    },
+    {
+      "id": "u25",
+      "speaker": "interviewer",
+      "text": "How often do you play golf?",
+      "timestamp": 1440
+    },
+    {
+      "id": "u26",
+      "speaker": "student",
+      "text": "Umm. Before, urr  twice or three times per month. But this one year, I can't play.",
+      "timestamp": 1500
+    },
+    {
+      "id": "u27",
+      "speaker": "interviewer",
+      "text": "I see. But, where is your favorite golf course?",
+      "timestamp": 1560
+    },
+    {
+      "id": "u28",
+      "speaker": "student",
+      "text": "Ummm. Hollin Country in Chiba. Urr. Hollin Country is famous for  competition of companies. Work Japan belong  the com com competition  not pro pro golfer, but urr our urr ur  company or XXX03 or a XXX04 or the companies belong to that competition.",
+      "timestamp": 1620
+    },
+    {
+      "id": "u29",
+      "speaker": "interviewer",
+      "text": "I see. Did you ever take part in a golf competition?",
+      "timestamp": 1680
+    },
+    {
+      "id": "u30",
+      "speaker": "student",
+      "text": "No, no, no. I'm not so orr not  so good golf player.",
+      "timestamp": 1740
+    },
+    {
+      "id": "u31",
+      "speaker": "interviewer",
+      "text": "Oh really?",
+      "timestamp": 1800
+    },
+    {
+      "id": "u32",
+      "speaker": "student",
+      "text": "Yeah.",
+      "timestamp": 1860
+    },
+    {
+      "id": "u33",
+      "speaker": "interviewer",
+      "text": "O K. By the way, er where do you live, Mister XXX02?",
+      "timestamp": 1920
+    },
+    {
+      "id": "u34",
+      "speaker": "student",
+      "text": "Ur. Now, I'm living  XXX05, XXX06 XXX06, urr XXX07.",
+      "timestamp": 1980
+    },
+    {
+      "id": "u35",
+      "speaker": "interviewer",
+      "text": "I see.",
+      "timestamp": 2040
+    },
+    {
+      "id": "u36",
+      "speaker": "student",
+      "text": "Near here.",
+      "timestamp": 2100
+    },
+    {
+      "id": "u37",
+      "speaker": "interviewer",
+      "text": "Ah. Near?",
+      "timestamp": 2160
+    },
+    {
+      "id": "u38",
+      "speaker": "student",
+      "text": "Yeah.",
+      "timestamp": 2220
+    },
+    {
+      "id": "u39",
+      "speaker": "interviewer",
+      "text": "O K. Is it a good place to live?",
+      "timestamp": 2280
+    },
+    {
+      "id": "u40",
+      "speaker": "student",
+      "text": "Umm. I think so.  Umm.  First reason is  I said   near here, and ummm  my very silent ur place  I like my mansion,",
+      "timestamp": 2340
+    },
+    {
+      "id": "u41",
+      "speaker": "interviewer",
+      "text": "I see.",
+      "timestamp": 2400
+    },
+    {
+      "id": "u42",
+      "speaker": "student",
+      "text": "not  house.",
+      "timestamp": 2460
+    },
+    {
+      "id": "u43",
+      "speaker": "interviewer",
+      "text": "Uh-huh. I see. Do you live in XXX06 with your family?",
+      "timestamp": 2520
+    },
+    {
+      "id": "u44",
+      "speaker": "student",
+      "text": "Ur. With  family? No. I'm alone now.",
+      "timestamp": 2580
+    },
+    {
+      "id": "u45",
+      "speaker": "interviewer",
+      "text": "Ah-huh.",
+      "timestamp": 2640
+    },
+    {
+      "id": "u46",
+      "speaker": "student",
+      "text": "Urr. I'm alone in XXX05. My family is in XXX08 now  because of my girl 's high school. But, next month, urr my wife and my girl my girl no, my daughter will come to XXX05.",
+      "timestamp": 2700
+    },
+    {
+      "id": "u47",
+      "speaker": "interviewer",
+      "text": "Wow. During the spring break?",
+      "timestamp": 2760
+    },
+    {
+      "id": "u48",
+      "speaker": "student",
+      "text": "Yes.",
+      "timestamp": 2820
+    },
+    {
+      "id": "u49",
+      "speaker": "interviewer",
+      "text": "That's good. What are you going to do with them?",
+      "timestamp": 2880
+    },
+    {
+      "id": "u50",
+      "speaker": "student",
+      "text": "Ummm. Urr. Maybe, urr  my daughter urr will not go anywhere with me.",
+      "timestamp": 2940
+    },
+    {
+      "id": "u51",
+      "speaker": "interviewer",
+      "text": "Oh really?",
+      "timestamp": 3000
+    },
+    {
+      "id": "u52",
+      "speaker": "student",
+      "text": "Unn I think so. Ur. Sometimes, I will  go to trip or  dinner with my wife. Er. So, when  urr if   dinner, umm my daughter will come, maybe.",
+      "timestamp": 3060
+    },
+    {
+      "id": "u53",
+      "speaker": "interviewer",
+      "text": "I see. Uh-huh. All right. Thank you very much. Now,",
+      "timestamp": 3120
+    },
+    {
+      "id": "u54",
+      "speaker": "student",
+      "text": "Hai.",
+      "timestamp": 3180
+    },
+    {
+      "id": "u55",
+      "speaker": "interviewer",
+      "text": "I'd like to show you one picture. Here you are. Please describe the picture for me.",
+      "timestamp": 3240
+    },
+    {
+      "id": "u56",
+      "speaker": "student",
+      "text": "Oh err. My daughter is urr is in her room, and she is talking with urr her fa favorite  dog and cat. Err. Now, she er she must urr  er study hard for  examination for university, but she is very dislike urr studying. So, many times, urr  she urr invite her dog or cat in her room and speak.",
+      "timestamp": 3300
+    },
+    {
+      "id": "u57",
+      "speaker": "interviewer",
+      "text": "Right. That's it?",
+      "timestamp": 3360
+    },
+    {
+      "id": "u58",
+      "speaker": "student",
+      "text": "laughter",
+      "timestamp": 3420
+    },
+    {
+      "id": "u59",
+      "speaker": "interviewer",
+      "text": "All right. Thank you very much. O K. Umm. Mister XXX02, do you have a computer?",
+      "timestamp": 3480
+    },
+    {
+      "id": "u60",
+      "speaker": "student",
+      "text": "Yes, I have.",
+      "timestamp": 3540
+    },
+    {
+      "id": "u61",
+      "speaker": "interviewer",
+      "text": "At home?",
+      "timestamp": 3600
+    },
+    {
+      "id": "u62",
+      "speaker": "student",
+      "text": "Um.",
+      "timestamp": 3660
+    },
+    {
+      "id": "u63",
+      "speaker": "interviewer",
+      "text": "O K.",
+      "timestamp": 3720
+    },
+    {
+      "id": "u64",
+      "speaker": "student",
+      "text": "Recently, I bought.",
+      "timestamp": 3780
+    },
+    {
+      "id": "u65",
+      "speaker": "interviewer",
+      "text": "Oh really?",
+      "timestamp": 3840
+    },
+    {
+      "id": "u66",
+      "speaker": "student",
+      "text": "Recently.",
+      "timestamp": 3900
+    },
+    {
+      "id": "u67",
+      "speaker": "interviewer",
+      "text": "Ah. I see. O K. Tell me about your computer.",
+      "timestamp": 3960
+    },
+    {
+      "id": "u68",
+      "speaker": "student",
+      "text": "Ummm. My computer is  note P C err  made by N E C. The name is \"LaVie\". Do you know?",
+      "timestamp": 4020
+    },
+    {
+      "id": "u69",
+      "speaker": "interviewer",
+      "text": "Ah. I've heard of it.",
+      "timestamp": 4080
+    },
+    {
+      "id": "u70",
+      "speaker": "student",
+      "text": "Um um.",
+      "timestamp": 4140
+    },
+    {
+      "id": "u71",
+      "speaker": "interviewer",
+      "text": "Then, what do you do with your computer?",
+      "timestamp": 4200
+    },
+    {
+      "id": "u72",
+      "speaker": "student",
+      "text": "Umm. I use  computer only for E-mail.  Err. In in my company, umm E E-mail is uu  must use er must need it, and  I have many business trip, or  so so I decided to buy  P C, before I didn't use any computer.",
+      "timestamp": 4260
+    },
+    {
+      "id": "u73",
+      "speaker": "interviewer",
+      "text": "But aren't you interested in the Internet?",
+      "timestamp": 4320
+    },
+    {
+      "id": "u74",
+      "speaker": "student",
+      "text": "Umm. No. Not so.",
+      "timestamp": 4380
+    },
+    {
+      "id": "u75",
+      "speaker": "interviewer",
+      "text": "Why not?",
+      "timestamp": 4440
+    },
+    {
+      "id": "u76",
+      "speaker": "student",
+      "text": "Urr. I like face-to-face communication, er but I found urr In Internet  Internet, especially E-mail, is very useful  for us.",
+      "timestamp": 4500
+    },
+    {
+      "id": "u77",
+      "speaker": "interviewer",
+      "text": "I see.",
+      "timestamp": 4560
+    },
+    {
+      "id": "u78",
+      "speaker": "student",
+      "text": "So, now, I use the many times.",
+      "timestamp": 4620
+    },
+    {
+      "id": "u79",
+      "speaker": "interviewer",
+      "text": "Oh that's good.",
+      "timestamp": 4680
+    },
+    {
+      "id": "u80",
+      "speaker": "student",
+      "text": "Yes.",
+      "timestamp": 4740
+    },
+    {
+      "id": "u81",
+      "speaker": "interviewer",
+      "text": "All right. Thank you very much. Now, let's have a role play.",
+      "timestamp": 4800
+    },
+    {
+      "id": "u82",
+      "speaker": "student",
+      "text": "Uh?",
+      "timestamp": 4860
+    },
+    {
+      "id": "u83",
+      "speaker": "interviewer",
+      "text": "Role play.",
+      "timestamp": 4920
+    },
+    {
+      "id": "u84",
+      "speaker": "student",
+      "text": "Yeah.",
+      "timestamp": 4980
+    },
+    {
+      "id": "u85",
+      "speaker": "interviewer",
+      "text": "Here you are. This is your card. Please read it to yourself, and, when you are ready, I'll begin.",
+      "timestamp": 5040
+    },
+    {
+      "id": "u86",
+      "speaker": "student",
+      "text": "Um. Umm.",
+      "timestamp": 5100
+    },
+    {
+      "id": "u87",
+      "speaker": "interviewer",
+      "text": "O K?",
+      "timestamp": 5160
+    },
+    {
+      "id": "u88",
+      "speaker": "student",
+      "text": "O K.",
+      "timestamp": 5220
+    },
+    {
+      "id": "u89",
+      "speaker": "interviewer",
+      "text": "I'm a salesclerk at the station, and you're the passenger.",
+      "timestamp": 5280
+    },
+    {
+      "id": "u90",
+      "speaker": "student",
+      "text": "Uh-huh. Excuse me.",
+      "timestamp": 5340
+    },
+    {
+      "id": "u91",
+      "speaker": "interviewer",
+      "text": "Hi. May I help you?",
+      "timestamp": 5400
+    },
+    {
+      "id": "u92",
+      "speaker": "student",
+      "text": "Urr ee. Please urr tell me ee how to buy a ticket to New York.",
+      "timestamp": 5460
+    },
+    {
+      "id": "u93",
+      "speaker": "interviewer",
+      "text": "You can buy the ticket here.",
+      "timestamp": 5520
+    },
+    {
+      "id": "u94",
+      "speaker": "student",
+      "text": "Oh urr. I want to urr go to New York. Urr. I'm sorry. Er. Pardon? No, no, no. laughter Urr.  Eee. I want to be  New York urr early, so I want to know what urr   best way to arrive New York early earliest.",
+      "timestamp": 5580
+    },
+    {
+      "id": "u95",
+      "speaker": "interviewer",
+      "text": "Then, you should take the super express train.",
+      "timestamp": 5640
+    },
+    {
+      "id": "u96",
+      "speaker": "student",
+      "text": "Uh-huh. Yeah. Urr.  ma may I can I buy  super express ticket here?",
+      "timestamp": 5700
+    },
+    {
+      "id": "u97",
+      "speaker": "interviewer",
+      "text": "Sure.",
+      "timestamp": 5760
+    }
+  ]
+}

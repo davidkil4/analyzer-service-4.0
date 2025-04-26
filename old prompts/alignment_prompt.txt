@@ -1,0 +1,115 @@
+# Clause Alignment Task
+
+## Primary Task
+Align each clause in the pruned text with its corresponding segment in the corrected text.
+
+## CRITICAL REQUIREMENT
+You MUST provide a corrected_segment field for EVERY clause identified. This field should show how that specific clause appears in the corrected version of the text. Failure to include corrected_segment for ANY clause will result in incorrect analysis.
+
+## Process
+1. For each clause identified in the pruned text, find the corresponding text in the corrected version
+2. Ensure that the alignment preserves the meaning and grammatical relationship
+3. Include ALL words that correspond to the original clause
+
+## Guidelines for Alignment
+
+### Core Rules
+1. **Meaning Preservation**: Map each clause to a specific part of the text in the corrected field that expresses the same core meaning
+2. **Connectors**: For coordinate/subordinate clauses, include connecting words (and, but, because, etc.)
+3. **Complete Alignment**: Every clause must have a mapped segment in the corrected text
+
+### Special Cases
+1. **Non-finite Clauses**: Map separately if they introduce a new subject or function as a complement
+2. **False Starts/Repairs**: Focus on the final intended structure
+3. **Implied Elements**: The corrected segment should include any implied elements made explicit
+4. **Significant Rewording**: If a clause has been significantly reworded, align it with the entire reformulated segment
+
+## Examples
+
+### Example 1: Simple Clause
+**Original**: "I like very much pizza"
+**Correct**: "I like pizza very much"
+```json
+{{
+  "n": 1,
+  "text": "I like very much pizza",
+  "clauses": [
+    {{
+      "text": "I like very much pizza",
+      "type": "main",
+      "corrected_segment": "I like pizza very much"
+    }}
+  ]
+}}
+```
+
+### Example 2: Multiple Clauses
+**Original**: "Work Japan belong competition not pro golfer but company or XXX03 belong that competition"
+**Correct**: "Work Japan belongs to the competition, not as professional golfers, but representing our company or XXX03"
+```json
+{{
+  "n": 1,
+  "text": "Work Japan belong competition not pro golfer but company or XXX03 belong that competition",
+  "clauses": [
+    {{
+      "text": "Work Japan belong competition not pro golfer",
+      "type": "main",
+      "corrected_segment": "Work Japan belongs to the competition, not as professional golfers"
+    }},
+    {{
+      "text": "company or XXX03 belong that competition",
+      "type": "coordinate",
+      "corrected_segment": "but representing our company or XXX03"
+    }}
+  ]
+}}
+```
+
+### Example 3: Subordinate Clause
+**Original**: "when if dinner my daughter will come"
+**Correct**: "When we have dinner, my daughter might come"
+```json
+{{
+  "n": 1,
+  "text": "when if dinner my daughter will come",
+  "clauses": [
+    {{
+      "text": "when if dinner",
+      "type": "subordinate",
+      "corrected_segment": "When we have dinner"
+    }},
+    {{
+      "text": "my daughter will come",
+      "type": "main",
+      "corrected_segment": "my daughter might come"
+    }}
+  ]
+}}
+```
+
+### Example 4: Implied Elements
+**Original**: "very tired today"
+**Correct**: "I am very tired today"
+```json
+{{
+  "n": 1,
+  "text": "very tired today",
+  "clauses": [
+    {{
+      "text": "very tired today",
+      "type": "main",
+      "implied_elements": ["I am"],
+      "corrected_segment": "I am very tired today"
+    }}
+  ]
+}}
+```
+
+## Input Format
+{input_format}
+
+## Output Format
+{output_format}
+
+## Input Items
+{input_items}

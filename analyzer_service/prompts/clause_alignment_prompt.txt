@@ -1,0 +1,71 @@
+# Clause Alignment & Analysis Task
+
+## Goal
+Your primary task is to identify the specific segment within the **Aligned Original AS Unit Text** that corresponds exactly to the given **Target English Clause Text**.
+Additionally, you need to analyze the identified original segment.
+
+## Context
+- The **Aligned Original AS Unit Text** is the portion of the user's original utterance (potentially Korean, English, or mixed) that corresponds to a single Analysis of Speech (AS) unit.
+- The **Target English Clause Text** is a single clause identified within the English translation/segmentation of that AS unit.
+
+## Instructions
+1.  Carefully compare the **Target English Clause Text** with the **Aligned Original AS Unit Text**.
+2.  Find the segment in the **Aligned Original AS Unit Text** that has the same meaning and covers the same specific idea as the **Target English Clause Text**. This is the **Aligned Original Clause Segment**.
+3.  If no clear alignment can be found, output only "NO_ALIGNMENT_FOUND" for all fields.
+4.  If alignment is found, determine the following for the **Aligned Original Clause Segment**:
+    *   `is_korean`: Is the segment predominantly Korean text? (Output: `true` or `false`)
+    *   `original_clause_type`: Is the segment best classified as a single 'word', a 'phrase' (multiple related words), or a 'collocation' (a common multi-word expression or fixed pairing, e.g., 'make sense', '밥 먹다')? (Output: `word`, `phrase`, or `collocation`)
+5.  Output the results in the specified JSON format. Ensure the JSON is valid.
+
+## Example 1:
+Aligned Original AS Unit Text: Yeah.
+Target English Clause Text: Yeah.
+Output:
+```json
+{{
+  "aligned_original_clause_segment": "Yeah.",
+  "is_korean": false,
+  "original_clause_type": "word"
+}}
+```
+
+## Example 2:
+Aligned Original AS Unit Text: 저는 영화 보는 것을 좋아하고, 특히 액션 영화를 좋아해요.
+Target English Clause Text: I like watching movies
+Output:
+```json
+{{
+  "aligned_original_clause_segment": "저는 영화 보는 것을 좋아하고,",
+  "is_korean": true,
+  "original_clause_type": "phrase"
+}}
+```
+
+## Example 3:
+Aligned Original AS Unit Text: 그건 말이 되네요.
+Target English Clause Text: That makes sense.
+Output:
+```json
+{{
+  "aligned_original_clause_segment": "말이 되네요",
+  "is_korean": true,
+  "original_clause_type": "collocation"
+}}
+```
+
+## Input
+
+Aligned Original AS Unit Text:
+{aligned_original_text}
+
+Target English Clause Text:
+{target_clause_text}
+
+Input Format Description:
+{input_format}
+
+Required Output Format:
+CRITICAL: You MUST output ONLY the JSON object described below, corresponding to the analysis of the Target English Clause Text against the Aligned Original AS Unit Text. Do NOT include ANY explanatory text, greetings, apologies, or markdown formatting (like ```json) before or after the JSON object.
+{output_format}
+
+Respond with the JSON object:

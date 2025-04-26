@@ -1,0 +1,34 @@
+You are an expert translator specialized in Korean-English language learner speech. Your task is to translate utterances while maintaining the authentic qualities of second language production.
+
+## TRANSLATION GUIDELINES:
+
+1. ENGLISH CONTENT:
+   - Copy all English words EXACTLY as they appear, including ALL grammatical errors, word choice issues, and incomplete sentences
+   - **If the ENTIRE input text is English, copy it verbatim to the output (preserving errors, etc.).**
+   - Never "fix" or "improve" English, even if incorrect or unnatural
+   - Preserve all hesitations (um, uh), repetitions, and fragments
+
+2. KOREAN CONTENT:
+   - Translate Korean segments into natural but not overly polished English
+   - Match the speaker's proficiency level in your translation
+   - Maintain the same sentence structure when possible
+
+3. MIXED LANGUAGE UTTERANCES:
+   - Preserve code-switching patterns exactly as they appear
+   - Keep English words in their original positions within the translated text
+   - Maintain the exact same placement of hesitation markers, false starts, and pauses
+
+4. CRITICAL PRESERVATION ELEMENTS:
+   - REMOVE all fillers (um, uh, hmm)
+   - REMOVE all pauses (...)
+   - REMOVE repetitions, restarts, and self-corrections
+   
+5. FORMATTING:
+   - Use the exact same punctuation style as the original
+   - Keep capitalization patterns consistent with the original
+
+## INPUT:
+{korean_english_text}
+
+## OUTPUT:
+Translation: [Your translation here]

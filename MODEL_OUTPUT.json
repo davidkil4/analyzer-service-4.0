@@ -1,0 +1,1799 @@
+{
+  "metadata": {
+    "title": "660 golf",
+    "date": "2025-03-14",
+    "language": "English",
+    "source": "conversations/660 golf.txt"
+  },
+  "analyzed_utterances": [
+    {
+      "n": "1.1",
+      "original": "Nice to meet you.",
+      "translated": "Nice to meet you.",
+      "correct": "Nice to meet you.",
+      "pruned": "Nice to meet you.",
+      "clauses": [
+        {
+          "text": "Nice to meet you.",
+          "type": "main",
+          "corrected_segment": "Nice to meet you.",
+          "subtype": null,
+          "implied_elements": [
+            "It is"
+          ],
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Greeting",
+                "category": "Polyword",
+                "component": "Nice to meet you.",
+                "frequency_level": 5.0,
+                "usage_context": "Initial greeting when meeting someone for the first time.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.38,
+        "clause_density": 1.0,
+        "mean_clause_length": 4.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "2.2",
+      "original": "Urr. My name is XXX02.",
+      "translated": "My name is XXX02.",
+      "correct": "My name is XXX02.",
+      "pruned": "My name is XXX02.",
+      "clauses": [
+        {
+          "text": "My name is XXX02.",
+          "type": "main",
+          "corrected_segment": "My name is XXX02.",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Introducing oneself",
+                "category": "Frame",
+                "component": "My name is XXX.",
+                "frequency_level": 5.0,
+                "usage_context": "Standard way to introduce oneself.",
+                "relative_note": "Very common and basic introduction."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.38,
+        "clause_density": 1.0,
+        "mean_clause_length": 4.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "3.2",
+      "original": "Urr.  It it my problem is only one. Er.",
+      "translated": "It my problem is only one.",
+      "correct": "I have only one problem.",
+      "pruned": "It my problem is only one.",
+      "clauses": [
+        {
+          "text": "It my problem is only one.",
+          "type": "main",
+          "corrected_segment": "I have only one problem.",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "Incorrect sentence structure and missing subject. The sentence does not follow a standard English structure and lacks a clear subject.",
+              "correction": "I have"
+            },
+            {
+              "category": "Word Order",
+              "severity": "moderate",
+              "error": "Incorrect word order. The phrase 'my problem is only one' is awkwardly phrased.",
+              "correction": "only one problem"
+            }
+          ],
+          "accuracy": 0.3,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Introducing a problem",
+                "category": "Sentence_Stem",
+                "component": "I have only one problem.",
+                "frequency_level": 3.8,
+                "usage_context": "Introducing a single issue or concern.",
+                "relative_note": "Fairly common way to introduce a problem, but less fixed than greetings."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.43,
+        "clause_density": 1.0,
+        "mean_clause_length": 6.0
+      },
+      "accuracy": {
+        "score": 0.49,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.0,
+          "severity_counts": {
+            "critical": 1,
+            "moderate": 1,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "4.2",
+      "original": "This is tennis elbow by bad golf.",
+      "translated": "This is tennis elbow by bad golf.",
+      "correct": "This tennis elbow is from playing golf badly.",
+      "pruned": "This is tennis elbow by bad golf.",
+      "clauses": [
+        {
+          "text": "This is tennis elbow by bad golf.",
+          "type": "main",
+          "corrected_segment": "This tennis elbow is from playing golf badly.",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "moderate",
+              "error": "Missing verb 'is' and incorrect preposition usage. The sentence requires a verb to connect the subject and predicate, and the preposition 'by' is inappropriate.",
+              "correction": "is from"
+            },
+            {
+              "category": "Vocabulary",
+              "severity": "moderate",
+              "error": "Awkward phrasing. 'bad golf' should be 'playing golf badly'.",
+              "correction": "playing golf badly"
+            }
+          ],
+          "accuracy": 0.4,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Explaining the cause of a problem",
+                "category": "Frame",
+                "component": "This [noun phrase] is from [gerund phrase].",
+                "frequency_level": 3.0,
+                "usage_context": "Explaining the origin or cause of a physical issue or other problem.",
+                "relative_note": "The specific instance is less frequent, but the pattern is recognizable."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.45,
+        "clause_density": 1.0,
+        "mean_clause_length": 7.0
+      },
+      "accuracy": {
+        "score": 0.62,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 2,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "6.1",
+      "original": "Umm. But the reason is not tennis",
+      "translated": "But the reason is not tennis",
+      "correct": "But the reason isn't tennis",
+      "pruned": "But the reason is not tennis",
+      "clauses": [
+        {
+          "text": "the reason is not tennis",
+          "type": "main",
+          "corrected_segment": "the reason isn't tennis",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Subject-Verb Agreement",
+              "severity": "minor",
+              "error": "Contraction needed. 'is not' should be 'isn't'.",
+              "correction": "isn't"
+            }
+          ],
+          "accuracy": 0.8,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Providing a reason",
+                "category": "Sentence_Stem",
+                "component": "the reason isn't [noun]",
+                "frequency_level": 2.5,
+                "usage_context": "Stating the actual cause of something",
+                "relative_note": "Less frequent than other sentence stems, but still a recognizable pattern."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.4,
+        "clause_density": 1.0,
+        "mean_clause_length": 5.0
+      },
+      "accuracy": {
+        "score": 0.89,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "6.2",
+      "original": "ur but by playing golf .",
+      "translated": "but by playing golf.",
+      "correct": "it's from playing golf.",
+      "pruned": "but by playing golf.",
+      "clauses": [
+        {
+          "text": "by playing golf.",
+          "type": "main",
+          "corrected_segment": null,
+          "subtype": null,
+          "implied_elements": [
+            "it is"
+          ],
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing an activity",
+                "category": "Pattern",
+                "component": "by + V-ing",
+                "frequency_level": 4.2,
+                "usage_context": "Explaining how something is done or achieved.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.35,
+        "clause_density": 1.0,
+        "mean_clause_length": 3.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "8.1",
+      "original": "I like very I I like very much.",
+      "translated": "I like very I I like very much.",
+      "correct": "I like it very much.",
+      "pruned": "I like very I like very much.",
+      "clauses": [
+        {
+          "text": "I like very I like very much.",
+          "type": "main",
+          "corrected_segment": "I like it very much.",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "moderate",
+              "error": "Incomplete sentence and repetition. The sentence is missing an object and contains redundant phrasing.",
+              "correction": "I like it"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "moderate",
+              "error": "Missing 'it'. The verb 'like' requires an object.",
+              "correction": "it"
+            }
+          ],
+          "accuracy": 0.4,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Expressing liking",
+                "category": "Sentence_Stem",
+                "component": "I like it very much.",
+                "frequency_level": 4.7,
+                "usage_context": "Expressing a strong positive feeling about something.",
+                "relative_note": "More emphatic than 'I like it'."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.45,
+        "clause_density": 1.0,
+        "mean_clause_length": 7.0
+      },
+      "accuracy": {
+        "score": 0.62,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 2,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "9.2",
+      "original": "Maybe, twenty years or more.",
+      "translated": "Maybe, twenty years or more.",
+      "correct": "maybe twenty years or more.",
+      "pruned": "Maybe, twenty years or more.",
+      "clauses": [
+        {
+          "text": "Maybe, twenty years or more.",
+          "type": "main",
+          "corrected_segment": "maybe twenty years or more.",
+          "subtype": null,
+          "implied_elements": [
+            "it has been"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Punctuation",
+              "severity": "minor",
+              "error": "Unnecessary comma after 'Maybe'.",
+              "correction": "maybe"
+            }
+          ],
+          "accuracy": 0.9,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Estimating a duration",
+                "category": "Frame",
+                "component": "maybe + [time period] + or more",
+                "frequency_level": 3.9,
+                "usage_context": "Giving an approximate length of time, with an indication that it could be longer.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.4,
+        "clause_density": 1.0,
+        "mean_clause_length": 5.0
+      },
+      "accuracy": {
+        "score": 0.89,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "3.1",
+      "original": "Umm. Before, urr  twice or three times per month.",
+      "translated": "Before, twice or three times per month.",
+      "correct": "Before, I played two or three times per month",
+      "pruned": "Before, twice or three times per month.",
+      "clauses": [
+        {
+          "text": "Before, twice or three times per month",
+          "type": "main",
+          "corrected_segment": "Before, I played two or three times per month",
+          "subtype": null,
+          "implied_elements": [
+            "I played golf"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "moderate",
+              "error": "Incomplete sentence. Missing subject and verb.",
+              "correction": "Before, I played"
+            }
+          ],
+          "accuracy": 0.4,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Providing background information",
+                "category": "Polyword",
+                "component": "Before",
+                "frequency_level": 4.5,
+                "usage_context": "Introducing a past situation or state",
+                "relative_note": null
+              },
+              {
+                "intention": "Describing frequency of an action",
+                "category": "Pattern",
+                "component": "X times per month",
+                "frequency_level": 3.9,
+                "usage_context": "Indicating how often something occurs within a monthly period",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.45,
+        "clause_density": 1.0,
+        "mean_clause_length": 7.0
+      },
+      "accuracy": {
+        "score": 0.79,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 1,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "4.1",
+      "original": "Ummm. Hollin Country in Chiba.",
+      "translated": "Hollin Country in Chiba.",
+      "correct": "Hollin Country in Chiba is famous for company competitions.",
+      "pruned": "Hollin Country in Chiba.",
+      "clauses": [
+        {
+          "text": "Hollin Country in Chiba",
+          "type": "main",
+          "corrected_segment": "Hollin Country in Chiba is famous for company competitions",
+          "subtype": null,
+          "implied_elements": [
+            "is"
+          ],
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0
+        }
+      ],
+      "complexity": {
+        "score": 0.38,
+        "clause_density": 1.0,
+        "mean_clause_length": 4.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "4.3",
+      "original": "Work Japan belong  the com com competition  not pro pro golfer, but urr our urr ur  company or XXX03 or a XXX04 or the companies belong to that competition.",
+      "translated": "Work Japan belong the com competition not pro pro golfer, but our company or XXX03 or a XXX04 or the companies belong to that competition.",
+      "correct": "Work Japan belongs to that competition, which isn't for professional golfers, but for our company, XXX03, XXX04, and other companies.",
+      "pruned": "Work Japan belong the com competition not pro golfer, but our company or XXX03 or a XXX04 or the companies belong to that competition.",
+      "clauses": [
+        {
+          "text": "Work Japan belong the com competition not pro golfer",
+          "type": "main",
+          "corrected_segment": "Work Japan belongs to that competition, which isn't for professional golfers",
+          "subtype": null,
+          "implied_elements": [
+            "companies that"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "Unclear sentence structure and word order. Requires significant restructuring.",
+              "correction": "Work Japan belongs to that competition, which isn't for professional golfers"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "minor",
+              "error": "Missing article: 'the' before 'com competition'.",
+              "correction": "the com competition"
+            }
+          ],
+          "accuracy": 0.2,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Categorization",
+                "category": "Frame",
+                "component": "belongs to that CATEGORY",
+                "frequency_level": 3.2,
+                "usage_context": "Indicating group membership",
+                "relative_note": "Common way to classify items."
+              },
+              {
+                "intention": "Providing negative information",
+                "category": "Sentence_Stem",
+                "component": "which isn't for X",
+                "frequency_level": 3.5,
+                "usage_context": "Stating what something is not intended for",
+                "relative_note": "Common way to provide negative information."
+              }
+            ]
+          }
+        },
+        {
+          "text": "our company or XXX03 or a XXX04 or the companies belong to that competition",
+          "type": "coordinate",
+          "corrected_segment": "but for our company, XXX03, XXX04, and other companies",
+          "subtype": null,
+          "implied_elements": [
+            "but"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Conjunction Usage",
+              "severity": "moderate",
+              "error": "Incorrect conjunction usage: 'or' should be 'and'.",
+              "correction": "and"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "minor",
+              "error": "Missing word: 'other'.",
+              "correction": "other"
+            }
+          ],
+          "accuracy": 0.5,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Giving example",
+                "category": "Polyword",
+                "component": "but for",
+                "frequency_level": 3.7,
+                "usage_context": "Introducing a specific case or example",
+                "relative_note": "More frequent than other potential formulas in this segment."
+              },
+              {
+                "intention": "Listing items",
+                "category": "Pattern",
+                "component": "X, Y, and other Z",
+                "frequency_level": 4.1,
+                "usage_context": "Listing items with an open category",
+                "relative_note": "Very common way to list items."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.85,
+        "clause_density": 2.0,
+        "mean_clause_length": 11.5
+      },
+      "accuracy": {
+        "score": 0.38,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 4,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.0,
+          "severity_counts": {
+            "critical": 1,
+            "moderate": 1,
+            "minor": 2
+          }
+        }
+      }
+    },
+    {
+      "n": "5.2",
+      "original": "I'm not so orr not  so good golf player.",
+      "translated": "I'm not so not so good golf player.",
+      "correct": "I'm not a very good golf player.",
+      "pruned": "I'm not so not so good golf player.",
+      "clauses": [
+        {
+          "text": "I'm not so not so good golf player",
+          "type": "main",
+          "corrected_segment": "I'm not a very good golf player",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Word Choice",
+              "severity": "moderate",
+              "error": "Redundant 'so not so'. Incorrect article usage.",
+              "correction": "a very"
+            }
+          ],
+          "accuracy": 0.6,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Self-deprecation/Modesty",
+                "category": "Frame",
+                "component": "I'm not a very good [NOUN]",
+                "frequency_level": 3.8,
+                "usage_context": "Used to express humility or lack of skill in a particular area, often before attempting the activity.",
+                "relative_note": "More frequent than other potential formulas in this segment."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.48,
+        "clause_density": 1.0,
+        "mean_clause_length": 8.0
+      },
+      "accuracy": {
+        "score": 0.79,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 1,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "7.1",
+      "original": "Ur. Now, I'm living  XXX05, XXX06 XXX06, urr XXX07.",
+      "translated": "Now, I'm living XXX05, XXX06 XXX06, XXX07.",
+      "correct": "Now I'm living in XXX05, XXX06, and XXX07.",
+      "pruned": "Now, I'm living XXX05, XXX06 XXX06, XXX07.",
+      "clauses": [
+        {
+          "text": "I'm living XXX05, XXX06 XXX06, XXX07",
+          "type": "main",
+          "corrected_segment": "Now I'm living in XXX05, XXX06, and XXX07",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "moderate",
+              "error": "Missing 'Now' at the beginning for context. Missing 'in' after living. Missing 'and' before the last item in the list.",
+              "correction": "Now I'm living in XXX05, XXX06, and XXX07"
+            }
+          ],
+          "accuracy": 0.5,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing current location",
+                "category": "Frame",
+                "component": "Now I'm living in [LOCATION]",
+                "frequency_level": 4.5,
+                "usage_context": "Used to state one's current residence or location.",
+                "relative_note": "Fairly common way to introduce where you live."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.43,
+        "clause_density": 1.0,
+        "mean_clause_length": 6.0
+      },
+      "accuracy": {
+        "score": 0.79,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 1,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "10.2",
+      "original": "Umm.  First reason is  I said   near here, and ummm  my very silent ur place  I like my mansion,",
+      "translated": "First reason is I said near here, and my very silent place I like my mansion,",
+      "correct": "The first reason is, as I said, it's near here, and I like my mansion because it's very quiet.",
+      "pruned": "First reason is I said near here, and my very silent place I like my mansion,",
+      "clauses": [
+        {
+          "text": "First reason is I said near here",
+          "type": "main",
+          "corrected_segment": "The first reason is, as I said, it's near here",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "moderate",
+              "error": "Awkward sentence structure. 'First reason is' should be 'The first reason is'. 'I said near here' should be rephrased for clarity.",
+              "correction": "The first reason is, as I said, it's near here"
+            }
+          ],
+          "accuracy": 0.4,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Introducing a reason",
+                "category": "Sentence_Stem",
+                "component": "The first reason is",
+                "frequency_level": 4.2,
+                "usage_context": "Used to begin a list of reasons or justifications.",
+                "relative_note": "Common way to start enumerating reasons."
+              },
+              {
+                "intention": "Referring to a previous statement",
+                "category": "Sentence_Stem",
+                "component": "as I said",
+                "frequency_level": 4.7,
+                "usage_context": "Used to remind the listener of something previously mentioned.",
+                "relative_note": "Very common discourse marker."
+              },
+              {
+                "intention": "Indicating proximity",
+                "category": "Frame",
+                "component": "it's near [LOCATION]",
+                "frequency_level": 4.0,
+                "usage_context": "Used to describe the location of something relative to another place.",
+                "relative_note": "Common way to express nearness."
+              }
+            ]
+          }
+        },
+        {
+          "text": "my very silent place I like my mansion",
+          "type": "coordinate",
+          "corrected_segment": "and I like my mansion because it's very quiet",
+          "subtype": null,
+          "implied_elements": [
+            "and"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Word Order",
+              "severity": "moderate",
+              "error": "Incorrect word order and missing conjunction to connect the two clauses.",
+              "correction": "and I like my mansion because it's very quiet"
+            }
+          ],
+          "accuracy": 0.3,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Expressing preference",
+                "category": "Sentence_Stem",
+                "component": "and I like [NOUN]",
+                "frequency_level": 4.6,
+                "usage_context": "Used to state a personal preference or enjoyment of something.",
+                "relative_note": "Very common way to express liking something."
+              },
+              {
+                "intention": "Providing a reason/justification",
+                "category": "Frame",
+                "component": "because it's [ADJECTIVE]",
+                "frequency_level": 4.8,
+                "usage_context": "Used to explain the reason for a preference or action.",
+                "relative_note": "Extremely common way to give a reason."
+              },
+              {
+                "intention": "Describing a quality",
+                "category": "Frame",
+                "component": "it's very [ADJECTIVE]",
+                "frequency_level": 4.9,
+                "usage_context": "Used to emphasize a particular quality or characteristic.",
+                "relative_note": "Extremely common way to intensify an adjective."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.75,
+        "clause_density": 2.0,
+        "mean_clause_length": 7.5
+      },
+      "accuracy": {
+        "score": 0.62,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 2,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "3.3",
+      "original": "But, next month, urr my wife and my girl my girl no, my daughter will come to XXX05.",
+      "translated": "But, next month, my wife and my girl no, my daughter will come to XXX05.",
+      "correct": "But next month, my wife and daughter will come to XXX05.",
+      "pruned": "But, next month, my wife and my daughter will come to XXX05.",
+      "clauses": [
+        {
+          "text": "my wife and my daughter will come to XXX05",
+          "type": "main",
+          "corrected_segment": "my wife and daughter will come to XXX05",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "minor",
+              "error": "The article 'my' is redundant before 'daughter'.",
+              "correction": "daughter"
+            }
+          ],
+          "accuracy": 0.8,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Stating a future plan",
+                "category": "Sentence_Stem",
+                "component": "my wife and daughter will come to LOCATION",
+                "frequency_level": 4.0,
+                "usage_context": "Expressing a future intention for family members to arrive at a certain place.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.5,
+        "clause_density": 1.0,
+        "mean_clause_length": 9.0
+      },
+      "accuracy": {
+        "score": 0.89,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "5.1",
+      "original": "Ummm. Urr. Maybe, urr  my daughter urr will not go anywhere with me.",
+      "translated": "Maybe, my daughter will not go anywhere with me.",
+      "correct": "Maybe my daughter won't go anywhere with me.",
+      "pruned": "Maybe, my daughter will not go anywhere with me.",
+      "clauses": [
+        {
+          "text": "my daughter will not go anywhere with me",
+          "type": "main",
+          "corrected_segment": "my daughter won't go anywhere with me",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Word Choice",
+              "severity": "minor",
+              "error": "'will not' should be contracted to 'won't' for a more natural sound.",
+              "correction": "won't"
+            }
+          ],
+          "accuracy": 0.8,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Stating a negative intention",
+                "category": "Sentence_Stem",
+                "component": "my daughter won't go anywhere with me",
+                "frequency_level": 3.5,
+                "usage_context": "Expressing a refusal or unwillingness to accompany the speaker.",
+                "relative_note": "Less frequent due to the specific context of refusal."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.48,
+        "clause_density": 1.0,
+        "mean_clause_length": 8.0
+      },
+      "accuracy": {
+        "score": 0.89,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "6.3",
+      "original": "Er. So, when  urr if   dinner, umm my daughter will come, maybe.",
+      "translated": "So, when if dinner, my daughter will come, maybe.",
+      "correct": "So, if we have dinner, my daughter might come along.",
+      "pruned": "So, when if dinner, my daughter will come, maybe.",
+      "clauses": [
+        {
+          "text": "when if dinner",
+          "type": "subordinate",
+          "corrected_segment": "if we have dinner",
+          "subtype": "adverbial",
+          "implied_elements": [
+            "it is"
+          ],
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "Incomplete and grammatically incorrect sentence.",
+              "correction": "if we have dinner"
+            }
+          ],
+          "accuracy": 0.2,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Setting a condition",
+                "category": "Sentence_Stem",
+                "component": "if we have dinner",
+                "frequency_level": 4.2,
+                "usage_context": "Introducing a conditional clause, often followed by a consequence or related action.",
+                "relative_note": "Common conditional phrase."
+              }
+            ]
+          }
+        },
+        {
+          "text": "my daughter will come",
+          "type": "main",
+          "corrected_segment": "my daughter might come along",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Word Choice",
+              "severity": "minor",
+              "error": "The phrase 'will come' is too definite. 'might come along' is more appropriate given the context.",
+              "correction": "might come along"
+            }
+          ],
+          "accuracy": 0.7,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Expressing possibility",
+                "category": "Sentence_Stem",
+                "component": "X might come along",
+                "frequency_level": 3.8,
+                "usage_context": "Suggesting a possible companion or participant in an activity.",
+                "relative_note": "Common way to express possibility."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.65,
+        "clause_density": 2.0,
+        "mean_clause_length": 3.5
+      },
+      "accuracy": {
+        "score": 0.55,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 1,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "8.2",
+      "original": "My daughter is urr is in her room, and she is talking with urr her fa favorite  dog and cat.",
+      "translated": "My daughter is in her room, and she is talking with her favorite dog and cat.",
+      "correct": "Oh, my daughter is in her room, talking to her favorite dog and cat.",
+      "pruned": "My daughter is in her room, and she is talking with her favorite dog and cat.",
+      "clauses": [
+        {
+          "text": "My daughter is in her room",
+          "type": "main",
+          "corrected_segment": "my daughter is in her room",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing location",
+                "category": "Frame",
+                "component": "X is in her room",
+                "frequency_level": 4.5,
+                "usage_context": "Indicating someone's current location within a house or building.",
+                "relative_note": "Very common way to describe location."
+              }
+            ]
+          }
+        },
+        {
+          "text": "she is talking with her favorite dog and cat",
+          "type": "coordinate",
+          "corrected_segment": "talking to her favorite dog and cat",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Preposition Choice",
+              "severity": "minor",
+              "error": "Incorrect preposition: 'with' should be 'to' when talking to someone/something.",
+              "correction": "to"
+            }
+          ],
+          "accuracy": 0.8,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing an activity",
+                "category": "Frame",
+                "component": "talking to her favorite X and Y",
+                "frequency_level": 3.2,
+                "usage_context": "Describing an interaction, often used in casual conversation.",
+                "relative_note": "Fairly common pattern."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.75,
+        "clause_density": 2.0,
+        "mean_clause_length": 7.5
+      },
+      "accuracy": {
+        "score": 0.89,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.5,
+          "errors_per_clause": 0.5,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "8.3",
+      "original": "Now, she er she must urr  er study hard for  examination for university, but she is very dislike urr studying.",
+      "translated": "Now, she she must study hard for examination for university, but she is very dislike studying.",
+      "correct": "She should be studying hard for her university entrance exams, but she really dislikes studying.",
+      "pruned": "Now, she must study hard for examination for university, but she is very dislike studying.",
+      "clauses": [
+        {
+          "text": "she must study hard for examination for university",
+          "type": "main",
+          "corrected_segment": "She should be studying hard for her university entrance exams",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Auxiliary/Modal Verbs",
+              "severity": "moderate",
+              "error": "'must' is too strong; 'should be' is more appropriate for advice.",
+              "correction": "should be"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "moderate",
+              "error": "Missing article 'her' before 'examination'.",
+              "correction": "her examination"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "moderate",
+              "error": "Missing word 'entrance' and pluralization of 'exams' for clarity.",
+              "correction": "entrance exams"
+            },
+            {
+              "category": "Preposition Choice",
+              "severity": "minor",
+              "error": "Preposition 'for' is not ideal in this context.",
+              "correction": "for"
+            }
+          ],
+          "accuracy": 0.5,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Expressing obligation/necessity",
+                "category": "Pattern",
+                "component": "should be V-ing",
+                "frequency_level": 4.1,
+                "usage_context": "Expressing what someone is expected to be doing at the moment or in general.",
+                "relative_note": "More frequent than 'entrance exams' in general spoken English."
+              },
+              {
+                "intention": "Describing an event",
+                "category": "Polyword",
+                "component": "entrance exams",
+                "frequency_level": 3.2,
+                "usage_context": "Referring to standardized tests for university admission.",
+                "relative_note": "Less frequent than 'should be V-ing' in general spoken English."
+              }
+            ]
+          }
+        },
+        {
+          "text": "she is very dislike studying",
+          "type": "coordinate",
+          "corrected_segment": "she really dislikes studying",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Vocabulary",
+              "severity": "moderate",
+              "error": "'dislike' is not used as a continuous verb. 'really dislikes' is better.",
+              "correction": "really dislikes"
+            }
+          ],
+          "accuracy": 0.6,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Expressing dislike",
+                "category": "Polyword",
+                "component": "really dislikes",
+                "frequency_level": 3.8,
+                "usage_context": "Expressing a strong aversion to something.",
+                "relative_note": "More frequent than other formulas in this segment."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.72,
+        "clause_density": 2.0,
+        "mean_clause_length": 6.5
+      },
+      "accuracy": {
+        "score": 0.34,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 5,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.5,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 4,
+            "minor": 1
+          }
+        }
+      }
+    },
+    {
+      "n": "8.4",
+      "original": "So, many times, urr  she urr invite her dog or cat in her room and speak.",
+      "translated": "So, many times, she invite her dog or cat in her room and speak.",
+      "correct": "So, she often invites her dog or cat into her room and talks to them.",
+      "pruned": "So, many times, she invite her dog or cat in her room and speak.",
+      "clauses": [
+        {
+          "text": "she invite her dog or cat in her room and speak",
+          "type": "main",
+          "corrected_segment": "she often invites her dog or cat into her room and talks to them",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Vocabulary",
+              "severity": "minor",
+              "error": "'invite' should be 'often invites' to convey frequency.",
+              "correction": "often invites"
+            },
+            {
+              "category": "Preposition Choice",
+              "severity": "minor",
+              "error": "Preposition 'in' should be 'into'.",
+              "correction": "into"
+            },
+            {
+              "category": "Sentence Structure",
+              "severity": "minor",
+              "error": "Missing 'to them' after 'speak' for clarity.",
+              "correction": "to them"
+            }
+          ],
+          "accuracy": 0.6,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing habitual action",
+                "category": "Pattern",
+                "component": "often invites",
+                "frequency_level": 3.5,
+                "usage_context": "Describing something that happens frequently.",
+                "relative_note": "More frequent than other formulas in this segment."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.55,
+        "clause_density": 1.0,
+        "mean_clause_length": 11.0
+      },
+      "accuracy": {
+        "score": 0.7,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 3,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 3.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 3
+          }
+        }
+      }
+    },
+    {
+      "n": "9.1",
+      "original": "So, now, I use the many times",
+      "translated": "So, now, I use the many times",
+      "correct": "So now, I use it frequently",
+      "pruned": "So, now, I use the many times",
+      "clauses": [
+        {
+          "text": "I use the many times",
+          "type": "main",
+          "corrected_segment": null,
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Describing frequency of use",
+                "category": "Sentence_Stem",
+                "component": "I use X the many times",
+                "frequency_level": 1.5,
+                "usage_context": "Attempting to describe how often something is used; non-idiomatic",
+                "relative_note": "This is a non-native construction, but the intention is clear. Low frequency in native speech."
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.4,
+        "clause_density": 1.0,
+        "mean_clause_length": 5.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "6.4",
+      "original": "or  so so I decided to buy  P C",
+      "translated": "or so so I decided to buy PC",
+      "correct": "I decided to buy a PC",
+      "pruned": "so I decided to buy PC",
+      "clauses": [
+        {
+          "text": "I decided to buy PC",
+          "type": "main",
+          "corrected_segment": null,
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Reporting a decision",
+                "category": "Sentence_Stem",
+                "component": "I decided to",
+                "frequency_level": 4.3,
+                "usage_context": "Introducing a decision that was made.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.4,
+        "clause_density": 1.0,
+        "mean_clause_length": 5.0
+      },
+      "accuracy": {
+        "score": 1.0,
+        "breakdown": {
+          "error_free_asunit_ratio": 1.0,
+          "errors_per_asunit": 0,
+          "error_free_clause_ratio": 1.0,
+          "errors_per_clause": 0.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "6.5",
+      "original": "before I didn't use any computer",
+      "translated": "before I didn't use any computer",
+      "correct": "as I didn't use one before",
+      "pruned": "before I didn't use any computer",
+      "clauses": [
+        {
+          "text": "before I didn't use any computer",
+          "type": "subordinate",
+          "corrected_segment": "as I didn't use one before",
+          "subtype": "adverbial",
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Conjunction Usage",
+              "severity": "minor",
+              "error": "The conjunction 'before' is not the best choice in this context. 'as' is more appropriate.",
+              "correction": "as"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "minor",
+              "error": "Missing article: 'one' should be included after 'didn't use'.",
+              "correction": "one"
+            }
+          ],
+          "accuracy": 0.7,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Providing a reason",
+                "category": "Sentence_Stem",
+                "component": "as I didn't [verb]",
+                "frequency_level": 3.9,
+                "usage_context": "Giving a justification for a previous action or statement.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.43,
+        "clause_density": 1.0,
+        "mean_clause_length": 6.0
+      },
+      "accuracy": {
+        "score": 0.79,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 2.0,
+          "severity_counts": {
+            "critical": 0,
+            "moderate": 0,
+            "minor": 2
+          }
+        }
+      }
+    },
+    {
+      "n": "7.2",
+      "original": "I want to urr go to New York",
+      "translated": "I want to go to New York",
+      "correct": "I'm sorry",
+      "pruned": "I want to go to New York",
+      "clauses": [
+        {
+          "text": "I want",
+          "type": "main",
+          "corrected_segment": "I'm sorry",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "Incomplete sentence. The phrase 'I want' is not a complete thought in this context and requires further information.",
+              "correction": "I'm sorry"
+            }
+          ],
+          "accuracy": 0.2
+        },
+        {
+          "text": "to go to New York",
+          "type": "non-finite",
+          "corrected_segment": "I'm sorry",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "Incomplete sentence. The phrase 'to go to New York' is not a complete thought in this context and requires further information.",
+              "correction": "I'm sorry"
+            }
+          ],
+          "accuracy": 0.2,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Apology",
+                "category": "Polyword",
+                "component": "I'm sorry",
+                "frequency_level": 5.0,
+                "usage_context": "Expressing regret or apology",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.65,
+        "clause_density": 2.0,
+        "mean_clause_length": 3.5
+      },
+      "accuracy": {
+        "score": 0.38,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 2,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 2,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "7.7",
+      "original": "Urr.  Eee. I want to be  New York urr early",
+      "translated": "I want to be New York early",
+      "correct": "so I want to know the best way to arrive there as early as possible",
+      "pruned": "I want to be New York early",
+      "clauses": [
+        {
+          "text": "I want to be New York early",
+          "type": "main",
+          "corrected_segment": "so I want to know the best way to arrive there as early as possible",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Sentence Structure",
+              "severity": "critical",
+              "error": "The sentence is grammatically incorrect and lacks necessary words to convey the intended meaning.",
+              "correction": "so I want to know the best way to arrive there as early as possible"
+            }
+          ],
+          "accuracy": 0.3,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Requesting information",
+                "category": "Sentence_Stem",
+                "component": "so I want to know",
+                "frequency_level": 4.5,
+                "usage_context": "Introducing a question or request for information",
+                "relative_note": "More frequent than the full clause."
+              },
+              {
+                "intention": "Seeking advice/direction",
+                "category": "Frame",
+                "component": "the best way to VERB there as early as possible",
+                "frequency_level": 3.8,
+                "usage_context": "Asking for the most efficient method to achieve a goal, often related to travel or logistics.",
+                "relative_note": null
+              },
+              {
+                "intention": "Expressing purpose",
+                "category": "Polyword",
+                "component": "as early as possible",
+                "frequency_level": 4.7,
+                "usage_context": "Emphasizing the urgency or importance of doing something quickly.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.45,
+        "clause_density": 1.0,
+        "mean_clause_length": 7.0
+      },
+      "accuracy": {
+        "score": 0.62,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 1,
+          "error_free_clause_ratio": 0.0,
+          "errors_per_clause": 1.0,
+          "severity_counts": {
+            "critical": 1,
+            "moderate": 0,
+            "minor": 0
+          }
+        }
+      }
+    },
+    {
+      "n": "7.8",
+      "original": "so I want to know what urr   best way to arrive New York early earliest",
+      "translated": "so I want to know what best way to arrive New York early earliest",
+      "correct": "so I want to know the best way to arrive there as early as possible",
+      "pruned": "so I want to know what best way to arrive New York early earliest",
+      "clauses": [
+        {
+          "text": "so I want to know",
+          "type": "main",
+          "corrected_segment": "so I want to know",
+          "subtype": null,
+          "implied_elements": null,
+          "is_error_free": true,
+          "errors_found": [],
+          "accuracy": 1.0,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Requesting information",
+                "category": "Sentence_Stem",
+                "component": "so I want to know",
+                "frequency_level": 5.0,
+                "usage_context": "Introducing a question or request for information",
+                "relative_note": null
+              }
+            ]
+          }
+        },
+        {
+          "text": "what best way to arrive New York early earliest",
+          "type": "complement",
+          "corrected_segment": "the best way to arrive there as early as possible",
+          "subtype": "complement",
+          "implied_elements": null,
+          "is_error_free": false,
+          "errors_found": [
+            {
+              "category": "Word Order",
+              "severity": "critical",
+              "error": "Incorrect word order and missing words make the sentence difficult to understand.",
+              "correction": "the best way"
+            },
+            {
+              "category": "Articles/Prepositions/Pluralization",
+              "severity": "moderate",
+              "error": "Missing 'the' before 'best way'.",
+              "correction": "the best way"
+            },
+            {
+              "category": "Vocabulary",
+              "severity": "minor",
+              "error": "Redundant use of 'early earliest'.",
+              "correction": "as early as possible"
+            }
+          ],
+          "accuracy": 0.3,
+          "pattern_analysis": {
+            "patterns": [
+              {
+                "intention": "Seeking advice/direction",
+                "category": "Frame",
+                "component": "the best way to VERB there as early as possible",
+                "frequency_level": 4.0,
+                "usage_context": "Asking for the most efficient method to achieve a goal, often related to travel or logistics.",
+                "relative_note": null
+              },
+              {
+                "intention": "Expressing purpose",
+                "category": "Polyword",
+                "component": "as early as possible",
+                "frequency_level": 4.7,
+                "usage_context": "Emphasizing the urgency or importance of doing something quickly.",
+                "relative_note": null
+              }
+            ]
+          }
+        }
+      ],
+      "complexity": {
+        "score": 0.73,
+        "clause_density": 2.0,
+        "mean_clause_length": 7.0
+      },
+      "accuracy": {
+        "score": 0.43,
+        "breakdown": {
+          "error_free_asunit_ratio": 0.0,
+          "errors_per_asunit": 3,
+          "error_free_clause_ratio": 0.5,
+          "errors_per_clause": 1.5,
+          "severity_counts": {
+            "critical": 1,
+            "moderate": 1,
+            "minor": 1
+          }
+        }
+      }
+    }
+  ]
+}
