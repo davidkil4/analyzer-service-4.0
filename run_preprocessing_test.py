@@ -18,7 +18,12 @@ SPEAKER_TO_PROCESS = "student"
 # --- Environment Setup ---
 # Load environment variables from .env file
 # Specify the path to the .env file explicitly if it's not in the current working directory
-loaded_dotenv = load_dotenv(verbose=True) # Rely on default search 
+loaded_dotenv = load_dotenv(verbose=True, override=True) # FORCE OVERRIDE
+
+# --- Print loaded key for verification ---
+# loaded_key = os.getenv("GOOGLE_API_KEY")
+# print(f"[DIAG] Loaded GOOGLE_API_KEY: {'*****' + loaded_key[-4:] if loaded_key else 'Not Found!'}", file=sys.stderr)
+# --- End verification ---
 
 # --- Configure Logging (after dotenv, before other imports/logic) ---
 logging.basicConfig(
