@@ -1,6 +1,5 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any, Literal
-from enum import Enum
 
 # --- Raw Input Schema --- 
 class InputUtterance(BaseModel):
@@ -32,11 +31,6 @@ class AlignedASUnit(SegmentedASUnit):
     """AS Unit after aligning with original Korean text."""
     aligned_original_text: Optional[str] = None # Specific segment of original aligned
 
-# New schema specifically for the output of the AS Unit Aligner LLM call
-class AlignmentOnlyOutput(BaseModel):
-    """Schema for the direct output of the AS Unit alignment step."""
-    aligned_original_text: Optional[str] = Field(None, description="The aligned segment from the original text, or null if no alignment found.")
-
 class Clause(BaseModel):
     """Represents a single clause identified within an AS unit."""
     clause_text: str = Field(..., description="The text of the clause.")
@@ -66,14 +60,6 @@ class AlignedASUnitWithClauses(ASUnitWithClauses):
     aligned_original_text: Optional[str] = Field(
         None, description="The specific segment from original_input_text that corresponds to as_unit_text. None if alignment failed."
     )
-
-class AnalyzedClause(BaseModel):
-    """Represents a single clause identified during initial analysis."""
-    clause_text: str = Field(..., description="The text of the clause.")
-
-class ClauseAnalysisOutput(BaseModel):
-    """Output schema for the clause analysis LLM call."""
-    clauses: List[AnalyzedClause] = Field(..., description="A list of clauses extracted from the AS unit.")
 
 class ClauseAlignmentOutput(BaseModel):
     """Represents the direct JSON output of the clause alignment LLM call."""
@@ -115,37 +101,7 @@ class PreprocessingOutput(BaseModel):
     """Represents the final output of the entire pre-processing pipeline."""
     processed_utterances: List[PreprocessedASUnit]
 
-# --- Main Analysis Schemas ---
-
-class ErrorSeverity(str, Enum):
-    """Enumeration for error severity levels."""
-    CRITICAL = "critical"
-    MODERATE = "moderate"
-    MINOR = "minor"
-
-class ErrorDetail(BaseModel):
-    """Schema for a single error identified within a clause."""
-    category: str = Field(..., description="The category of the error (e.g., 'Sentence Structure', 'Vocabulary').")
-    severity: ErrorSeverity = Field(..., description="The severity of the error.")
-    error: str = Field(..., description="A description of the specific error found.")
-    correction: Optional[str] = Field(None, description="The suggested correction for the error.")
-
-class ClauseAnalysis(BaseModel):
-    """Schema for the analysis results of a single clause."""
-    clause_text: str = Field(..., description="The original text of the clause.")
-    corrected_clause_text: Optional[str] = Field(None, description="The corrected version of the clause text, if applicable.")
-    errors_found: List[ErrorDetail] = Field(default_factory=list, description="A list of errors found within this clause.")
-    clause_pattern_analysis: Optional[Any] = Field(None, description="Pattern analysis results specifically for this clause (Structure TBD).") # Using Any until structure is defined
-
-class MainAnalysisOutput(BaseModel):
-    """Schema for the final output of the main analysis chain for a single AS Unit."""
-    as_unit_id: str = Field(..., description="Unique identifier for the AS unit.")
-    original_text: str = Field(..., description="The original text of the AS unit (post-preprocessing).")
-    corrected_text: Optional[str] = Field(None, description="The corrected version of the AS unit text, if applicable.")
-    complexity_score: Optional[float] = Field(None, description="The calculated complexity score for the AS unit.")
-    accuracy_score: Optional[float] = Field(None, description="The calculated accuracy score for the AS unit.")
-    clauses: List[ClauseAnalysis] = Field(default_factory=list, description="A list containing the analysis results for each clause in the AS unit.")
-    as_unit_pattern_analysis: Optional[Any] = Field(None, description="Pattern analysis results for the entire AS unit (Structure TBD).") # Using Any until structure is defined
+# --- Main Analysis Schemas (Placeholders - Define based on analysis tasks) --- 
 
 class AnalysisInput(BaseModel):
     """Input to the main analysis chain (likely a list of preprocessed units)."""

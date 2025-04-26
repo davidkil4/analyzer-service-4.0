@@ -50,28 +50,78 @@ Analyze each AS-unit to identify and classify clauses.
 
 1. **Fragments and Ellipsis**
    - Treat as main clauses with implied elements
-   - Capture the explicit text and note the implied elements in the `implied_elements` field
-   - Example: "maybe twenty years" → text: "maybe twenty years", implied_elements: ["it is", "it has been"]
+   - Example: "very good" → main clause with implied ["it is", "that is"]
+   - Example: "near here" → main clause with implied ["it is", "I am"]
 
-2. **Questions**
-   - Analyze as main clauses
-   - Example: "what did you specialized" → main clause
+2. **Coordinated Verb Phrases**
+   - Count as single clause when sharing the same subject
+   - Example: "I went to store and bought milk" → single main clause
+   - Only count as separate clauses when each has its own subject
 
-3. **Compound Verbs**
-   - Treat as part of a single clause
-   - Example: "I wanted to study and I liked" → Two clauses (main + coordinate)
 
-4. **Multiple AS-Units in Input**
-   - Process each AS-unit independently, providing a separate clause analysis for each
+### Conjunction Treatment
 
-##Input Format
+In coordinate clauses, separate the conjunction from the clause proper
+Example: "I like pizza and she prefers pasta" → "I like pizza" + "she prefers pasta" with "and" as coordinator
 
-The input will be a single AS-unit text:
-```
+
+
+### Complex Examples
+
+1. **Nested Subordinate Clauses**
+   - Example: "I believe that he said that they were coming"
+   - Main clause: "I believe"
+   - First-level complement clause: "that he said"
+   - Second-level complement clause: "that they were coming"
+
+2. **Multiple Clause Types**
+   - Example: "When I arrived home, I saw that the door was open and someone had been inside"
+   - Adverbial clause: "When I arrived home"
+   - Main clause: "I saw"
+   - Complement clause: "that the door was open"
+   - Coordinate clause: "someone had been inside" (coordinator: "and")
+
+### Error Handling for Ambiguous Cases
+
+1. **Unclear Boundaries**
+   - When clause boundaries are ambiguous, favor the interpretation that produces the most grammatically complete clauses
+2. **Fragmentary Speech**
+   - For extremely fragmented utterances, identify the minimal implied elements needed to form a coherent clause
+3. **Repetitions/Corrections**
+   - Consider self-corrections as part of the original clause unless they form a complete new clause
+4. **Interrupted Clauses**
+   - Mark as incomplete but still classify according to their intended structure
+
+### Verification Criteria
+
+1. **Clause Completeness**
+   - Each identified clause must contain or imply a subject and verb
+2. **Dependency Check**
+   - Ensure subordinate clauses are properly attached to a main clause
+3. **Coordination Test**
+   - For coordinate clauses, verify each could stand as an independent sentence
+4. **Cross-Validation**
+   - Check that the total number of clauses matches the complexity of the utterance
+5. **Element Coverage**
+   - Ensure every word in the utterance is assigned to some clause
+
+## Input Format Description
+{input_format}
+
+## AS Unit to Analyze
 {input_as_units}
+
+## Required Output Format
+CRITICAL: You MUST output ONLY the JSON object described below. Do NOT include ANY explanatory text, greetings, apologies, or markdown formatting (like ```json) before or after the JSON object.
+
+{output_format}
+
+Example JSON Output for "I like pizza and she prefers pasta":
+```json
+{{
+  "clauses": [
+    {{"clause_text": "I like pizza"}},
+    {{"clause_text": "and she prefers pasta"}}
+  ]
+}}
 ```
-
-##Output Format
-
-Provide the output ONLY in the format specified below.
-{format_instructions}

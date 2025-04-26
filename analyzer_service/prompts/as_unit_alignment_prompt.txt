@@ -41,10 +41,6 @@ Original Utterance Text:
 Target AS Unit Text:
 {target_as_unit_text}
 
-## Output Format
-CRITICAL: You MUST output ONLY the JSON object described by the format instructions below. Do NOT include ANY explanatory text, greetings, apologies, or markdown formatting (like ```json) before or after the JSON object.
+## Output
 
-If you can find the corresponding segment in the Original Utterance Text, place that segment in the `aligned_original_text` field.
-If you CANNOT find a corresponding segment, set the `aligned_original_text` field to `null`.
-
-{format_instructions}
+Aligned Original Segment: [Output the aligned segment from Original Utterance Text here, or NO_ALIGNMENT_FOUND]

@@ -10,7 +10,7 @@ import logging
 print("[DIAG] Running run_preprocessing_test.py...", file=sys.stderr)
 
 # --- Configuration ---
-INPUT_FILE = "input files/600_son_converted.json"
+INPUT_FILE = "input_files/600_son_converted.json"
 OUTPUT_FILE = "preprocessing_output.json" # Define output file
 BATCH_SIZE = 10
 SPEAKER_TO_PROCESS = "student"

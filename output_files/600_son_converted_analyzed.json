@@ -1,0 +1,4134 @@
+[
+  {
+    "as_unit_id": "u1-as1",
+    "original_utterance_id": "u1",
+    "original_input_text": "O K. Thank you very much for coming.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u1-as2",
+    "original_utterance_id": "u1",
+    "original_input_text": "O K. Thank you very much for coming.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u1-as3",
+    "original_utterance_id": "u1",
+    "original_input_text": "O K. Thank you very much for coming.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u1-as4",
+    "original_utterance_id": "u1",
+    "original_input_text": "O K. Thank you very much for coming.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u2-as1",
+    "original_utterance_id": "u2",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Mh-hmm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u2-as2",
+    "original_utterance_id": "u2",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u2-as3",
+    "original_utterance_id": "u2",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u2-as4",
+    "original_utterance_id": "u2",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u3-as1",
+    "original_utterance_id": "u3",
+    "original_input_text": "My name is XXX01. Can I have your name, please?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u3-as2",
+    "original_utterance_id": "u3",
+    "original_input_text": "My name is XXX01. Can I have your name, please?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u3-as3",
+    "original_utterance_id": "u3",
+    "original_input_text": "My name is XXX01. Can I have your name, please?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u3-as4",
+    "original_utterance_id": "u3",
+    "original_input_text": "My name is XXX01. Can I have your name, please?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u4-as1",
+    "original_utterance_id": "u4",
+    "original_input_text": "Ur. My name is XXX02.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u4-as2",
+    "original_utterance_id": "u4",
+    "original_input_text": "Ur. My name is XXX02.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u4-as3",
+    "original_utterance_id": "u4",
+    "original_input_text": "Ur. My name is XXX02.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u4-as4",
+    "original_utterance_id": "u4",
+    "original_input_text": "Ur. My name is XXX02.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u5-as1",
+    "original_utterance_id": "u5",
+    "original_input_text": "O K. How are you today?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u6-as1",
+    "original_utterance_id": "u6",
+    "original_input_text": "괜찮아요. And you?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "괜찮아요.",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "괜찮아요.",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u6-as2",
+    "original_utterance_id": "u6",
+    "original_input_text": "괜찮아요. And you?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u6-as3",
+    "original_utterance_id": "u6",
+    "original_input_text": "괜찮아요. And you?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u6-as4",
+    "original_utterance_id": "u6",
+    "original_input_text": "괜찮아요. And you?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "And you?",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "And you?",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u7-as1",
+    "original_utterance_id": "u7",
+    "original_input_text": "Yes. Fine, thank you. Where do you live?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u8-as1",
+    "original_utterance_id": "u8",
+    "original_input_text": "Oh. I... 어... XXX03에 살아요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Oh.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u8-as2",
+    "original_utterance_id": "u8",
+    "original_input_text": "Oh. I... 어... XXX03에 살아요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "어...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u8-as3",
+    "original_utterance_id": "u8",
+    "original_input_text": "Oh. I... 어... XXX03에 살아요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u8-as4",
+    "original_utterance_id": "u8",
+    "original_input_text": "Oh. I... 어... XXX03에 살아요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u9-as1",
+    "original_utterance_id": "u9",
+    "original_input_text": "Hm. Where in XXX03?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u10-as1",
+    "original_utterance_id": "u10",
+    "original_input_text": "Urn. Er. XXX04 근처요.",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Urn.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u11-as1",
+    "original_utterance_id": "u11",
+    "original_input_text": "I see.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u11-as2",
+    "original_utterance_id": "u11",
+    "original_input_text": "I see.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u11-as3",
+    "original_utterance_id": "u11",
+    "original_input_text": "I see.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u11-as4",
+    "original_utterance_id": "u11",
+    "original_input_text": "I see.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u12-as1",
+    "original_utterance_id": "u12",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Mh-hmm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u12-as2",
+    "original_utterance_id": "u12",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u12-as3",
+    "original_utterance_id": "u12",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u12-as4",
+    "original_utterance_id": "u12",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u13-as1",
+    "original_utterance_id": "u13",
+    "original_input_text": "How long does it take from your house to this office?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u14-as1",
+    "original_utterance_id": "u14",
+    "original_input_text": "This office?",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u15-as1",
+    "original_utterance_id": "u15",
+    "original_input_text": "Yes.",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u16-as1",
+    "original_utterance_id": "u16",
+    "original_input_text": "Erm... maybe... 삼사년 걸려요.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u17-as1",
+    "original_utterance_id": "u17",
+    "original_input_text": "Mh-hmm. Mh-hmm. Hm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u17-as2",
+    "original_utterance_id": "u17",
+    "original_input_text": "Mh-hmm. Mh-hmm. Hm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "Mh-hmm. Mh-hmm. Hm.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u17-as3",
+    "original_utterance_id": "u17",
+    "original_input_text": "Mh-hmm. Mh-hmm. Hm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u17-as4",
+    "original_utterance_id": "u17",
+    "original_input_text": "Mh-hmm. Mh-hmm. Hm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u18-as1",
+    "original_utterance_id": "u18",
+    "original_input_text": "I think.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u18-as2",
+    "original_utterance_id": "u18",
+    "original_input_text": "I think.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u18-as3",
+    "original_utterance_id": "u18",
+    "original_input_text": "I think.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u18-as4",
+    "original_utterance_id": "u18",
+    "original_input_text": "I think.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u19-as1",
+    "original_utterance_id": "u19",
+    "original_input_text": "Hm. O K. Does your family also live in XXX04?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u20-as1",
+    "original_utterance_id": "u20",
+    "original_input_text": "Yes.",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u21-as1",
+    "original_utterance_id": "u21",
+    "original_input_text": "Uhm. Tell me about your family.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Uhm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u21-as2",
+    "original_utterance_id": "u21",
+    "original_input_text": "Uhm. Tell me about your family.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u21-as3",
+    "original_utterance_id": "u21",
+    "original_input_text": "Uhm. Tell me about your family.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u21-as4",
+    "original_utterance_id": "u21",
+    "original_input_text": "Uhm. Tell me about your family.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as1",
+    "original_utterance_id": "u22",
+    "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as2",
+    "original_utterance_id": "u22",
+    "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "아내랑 아들 하나 딸 하나 있어요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as3",
+    "original_utterance_id": "u22",
+    "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as4",
+    "original_utterance_id": "u22",
+    "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u23-as1",
+    "original_utterance_id": "u23",
+    "original_input_text": "I see. How old is your son?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u24-as1",
+    "original_utterance_id": "u24",
+    "original_input_text": "Yeah. Hm. He is 다섯 살이에요.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Yeah.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u25-as1",
+    "original_utterance_id": "u25",
+    "original_input_text": "And, how was your daughter?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u25-as2",
+    "original_utterance_id": "u25",
+    "original_input_text": "And, how was your daughter?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u25-as3",
+    "original_utterance_id": "u25",
+    "original_input_text": "And, how was your daughter?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u25-as4",
+    "original_utterance_id": "u25",
+    "original_input_text": "And, how was your daughter?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u26-as1",
+    "original_utterance_id": "u26",
+    "original_input_text": "Mm. She is 두 살이에요.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Mm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u27-as1",
+    "original_utterance_id": "u27",
+    "original_input_text": "I see. O K. So, what do you do with them on weekends?",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "I see. O K.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u28-as1",
+    "original_utterance_id": "u28",
+    "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "어...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u28-as2",
+    "original_utterance_id": "u28",
+    "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "어... Christmas present 사러 갔어요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u28-as3",
+    "original_utterance_id": "u28",
+    "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u28-as4",
+    "original_utterance_id": "u28",
+    "original_input_text": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u29-as1",
+    "original_utterance_id": "u29",
+    "original_input_text": "Oh. And so, what did you buy?",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Oh.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u30-as1",
+    "original_utterance_id": "u30",
+    "original_input_text": "Oh... 어... TV 애니메이션 캐릭터 알아요?",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "어...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "어...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u31-as1",
+    "original_utterance_id": "u31",
+    "original_input_text": "\"Zoi\"? laughter",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u32-as1",
+    "original_utterance_id": "u32",
+    "original_input_text": "Yeah... 그러니까... TV animation character.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Yeah...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "그러니까...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u32-as2",
+    "original_utterance_id": "u32",
+    "original_input_text": "Yeah... 그러니까... TV animation character.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "니까...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u32-as3",
+    "original_utterance_id": "u32",
+    "original_input_text": "Yeah... 그러니까... TV animation character.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u32-as4",
+    "original_utterance_id": "u32",
+    "original_input_text": "Yeah... 그러니까... TV animation character.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u33-as1",
+    "original_utterance_id": "u33",
+    "original_input_text": "I see. Mh-hmm.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u34-as1",
+    "original_utterance_id": "u34",
+    "original_input_text": "And 제 아들이... um... 그 캐릭터 피규어를 원해요.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u35-as1",
+    "original_utterance_id": "u35",
+    "original_input_text": "Hm. I see.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Hm. I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u35-as2",
+    "original_utterance_id": "u35",
+    "original_input_text": "Hm. I see.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u35-as3",
+    "original_utterance_id": "u35",
+    "original_input_text": "Hm. I see.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u35-as4",
+    "original_utterance_id": "u35",
+    "original_input_text": "Hm. I see.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u36-as1",
+    "original_utterance_id": "u36",
+    "original_input_text": "Er. \"Ultrazaurusu\".",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u36-as2",
+    "original_utterance_id": "u36",
+    "original_input_text": "Er. \"Ultrazaurusu\".",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "Er. \"Ultrazaurusu\".",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u36-as3",
+    "original_utterance_id": "u36",
+    "original_input_text": "Er. \"Ultrazaurusu\".",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u36-as4",
+    "original_utterance_id": "u36",
+    "original_input_text": "Er. \"Ultrazaurusu\".",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u37-as1",
+    "original_utterance_id": "u37",
+    "original_input_text": "I see.",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u38-as1",
+    "original_utterance_id": "u38",
+    "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "어...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u38-as2",
+    "original_utterance_id": "u38",
+    "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "어... 푸우 캐릭터 냉장고 장난감 원해요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u38-as3",
+    "original_utterance_id": "u38",
+    "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u38-as4",
+    "original_utterance_id": "u38",
+    "original_input_text": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u39-as1",
+    "original_utterance_id": "u39",
+    "original_input_text": "Huh. I see. Uh-huh.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Uh-huh.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u39-as2",
+    "original_utterance_id": "u39",
+    "original_input_text": "Huh. I see. Uh-huh.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u39-as3",
+    "original_utterance_id": "u39",
+    "original_input_text": "Huh. I see. Uh-huh.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u39-as4",
+    "original_utterance_id": "u39",
+    "original_input_text": "Huh. I see. Uh-huh.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u40-as1",
+    "original_utterance_id": "u40",
+    "original_input_text": "Hm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u40-as2",
+    "original_utterance_id": "u40",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u40-as3",
+    "original_utterance_id": "u40",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u40-as4",
+    "original_utterance_id": "u40",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u41-as1",
+    "original_utterance_id": "u41",
+    "original_input_text": "Really?",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u42-as1",
+    "original_utterance_id": "u42",
+    "original_input_text": "So... 지난주에 선물 샀어요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "So...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u42-as2",
+    "original_utterance_id": "u42",
+    "original_input_text": "So... 지난주에 선물 샀어요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "지난주에 선물 샀어요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u42-as3",
+    "original_utterance_id": "u42",
+    "original_input_text": "So... 지난주에 선물 샀어요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u42-as4",
+    "original_utterance_id": "u42",
+    "original_input_text": "So... 지난주에 선물 샀어요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u43-as1",
+    "original_utterance_id": "u43",
+    "original_input_text": "I see. And, are you going to give them those presents on the twenty-fourth of December?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u43-as2",
+    "original_utterance_id": "u43",
+    "original_input_text": "I see. And, are you going to give them those presents on the twenty-fourth of December?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u43-as3",
+    "original_utterance_id": "u43",
+    "original_input_text": "I see. And, are you going to give them those presents on the twenty-fourth of December?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u43-as4",
+    "original_utterance_id": "u43",
+    "original_input_text": "I see. And, are you going to give them those presents on the twenty-fourth of December?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "are you",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u44-as1",
+    "original_utterance_id": "u44",
+    "original_input_text": "Uhm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Uhm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u44-as2",
+    "original_utterance_id": "u44",
+    "original_input_text": "Uhm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u44-as3",
+    "original_utterance_id": "u44",
+    "original_input_text": "Uhm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u44-as4",
+    "original_utterance_id": "u44",
+    "original_input_text": "Uhm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u45-as1",
+    "original_utterance_id": "u45",
+    "original_input_text": "Or, have you already given the present to them?",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u46-as1",
+    "original_utterance_id": "u46",
+    "original_input_text": "No... 크리스마스 이브에 줄 거예요.",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u47-as1",
+    "original_utterance_id": "u47",
+    "original_input_text": "I see. O K. Next, please tell me about your job.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u47-as2",
+    "original_utterance_id": "u47",
+    "original_input_text": "I see. O K. Next, please tell me about your job.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u47-as3",
+    "original_utterance_id": "u47",
+    "original_input_text": "I see. O K. Next, please tell me about your job.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u47-as4",
+    "original_utterance_id": "u47",
+    "original_input_text": "I see. O K. Next, please tell me about your job.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u48-as1",
+    "original_utterance_id": "u48",
+    "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Yeah...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u48-as2",
+    "original_utterance_id": "u48",
+    "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "어... 제 일은... um... POS 시스템 개발 관리예요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u48-as3",
+    "original_utterance_id": "u48",
+    "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u48-as4",
+    "original_utterance_id": "u48",
+    "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u49-as1",
+    "original_utterance_id": "u49",
+    "original_input_text": "Hm.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u50-as1",
+    "original_utterance_id": "u50",
+    "original_input_text": "Yeah. Do you know POS?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Yeah.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u50-as2",
+    "original_utterance_id": "u50",
+    "original_input_text": "Yeah. Do you know POS?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u50-as3",
+    "original_utterance_id": "u50",
+    "original_input_text": "Yeah. Do you know POS?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u50-as4",
+    "original_utterance_id": "u50",
+    "original_input_text": "Yeah. Do you know POS?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u51-as1",
+    "original_utterance_id": "u51",
+    "original_input_text": "Uh I don't know P O S.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u51-as2",
+    "original_utterance_id": "u51",
+    "original_input_text": "Uh I don't know P O S.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u51-as3",
+    "original_utterance_id": "u51",
+    "original_input_text": "Uh I don't know P O S.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u51-as4",
+    "original_utterance_id": "u51",
+    "original_input_text": "Uh I don't know P O S.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u52-as1",
+    "original_utterance_id": "u52",
+    "original_input_text": "Uh... POS는... 그러니까... cash register예요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "그러니까...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "그러니까...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u52-as2",
+    "original_utterance_id": "u52",
+    "original_input_text": "Uh... POS는... 그러니까... cash register예요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u52-as3",
+    "original_utterance_id": "u52",
+    "original_input_text": "Uh... POS는... 그러니까... cash register예요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u52-as4",
+    "original_utterance_id": "u52",
+    "original_input_text": "Uh... POS는... 그러니까... cash register예요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u53-as1",
+    "original_utterance_id": "u53",
+    "original_input_text": "Yeah.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as1",
+    "original_utterance_id": "u54",
+    "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Yeah...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Yeah...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as2",
+    "original_utterance_id": "u54",
+    "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "제가 하는 일은 XXX06 전자 계산대...",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as3",
+    "original_utterance_id": "u54",
+    "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as4",
+    "original_utterance_id": "u54",
+    "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "제가 하는 일은",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u55-as1",
+    "original_utterance_id": "u55",
+    "original_input_text": "I see. Do you like your job?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u55-as2",
+    "original_utterance_id": "u55",
+    "original_input_text": "I see. Do you like your job?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I see.",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u55-as3",
+    "original_utterance_id": "u55",
+    "original_input_text": "I see. Do you like your job?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u55-as4",
+    "original_utterance_id": "u55",
+    "original_input_text": "I see. Do you like your job?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u56-as1",
+    "original_utterance_id": "u56",
+    "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "음...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "음...",
+        "is_korean": true,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u56-as2",
+    "original_utterance_id": "u56",
+    "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "그냥 제 일이에요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u56-as3",
+    "original_utterance_id": "u56",
+    "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u56-as4",
+    "original_utterance_id": "u56",
+    "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u57-as1",
+    "original_utterance_id": "u57",
+    "original_input_text": "O K. Hm. O K. Thank you very much.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u57-as2",
+    "original_utterance_id": "u57",
+    "original_input_text": "O K. Hm. O K. Thank you very much.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u57-as3",
+    "original_utterance_id": "u57",
+    "original_input_text": "O K. Hm. O K. Thank you very much.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u57-as4",
+    "original_utterance_id": "u57",
+    "original_input_text": "O K. Hm. O K. Thank you very much.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u58-as1",
+    "original_utterance_id": "u58",
+    "original_input_text": "Next, I have a picture to show you.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u58-as2",
+    "original_utterance_id": "u58",
+    "original_input_text": "Next, I have a picture to show you.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u58-as3",
+    "original_utterance_id": "u58",
+    "original_input_text": "Next, I have a picture to show you.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u58-as4",
+    "original_utterance_id": "u58",
+    "original_input_text": "Next, I have a picture to show you.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "I have",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u59-as1",
+    "original_utterance_id": "u59",
+    "original_input_text": "O K. Hm.",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u60-as1",
+    "original_utterance_id": "u60",
+    "original_input_text": "O K. Please tell me about this picture.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u60-as2",
+    "original_utterance_id": "u60",
+    "original_input_text": "O K. Please tell me about this picture.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u60-as3",
+    "original_utterance_id": "u60",
+    "original_input_text": "O K. Please tell me about this picture.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u60-as4",
+    "original_utterance_id": "u60",
+    "original_input_text": "O K. Please tell me about this picture.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u61-as1",
+    "original_utterance_id": "u61",
+    "original_input_text": "Hm... This picture... 어... 동네 풍경이에요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Hm...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u61-as2",
+    "original_utterance_id": "u61",
+    "original_input_text": "Hm... This picture... 어... 동네 풍경이에요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "어... 동네 풍경이에요.",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u61-as3",
+    "original_utterance_id": "u61",
+    "original_input_text": "Hm... This picture... 어... 동네 풍경이에요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u61-as4",
+    "original_utterance_id": "u61",
+    "original_input_text": "Hm... This picture... 어... 동네 풍경이에요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u62-as1",
+    "original_utterance_id": "u62",
+    "original_input_text": "Mh-hmm. What are there in this picture?",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as1",
+    "original_utterance_id": "u63",
+    "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as2",
+    "original_utterance_id": "u63",
+    "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고...",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as3",
+    "original_utterance_id": "u63",
+    "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as4",
+    "original_utterance_id": "u63",
+    "original_input_text": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u64-as1",
+    "original_utterance_id": "u64",
+    "original_input_text": "Hm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u64-as2",
+    "original_utterance_id": "u64",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u64-as3",
+    "original_utterance_id": "u64",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u64-as4",
+    "original_utterance_id": "u64",
+    "original_input_text": "Hm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u65-as1",
+    "original_utterance_id": "u65",
+    "original_input_text": "이 사진은... very peaceful해 보여요.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u65-as2",
+    "original_utterance_id": "u65",
+    "original_input_text": "이 사진은... very peaceful해 보여요.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "이 사진은...",
+        "is_korean": true,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u65-as3",
+    "original_utterance_id": "u65",
+    "original_input_text": "이 사진은... very peaceful해 보여요.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u65-as4",
+    "original_utterance_id": "u65",
+    "original_input_text": "이 사진은... very peaceful해 보여요.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u66-as1",
+    "original_utterance_id": "u66",
+    "original_input_text": "Hm.",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "Hm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u67-as1",
+    "original_utterance_id": "u67",
+    "original_input_text": "And I think... 좀 부자 동네 같아요.",
+    "as_unit_text": "Okay so um I think that's a good idea and we should do that but uh I don't know how to do it.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so um I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but uh I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u68-as1",
+    "original_utterance_id": "u68",
+    "original_input_text": "laughter",
+    "as_unit_text": "Okay so I think that's a good idea and I think we should do that but I don't know how to do it.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that's a good idea",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "and I think we should do that",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know how to do it",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u69-as1",
+    "original_utterance_id": "u69",
+    "original_input_text": "O K. So, is this picture similar to your house?",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u69-as2",
+    "original_utterance_id": "u69",
+    "original_input_text": "O K. So, is this picture similar to your house?",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "is_korean": false,
+        "original_clause_type": "phrase"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u69-as3",
+    "original_utterance_id": "u69",
+    "original_input_text": "O K. So, is this picture similar to your house?",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u69-as4",
+    "original_utterance_id": "u69",
+    "original_input_text": "O K. So, is this picture similar to your house?",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "O K.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u70-as1",
+    "original_utterance_id": "u70",
+    "original_input_text": "No... 저희 집은 아파트예요... not independent house.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "No...",
+        "is_korean": false,
+        "original_clause_type": "word"
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u71-as1",
+    "original_utterance_id": "u71",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "Mh-hmm.",
+        "is_korean": false,
+        "original_clause_type": "word"
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u71-as2",
+    "original_utterance_id": "u71",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u71-as3",
+    "original_utterance_id": "u71",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u71-as4",
+    "original_utterance_id": "u71",
+    "original_input_text": "Mh-hmm.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u72-as1",
+    "original_utterance_id": "u72",
+    "original_input_text": "And... 마당도 없어요.",
+    "as_unit_text": "Okay so I think that I need to go to the store and get some milk and eggs and bread but I don't know if they have any bread there.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "so I think that I need to go to the store and get some milk and eggs and bread",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "but I don't know if they have any bread there",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u73-as1",
+    "original_utterance_id": "u73",
+    "original_input_text": "Hm. Hm. O K. Thank you very much.",
+    "as_unit_text": "Okay, I understand.",
+    "aligned_original_text": "NO_ALIGNMENT_FOUND",
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "Okay",
+        "aligned_original_clause_segment": null,
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "I understand",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u73-as2",
+    "original_utterance_id": "u73",
+    "original_input_text": "Hm. Hm. O K. Thank you very much.",
+    "as_unit_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will translate the Korean segments into natural English, matching the speaker's likely proficiency, and copy the English words/phrases EXACTLY as they appear, preserving all errors and code-switching",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u73-as3",
+    "original_utterance_id": "u73",
+    "original_input_text": "Hm. Hm. O K. Thank you very much.",
+    "as_unit_text": "I will also maintain the original punctuation and capitalization.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I will also maintain the original punctuation and capitalization.",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u73-as4",
+    "original_utterance_id": "u73",
+    "original_input_text": "Hm. Hm. O K. Thank you very much.",
+    "as_unit_text": "I'm ready when you are.",
+    "aligned_original_text": null,
+    "context": null,
+    "clauses": [
+      {
+        "clause_text": "I'm ready",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      },
+      {
+        "clause_text": "when you are",
+        "aligned_original_clause_segment": "NO_ALIGNMENT_FOUND",
+        "is_korean": null,
+        "original_clause_type": null
+      }
+    ]
+  }
+]
