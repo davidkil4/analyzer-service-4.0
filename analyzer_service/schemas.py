@@ -68,6 +68,24 @@ class ClauseAlignmentOutput(BaseModel):
     is_korean: Optional[bool] # Make Optional
     original_clause_type: Optional[Literal['word', 'phrase', 'collocation']] # Make Optional
 
+class ErrorDetail(BaseModel):
+    category: str = Field(description="The category of the identified error (e.g., 'Verb Tense/Aspect', 'Article').")
+    severity: str = Field(description="The severity of the error ('critical', 'moderate', 'minor').")
+    error: str = Field(description="A brief description of the specific error in the original clause.")
+    correction: str = Field(description="The specific correction applied in the corrected clause.")
+
+class ErrorList(BaseModel):
+    errors: List[ErrorDetail] = Field(description="A list of all errors identified between the original and corrected clauses.")
+
+class PatternDetail(BaseModel):
+    """Represents a single identified formulaic pattern within a clause."""
+    intention: str = Field(..., description="The communicative goal of the pattern (e.g., 'Expressing opinion', 'Requesting').")
+    category: str = Field(..., description="The type of formula (e.g., 'Polyword', 'Frame', 'Sentence_Stem', 'Pattern').")
+    component: str = Field(..., description="The formulaic sequence itself, potentially with placeholders (e.g., 'I think that', 'the ___ thing is').")
+    frequency_level: float = Field(..., description="Frequency rating (1-5) in natural spoken English, possibly adjusted relatively.")
+    usage_context: str = Field(..., description="Brief description of typical usage context.")
+    relative_note: Optional[str] = Field(None, description="Optional note comparing frequency to other patterns in the same clause.")
+
 class AlignedClause(Clause):
     """Represents a clause after alignment with original text and analysis."""
     # Inherits fields from Clause:
@@ -84,6 +102,9 @@ class AlignedClause(Clause):
     original_clause_type: Optional[Literal['word', 'phrase', 'collocation']] = Field(
         None, description="Classification of the aligned_original_clause_segment ('word', 'phrase', or 'collocation')."
     )
+    corrected_clause_text: Optional[str] = Field(None, description="Corrected version of the clause text.")
+    errors_found: List[ErrorDetail] = Field([], description="List of errors found in the clause.")
+    pattern_analysis: Optional[List[PatternDetail]] = None # Populated by pattern analysis
 
 class PreprocessedASUnit(BaseModel): 
     """Final structure for a single AS unit after all pre-processing.
@@ -131,12 +152,6 @@ class Severity(str, Enum):
     MODERATE = "moderate"
     MINOR = "minor"
 
-class ErrorDetail(BaseModel):
-    category: str
-    severity: Severity
-    error: str
-    correction: str
-
 class ClauseAnalysis(BaseModel):
     clause_text: str
     corrected_clause_text: Optional[str] = None
@@ -145,12 +160,25 @@ class ClauseAnalysis(BaseModel):
 
 class MainAnalysisOutput(BaseModel):
     as_unit_id: str
-    original_text: str
+    original_text: str # This should be the as_unit_text from PreprocessedASUnit
     corrected_text: Optional[str] = None
     complexity_score: float
     accuracy_score: float
     clauses: List[ClauseAnalysis]
     as_unit_pattern_analysis: Optional[Dict[str, Any]] = None # Structure TBD
+
+# ====================================
+# Intermediate Analysis Chain Schemas
+# ====================================
+
+# Removing the CorrectionOutput schema as correction happens per clause
+# class CorrectionOutput(BaseModel):
+#     """Intermediate output from the correction chain."""
+#     as_unit_id: str
+#     original_as_unit_text: str # Pass through the original text for downstream use
+#     corrected_text: Optional[str] = None # Allow None if correction fails or is identical
+#     # Include context used for correction for potential debugging/logging? Optional.
+#     # context_used: Optional[List[ContextUtterance]] = None
 
 # ================================
 # Schemas for Adding Context
@@ -163,6 +191,8 @@ class ContextUtterance(BaseModel):
 class AnalysisInputItem(PreprocessedASUnit):
     """Input schema for the main analysis chain, including prior utterance context."""
     context: Optional[List[ContextUtterance]] = None
+    complexity_score: Optional[float] = Field(None, description="Calculated syntactic complexity score (structure score based on density and MLC).")
+    accuracy_score: Optional[float] = Field(None, description="Calculated accuracy score based on severity and count of errors.")
 
 # =============================
 # Placeholder for Analysis Results (If needed later)

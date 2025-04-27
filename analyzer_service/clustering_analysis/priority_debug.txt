@@ -1,0 +1,378 @@
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 1
+Patterns count: 2
+Metrics: {'C': 0.35, 'A': 0.79, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.2
+Error boost: 0.2
+Formulaic score: 0.9
+Accuracy factor: 0.5249999999999999
+Base value: 0.1
+Priority score: 0.542
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 1
+Patterns count: 0
+Metrics: {'C': 0.35, 'A': 0.89, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.5
+Error boost: 0.5
+Formulaic score: 0.0
+Accuracy factor: 0.2749999999999999
+Base value: 0.1
+Priority score: 0.427
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 3
+Patterns count: 1
+Metrics: {'C': 0.35, 'A': 0.49, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.9
+Error boost: 0.36666666666666664
+Formulaic score: 0.9
+Accuracy factor: 0.7250000000000001
+Base value: 0.1
+Priority score: 0.662
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 1
+Patterns count: 0
+Metrics: {'C': 0.38, 'A': 0.89, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.4
+Error boost: 0.4
+Formulaic score: 0.0
+Accuracy factor: 0.2749999999999999
+Base value: 0.1
+Priority score: 0.367
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 1
+Patterns count: 0
+Metrics: {'C': 0.38, 'A': 0.89, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.2
+Error boost: 0.2
+Formulaic score: 0.0
+Accuracy factor: 0.2749999999999999
+Base value: 0.1
+Priority score: 0.247
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 1
+Patterns count: 0
+Metrics: {'C': 0.38, 'A': 0.79, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.2
+Error boost: 0.2
+Formulaic score: 0.0
+Accuracy factor: 0.5249999999999999
+Base value: 0.1
+Priority score: 0.272
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 2
+Patterns count: 1
+Metrics: {'C': 0.38, 'A': 0.62, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.4
+Error boost: 0.26666666666666666
+Formulaic score: 0.8
+Accuracy factor: 0.95
+Base value: 0.1
+Priority score: 0.595
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 4
+Patterns count: 0
+Metrics: {'C': 0.38, 'A': 0.24, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 1.0
+Error boost: 0.16666666666666657
+Formulaic score: 0.0
+Accuracy factor: 0.10000000000000009
+Base value: 0.1
+Priority score: 0.21
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 2
+Patterns count: 0
+Metrics: {'C': 0.38, 'A': 0.55, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 1.0
+Error boost: 0.7333333333333333
+Formulaic score: 0.0
+Accuracy factor: 0.8750000000000002
+Base value: 0.1
+Priority score: 0.627
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD-1
+Errors count: 2
+Patterns count: 1
+Metrics: {'C': 0.38, 'A': 0.55, 'F': 0.0}
+Error ratios: {'korean vocabulary': 0.47, 'article/preposition/determiner/quantifier': 0.33, '': 0.27, 'punctuation': 0.27}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD-1
+Error weight: 0.8
+Error boost: 0.6666666666666666
+Formulaic score: 0.9
+Accuracy factor: 0.8750000000000002
+Base value: 0.1
+Priority score: 0.857
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 5
+Patterns count: 1
+Metrics: {'C': 0.43, 'A': 0.3, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.19999999999999984
+Formulaic score: 0.8
+Accuracy factor: 0.25
+Base value: 0.1
+Priority score: 0.485
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 2
+Patterns count: 2
+Metrics: {'C': 0.46, 'A': 0.49, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 0.8
+Error boost: 0.6666666666666666
+Formulaic score: 0.9
+Accuracy factor: 0.7250000000000001
+Base value: 0.1
+Priority score: 0.842
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 3
+Patterns count: 2
+Metrics: {'C': 0.46, 'A': 0.43, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.4666666666666666
+Formulaic score: 0.9
+Accuracy factor: 0.5750000000000001
+Base value: 0.1
+Priority score: 0.708
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 5
+Patterns count: 2
+Metrics: {'C': 0.46, 'A': 0.3, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.0
+Formulaic score: 1.0
+Accuracy factor: 0.25
+Base value: 0.1
+Priority score: 0.425
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 2
+Patterns count: 1
+Metrics: {'C': 0.46, 'A': 0.55, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 0.8
+Error boost: 0.6666666666666666
+Formulaic score: 0.9
+Accuracy factor: 0.8750000000000002
+Base value: 0.1
+Priority score: 0.857
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 2
+Patterns count: 0
+Metrics: {'C': 0.46, 'A': 0.55, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.7999999999999999
+Formulaic score: 0.0
+Accuracy factor: 0.8750000000000002
+Base value: 0.1
+Priority score: 0.667
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 4
+Patterns count: 0
+Metrics: {'C': 0.48, 'A': 0.19, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.0
+Formulaic score: 0.0
+Accuracy factor: 0.1
+Base value: 0.1
+Priority score: 0.11
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 3
+Patterns count: 2
+Metrics: {'C': 0.48, 'A': 0.43, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.5999999999999999
+Formulaic score: 0.9
+Accuracy factor: 0.5750000000000001
+Base value: 0.1
+Priority score: 0.787
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 3
+Patterns count: 0
+Metrics: {'C': 0.48, 'A': 0.43, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.5999999999999999
+Formulaic score: 0.0
+Accuracy factor: 0.5750000000000001
+Base value: 0.1
+Priority score: 0.517
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD
+Errors count: 4
+Patterns count: 2
+Metrics: {'C': 0.48, 'A': 0.34, 'F': 0.0}
+Error ratios: {'korean vocabulary': 1.0, 'article/preposition/determiner/quantifier': 0.55, 'word order': 0.45, '': 0.36}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD
+Error weight: 1.0
+Error boost: 0.0
+Formulaic score: 0.9
+Accuracy factor: 0.3500000000000001
+Base value: 0.1
+Priority score: 0.405
+
+
+==== CALCULATE PRIORITY INPUTS ====
+Zone: ZPD+1
+Errors count: 1
+Patterns count: 0
+Metrics: {'C': 0.64, 'A': 0.79, 'F': 0.0}
+Error ratios: {'article/preposition/determiner/quantifier': 1.0}
+
+
+==== PRIORITY CALCULATION ====
+Zone: ZPD+1
+Error weight: 0.6
+Error boost: 0.6
+Formulaic score: 0.0
+Accuracy factor: 0.5249999999999999
+Base value: 0.1
+Priority score: 0.512

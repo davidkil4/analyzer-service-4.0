@@ -3,6 +3,11 @@ import os
 import logging
 from dotenv import load_dotenv
 from pathlib import Path
+from analyzer_service.analysis_chains import (
+    get_pattern_analysis_chain,
+    process_pattern_analysis_for_unit,
+    calculate_scores_for_unit # Added calculate_scores_for_unit
+)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -50,6 +55,7 @@ def process_in_batches(input_filepath: str, output_dir: str):
     # TODO: Initialize chains (outside the loop for efficiency if they are stateless)
     # preprocessing_chain = get_preprocessing_chain()
     # main_analysis_chain = get_main_analysis_chain()
+    pattern_chain = get_pattern_analysis_chain()
 
     all_results = []
     num_batches = (len(utterances) + BATCH_SIZE - 1) // BATCH_SIZE
@@ -96,7 +102,27 @@ def process_in_batches(input_filepath: str, output_dir: str):
         else:
              logger.warning(f"Skipping main analysis for Batch {batch_number} due to empty pre-processing results.")
 
-        all_results.extend(batch_final_results)
+        # --- Pattern Analysis Step ---
+        logger.info(f"Starting pattern analysis for Batch {batch_number}...")
+        batch_pattern_results = []
+        for item in batch_final_results:
+            try:
+                pattern_result = process_pattern_analysis_for_unit(item, pattern_chain)
+                batch_pattern_results.append(pattern_result)
+            except Exception as e:
+                logger.error(f"Error during pattern analysis for item {item.get('id', 'N/A')} in Batch {batch_number}: {e}")
+                # Decide how to handle: append item or skip
+                batch_pattern_results.append(item)
+
+        # --- Calculate Final Scores (Synchronous) ---
+        logger.info(f"Calculating Complexity and Accuracy scores for batch {batch_number}...")
+        scored_batch = []
+        for item in batch_pattern_results:
+            scored_item = calculate_scores_for_unit(item)
+            scored_batch.append(scored_item)
+            logger.debug(f"  Final scores for {item.get('id', 'N/A')}: Complexity={scored_item.get('complexity_score', 'N/A')}, Accuracy={scored_item.get('accuracy_score', 'N/A')}")
+
+        all_results.extend(scored_batch)
         logger.info(f"--- Finished Processing Batch {batch_number}/{num_batches} ---")
 
     # --- Save Final Results --- TODO: Define final output format

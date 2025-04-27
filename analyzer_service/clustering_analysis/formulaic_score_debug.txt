@@ -1,0 +1,55 @@
+
+
+Frequencies: [4.5, 3.5]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.5]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.0]
+Max frequency: 4.0
+Normalized score: 0.8
+
+
+Frequencies: [4.5]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.0]
+Max frequency: 4.0
+Normalized score: 0.8
+
+
+Frequencies: [4.5, 3.0]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.5, 4.0]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [5.0, 4.5]
+Max frequency: 5.0
+Normalized score: 1.0
+
+
+Frequencies: [4.5]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.5, 4.0]
+Max frequency: 4.5
+Normalized score: 0.9
+
+
+Frequencies: [4.5, 4.0]
+Max frequency: 4.5
+Normalized score: 0.9

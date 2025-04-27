@@ -1,0 +1,101 @@
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Providing a concise answer', 'category': 'Sentence_Stem', 'component': 'I have one', 'frequency': 4.5, 'context': 'Used as a short, simple response to a question about possession or quantity.', 'note': 'More frequent than the elaborated versions in this context.'}
+Pattern 1: {'intention': 'Specifying family member', 'category': 'Frame', 'component': 'I have one ___', 'frequency': 3.5, 'context': 'Used to specify a single instance of something, often in response to a question.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 1
+Pattern 0: {'intention': 'Providing information/contradiction', 'category': 'Sentence_Stem', 'component': "It's not a", 'frequency': 4.5, 'context': 'Common way to start a negative statement, often used to correct or contradict information.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 1
+Pattern 0: {'intention': 'Inquiry about knowledge', 'category': 'Pattern', 'component': 'Are you familiar with X?', 'frequency': 4.0, 'context': 'Common way to ask if someone knows about something.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 1
+Pattern 0: {'intention': 'Providing a simple explanation or justification', 'category': 'Sentence_Stem', 'component': "It's just ___", 'frequency': 4.5, 'context': 'Used to downplay the significance of something.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 1
+Pattern 0: {'intention': 'Expressing duration', 'category': 'Sentence_Stem', 'component': 'It takes ___', 'frequency': 4.0, 'context': 'Common way to indicate the time needed for something.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my son', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': 'More frequent than the rest in this clause'}
+Pattern 1: {'intention': 'Expressing desire', 'category': 'Pattern', 'component': 'wants a figure of', 'frequency': 3.0, 'context': 'Used to express a desire for a specific item.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Expressing future action', 'category': 'Sentence_Stem', 'component': "I'll give them", 'frequency': 4.5, 'context': 'Common way to express a future action involving giving something to someone.', 'note': None}
+Pattern 1: {'intention': 'Specifying a time', 'category': 'Polyword', 'component': 'Christmas Eve', 'frequency': 4.0, 'context': 'Specific time of year, commonly used in English-speaking cultures.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Expressing surprise or realization', 'category': 'Polyword', 'component': 'Oh,', 'frequency': 5.0, 'context': 'Used as an interjection to express a range of emotions, often surprise.', 'note': None}
+Pattern 1: {'intention': 'Requesting information', 'category': 'Pattern', 'component': 'do you know any X?', 'frequency': 4.5, 'context': 'Common way to ask if someone is familiar with something.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 1
+Pattern 0: {'intention': 'Introducing a narrative', 'category': 'Sentence_Stem', 'component': 'So last week,', 'frequency': 4.5, 'context': 'Common way to start a story or anecdote.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Temporal reference', 'category': 'Pattern', 'component': 'X ago', 'frequency': 4.5, 'context': 'Common way to refer to a past time period.', 'note': "More frequent than 'went to buy' in this context."}
+Pattern 1: {'intention': 'Describing an action', 'category': 'Pattern', 'component': 'went to buy', 'frequency': 4.0, 'context': 'Common way to describe a past action with a purpose.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0
+
+
+==== PATTERNS INPUT ====
+Patterns count: 2
+Pattern 0: {'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my daughter', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."}
+Pattern 1: {'intention': 'Specifying a desired item', 'category': 'Pattern', 'component': 'wants a X Y', 'frequency': 4.0, 'context': 'Common pattern for expressing desires, where X is the subject and Y is the object.', 'note': None}
+
+
+==== PATTERNS INPUT ====
+Patterns count: 0

@@ -1,0 +1,1373 @@
+{
+    "global_statistics": {
+        "total_utterances": 29,
+        "feature_averages": {
+            "complexity": {
+                "mean": 0.43,
+                "std": 0.07
+            },
+            "accuracy": {
+                "mean": 0.55,
+                "std": 0.21
+            },
+            "error_distribution": {
+                "critical": {
+                    "mean": 0.76,
+                    "std": 0.0
+                },
+                "moderate": {
+                    "mean": 0.93,
+                    "std": 0.0
+                },
+                "minor": {
+                    "mean": 0.69,
+                    "std": 0.0
+                }
+            }
+        },
+        "error_distribution": {
+            "critical": {
+                "mean": 0.76,
+                "std": 0.0
+            },
+            "moderate": {
+                "mean": 0.93,
+                "std": 0.0
+            },
+            "minor": {
+                "mean": 0.69,
+                "std": 0.0
+            }
+        }
+    },
+    "tendency_zone": {
+        "size": 8,
+        "distance_from_global_mean": 0.54
+    },
+    "regions": {
+        "ZPD/2": {
+            "statistics": {
+                "utterance_count": 0,
+                "complexity_bounds": [
+                    0.22999999999999998,
+                    0.31999999999999995
+                ],
+                "averages": {}
+            },
+            "utterances": []
+        },
+        "ZPD-1": {
+            "statistics": {
+                "utterance_count": 15,
+                "complexity_bounds": [
+                    0.31999999999999995,
+                    0.41
+                ],
+                "averages": {
+                    "complexity": 0.384,
+                    "accuracy": 0.6406666666666667,
+                    "error_rates": {
+                        "critical": 0.0,
+                        "moderate": 0.0,
+                        "minor": 0.0
+                    }
+                }
+            },
+            "proficiency_tier": "Moderate Moderately Accurate (Korean Vocabulary (0.47), Article/Preposition/Determiner/Quantifier (0.33), Word Choice (Lexical) (0.27), Punctuation (0.27))",
+            "utterances": [
+                {
+                    "original": "Er... I have... \uc544\ub0b4\ub791 \uc544\ub4e4 \ud558\ub098 \ub538 \ud558\ub098 \uc788\uc5b4\uc694.",
+                    "corrected": "one I have.",
+                    "metrics": {
+                        "C": 0.35,
+                        "A": 0.79,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "one I have",
+                            "corrected_segment": "one I have",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "moderate",
+                                    "error": "Incorrect word order",
+                                    "correction": "I have one"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Providing a concise answer",
+                                    "category": "Sentence_Stem",
+                                    "component": "I have one",
+                                    "frequency": 4.5,
+                                    "context": "Used as a short, simple response to a question about possession or quantity.",
+                                    "note": "More frequent than the elaborated versions in this context."
+                                },
+                                {
+                                    "intention": "Specifying family member",
+                                    "category": "Frame",
+                                    "component": "I have one ___",
+                                    "frequency": 3.5,
+                                    "context": "Used to specify a single instance of something, often in response to a question.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Uh... POS\ub294... \uadf8\ub7ec\ub2c8\uae4c... cash register\uc608\uc694.",
+                    "corrected": "So, it's cash register.",
+                    "metrics": {
+                        "C": 0.35,
+                        "A": 0.89,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "it's cash register",
+                            "corrected_segment": "it's cash register",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "minor",
+                                    "error": "Missing indefinite article before 'cash register'",
+                                    "correction": "a"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "No... \uc800\ud76c \uc9d1\uc740 \uc544\ud30c\ud2b8\uc608\uc694... not independent house.",
+                    "corrected": "not independent house.",
+                    "metrics": {
+                        "C": 0.35,
+                        "A": 0.49,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.86,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "not independent house",
+                            "corrected_segment": "not independent house",
+                            "errors": [
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "moderate",
+                                    "error": "Incomplete sentence; missing subject and verb",
+                                    "correction": "It's not a detached house"
+                                },
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Use of 'independent house' which is not standard English",
+                                    "correction": "detached house"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article",
+                                    "correction": "a detached house"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Providing information/contradiction",
+                                    "category": "Sentence_Stem",
+                                    "component": "It's not a",
+                                    "frequency": 4.5,
+                                    "context": "Common way to start a negative statement, often used to correct or contradict information.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Ur. My name is XXX02.",
+                    "corrected": "My name is XXX02.",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.89,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "My name is XXX02",
+                            "corrected_segment": "My name is XXX02",
+                            "errors": [
+                                {
+                                    "category": "Punctuation",
+                                    "severity": "minor",
+                                    "error": "Missing period at the end of the sentence",
+                                    "correction": "."
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Yeah... \uadf8\ub7ec\ub2c8\uae4c... TV animation character.",
+                    "corrected": "so, TV animation character.",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.89,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "so, TV animation character",
+                            "corrected_segment": "so, TV animation character",
+                            "errors": [
+                                {
+                                    "category": "Noun Number",
+                                    "severity": "minor",
+                                    "error": "Incorrect singular noun 'character'",
+                                    "correction": "characters"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Hm... This picture... \uc5b4... \ub3d9\ub124 \ud48d\uacbd\uc774\uc5d0\uc694.",
+                    "corrected": "This picture \ub3d9\ub124 \ud48d\uacbd\uc774\uc5d0\uc694.",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.79,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "This picture \ub3d9\ub124 \ud48d\uacbd\uc774\uc5d0\uc694",
+                            "corrected_segment": "This picture \ub3d9\ub124 \ud48d\uacbd\uc774\uc5d0\uc694",
+                            "errors": [
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Use of Korean phrase '\ub3d9\ub124 \ud48d\uacbd\uc774\uc5d0\uc694' instead of English equivalent",
+                                    "correction": "depicts a neighborhood scene"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Yeah. Do you know POS?",
+                    "corrected": "Do you know POS?",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.62,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.57,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Do you know POS?",
+                            "corrected_segment": "Do you know POS?",
+                            "errors": [
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Informal and unclear abbreviation 'POS'",
+                                    "correction": "POS systems"
+                                },
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "moderate",
+                                    "error": "Grammatically correct but less natural phrasing",
+                                    "correction": "Are you familiar with"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Inquiry about knowledge",
+                                    "category": "Pattern",
+                                    "component": "Are you familiar with X?",
+                                    "frequency": 4.0,
+                                    "context": "Common way to ask if someone knows about something.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "No... \uc800\ud76c \uc9d1\uc740 \uc544\ud30c\ud2b8\uc608\uc694... not independent house.",
+                    "corrected": "Our house is apartment...",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.24,
+                        "E": {
+                            "critical": 1.14,
+                            "moderate": 0.57,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Our house is apartment...",
+                            "corrected_segment": "Our house is apartment...",
+                            "errors": [
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "critical",
+                                    "error": "Incomplete and grammatically incorrect sentence structure",
+                                    "correction": "We live in an apartment."
+                                },
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Incorrect use of 'house' in the context of apartment living",
+                                    "correction": "We live in an apartment"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article and preposition",
+                                    "correction": "in an apartment"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Oh. I... \uc5b4... XXX03\uc5d0 \uc0b4\uc544\uc694.",
+                    "corrected": "I... I live in XXX03.",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "I live in XXX03",
+                            "corrected_segment": "I live in XXX03",
+                            "errors": [
+                                {
+                                    "category": "Punctuation",
+                                    "severity": "minor",
+                                    "error": "Missing hyphen between XXX and 03",
+                                    "correction": "XXX-03"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Uhm... \uc74c... \uadf8\ub0e5 \uc81c \uc77c\uc774\uc5d0\uc694.",
+                    "corrected": "Just it's my job.",
+                    "metrics": {
+                        "C": 0.38,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Just it's my job",
+                            "corrected_segment": "Just it's my job",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "minor",
+                                    "error": "Incorrect word order",
+                                    "correction": "It's just my job"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Providing a simple explanation or justification",
+                                    "category": "Sentence_Stem",
+                                    "component": "It's just ___",
+                                    "frequency": 4.5,
+                                    "context": "Used to downplay the significance of something.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Oh... children are playing ball... \uadf8\ub9ac\uace0 \ud55c \ub0a8\uc790\uac00 \uae38\uc5d0\uc11c \ub6f0\uace0 \uc788\uc5b4\uc694. \uc5ec\uc790\ub4e4\uc740 \uae38\uc5d0\uc11c \uc598\uae30\ud558\uace0 \uc788\uace0... \uc74c... there are three dogs and cat.",
+                    "corrected": "Oh children are playing ball",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 0.7,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.29,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Oh children are playing ball",
+                            "corrected_segment": "Oh children are playing ball",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article and quantifier",
+                                    "correction": "some"
+                                },
+                                {
+                                    "category": "Punctuation",
+                                    "severity": "minor",
+                                    "error": "Missing comma after interjection",
+                                    "correction": "Oh,"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Er... I have... \uc544\ub0b4\ub791 \uc544\ub4e4 \ud558\ub098 \ub538 \ud558\ub098 \uc788\uc5b4\uc694.",
+                    "corrected": "I have wife and son.",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 0.49,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "I have wife and son",
+                            "corrected_segment": "I have wife and son",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite articles before 'wife' and 'son'",
+                                    "correction": "a wife and a son"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Yeah. Hm. He is \ub2e4\uc12f \uc0b4\uc774\uc5d0\uc694.",
+                    "corrected": "He is five years old.",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "He is five years old",
+                            "corrected_segment": "He is five years old",
+                            "errors": [
+                                {
+                                    "category": "Punctuation",
+                                    "severity": "minor",
+                                    "error": "Missing period at the end of the sentence",
+                                    "correction": "."
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Describing age",
+                                    "category": "Pattern",
+                                    "component": "X years old",
+                                    "frequency": 5.0,
+                                    "context": "Standard way to state someone's age.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Mm. She is \ub450 \uc0b4\uc774\uc5d0\uc694.",
+                    "corrected": "She is two years old.",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 0.62,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "She is two years old",
+                            "corrected_segment": "She is two years old",
+                            "errors": [
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Describing age",
+                                    "category": "Pattern",
+                                    "component": "X years old",
+                                    "frequency": 5.0,
+                                    "context": "Standard way to state someone's age.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "And... \ub9c8\ub2f9\ub3c4 \uc5c6\uc5b4\uc694.",
+                    "corrected": "there is no yard, either.",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "there is no yard, either",
+                            "corrected_segment": "there is no yard, either",
+                            "errors": [
+                                {
+                                    "category": "Formality/Register",
+                                    "severity": "minor",
+                                    "error": "Using full form 'there is' instead of contraction",
+                                    "correction": "There's"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Adding information to a negative statement",
+                                    "category": "Polyword",
+                                    "component": "either",
+                                    "frequency": 4.5,
+                                    "context": "Used at the end of a negative sentence to emphasize the negativity or add another negative element.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                }
+            ]
+        },
+        "ZPD": {
+            "statistics": {
+                "utterance_count": 11,
+                "complexity_bounds": [
+                    0.41,
+                    0.5
+                ],
+                "averages": {
+                    "complexity": 0.4663636363636364,
+                    "accuracy": 0.3954545454545455,
+                    "error_rates": {
+                        "critical": 0.0,
+                        "moderate": 0.0,
+                        "minor": 0.0
+                    }
+                }
+            },
+            "proficiency_tier": "Complex Inaccurate (Korean Vocabulary (1.00), Article/Preposition/Determiner/Quantifier (0.55), Word Order (0.45), Word Choice (Lexical) (0.36))",
+            "utterances": [
+                {
+                    "original": "Erm... maybe... \uc0bc\uc0ac\ub144 \uac78\ub824\uc694.",
+                    "corrected": "maybe three four year it takes.",
+                    "metrics": {
+                        "C": 0.43,
+                        "A": 0.3,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.57,
+                            "minor": 0.29
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "maybe three four year it takes",
+                            "corrected_segment": "maybe three four year it takes",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "moderate",
+                                    "error": "Incorrect word order, making the sentence unclear",
+                                    "correction": "It takes maybe three or four years"
+                                },
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "moderate",
+                                    "error": "Missing subject and verb structure",
+                                    "correction": "It takes maybe three or four years"
+                                },
+                                {
+                                    "category": "Conjunction Usage",
+                                    "severity": "minor",
+                                    "error": "Incorrect use of 'four' instead of 'or'",
+                                    "correction": "or"
+                                },
+                                {
+                                    "category": "Noun Number",
+                                    "severity": "minor",
+                                    "error": "Incorrect singular 'year'",
+                                    "correction": "years"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Expressing duration",
+                                    "category": "Sentence_Stem",
+                                    "component": "It takes ___",
+                                    "frequency": 4.0,
+                                    "context": "Common way to indicate the time needed for something.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "And \uc81c \uc544\ub4e4\uc774... um... \uadf8 \uce90\ub9ad\ud130 \ud53c\uaddc\uc5b4\ub97c \uc6d0\ud574\uc694.",
+                    "corrected": "And my son wants that character figure.",
+                    "metrics": {
+                        "C": 0.46,
+                        "A": 0.49,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "And my son wants that character figure.",
+                            "corrected_segment": "And my son wants that character figure.",
+                            "errors": [
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Unnatural phrasing of 'that character figure'",
+                                    "correction": "a figure of that character"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Adding information",
+                                    "category": "Sentence_Stem",
+                                    "component": "And my son",
+                                    "frequency": 4.5,
+                                    "context": "Common way to add information to a previous statement, especially in narratives.",
+                                    "note": "More frequent than the rest in this clause"
+                                },
+                                {
+                                    "intention": "Expressing desire",
+                                    "category": "Pattern",
+                                    "component": "wants a figure of",
+                                    "frequency": 3.0,
+                                    "context": "Used to express a desire for a specific item.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "No... \ud06c\ub9ac\uc2a4\ub9c8\uc2a4 \uc774\ube0c\uc5d0 \uc904 \uac70\uc608\uc694.",
+                    "corrected": "I will give it on Christmas Eve.",
+                    "metrics": {
+                        "C": 0.46,
+                        "A": 0.43,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.29,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "I will give it on Christmas Eve",
+                            "corrected_segment": "I will give it on Christmas Eve",
+                            "errors": [
+                                {
+                                    "category": "Pronoun Reference",
+                                    "severity": "moderate",
+                                    "error": "Unclear pronoun reference ('it')",
+                                    "correction": "them the presents"
+                                },
+                                {
+                                    "category": "Auxiliary/Modal Verbs",
+                                    "severity": "minor",
+                                    "error": "Full form of 'will' instead of contraction",
+                                    "correction": "I'll"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Expressing future action",
+                                    "category": "Sentence_Stem",
+                                    "component": "I'll give them",
+                                    "frequency": 4.5,
+                                    "context": "Common way to express a future action involving giving something to someone.",
+                                    "note": null
+                                },
+                                {
+                                    "intention": "Specifying a time",
+                                    "category": "Polyword",
+                                    "component": "Christmas Eve",
+                                    "frequency": 4.0,
+                                    "context": "Specific time of year, commonly used in English-speaking cultures.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Oh... \uc5b4... TV \uc560\ub2c8\uba54\uc774\uc158 \uce90\ub9ad\ud130 \uc54c\uc544\uc694?",
+                    "corrected": "Oh TV animation character do you know?",
+                    "metrics": {
+                        "C": 0.46,
+                        "A": 0.3,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.57,
+                            "minor": 0.29
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Oh TV animation character do you know?",
+                            "corrected_segment": "Oh TV animation character do you know?",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "moderate",
+                                    "error": "Incorrect word order",
+                                    "correction": "do you know any TV animation characters?"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article and quantifier",
+                                    "correction": "any"
+                                },
+                                {
+                                    "category": "Noun Number",
+                                    "severity": "minor",
+                                    "error": "Incorrect singular 'character'",
+                                    "correction": "characters"
+                                },
+                                {
+                                    "category": "Punctuation",
+                                    "severity": "minor",
+                                    "error": "Missing comma after 'Oh'",
+                                    "correction": "Oh,"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Expressing surprise or realization",
+                                    "category": "Polyword",
+                                    "component": "Oh,",
+                                    "frequency": 5.0,
+                                    "context": "Used as an interjection to express a range of emotions, often surprise.",
+                                    "note": null
+                                },
+                                {
+                                    "intention": "Requesting information",
+                                    "category": "Pattern",
+                                    "component": "do you know any X?",
+                                    "frequency": 4.5,
+                                    "context": "Common way to ask if someone is familiar with something.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "So... \uc9c0\ub09c\uc8fc\uc5d0 \uc120\ubb3c \uc0c0\uc5b4\uc694.",
+                    "corrected": "So last week, I bought a present.",
+                    "metrics": {
+                        "C": 0.46,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "So last week, I bought a present",
+                            "corrected_segment": "So last week, I bought a present",
+                            "errors": [
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "minor",
+                                    "error": "Using the word 'present' instead of a more natural synonym",
+                                    "correction": "gift"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Introducing a narrative",
+                                    "category": "Sentence_Stem",
+                                    "component": "So last week,",
+                                    "frequency": 4.5,
+                                    "context": "Common way to start a story or anecdote.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Oh... children are playing ball... \uadf8\ub9ac\uace0 \ud55c \ub0a8\uc790\uac00 \uae38\uc5d0\uc11c \ub6f0\uace0 \uc788\uc5b4\uc694. \uc5ec\uc790\ub4e4\uc740 \uae38\uc5d0\uc11c \uc598\uae30\ud558\uace0 \uc788\uace0... \uc74c... there are three dogs and cat.",
+                    "corrected": "The women are talking on the street",
+                    "metrics": {
+                        "C": 0.46,
+                        "A": 0.55,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.0,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "The women are talking on the street",
+                            "corrected_segment": "The women are talking on the street",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "minor",
+                                    "error": "Unnecessary definite article 'The'",
+                                    "correction": ""
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Yeah... \uc5b4... \uc81c \uc77c\uc740... um... POS \uc2dc\uc2a4\ud15c \uac1c\ubc1c \uad00\ub9ac\uc608\uc694.",
+                    "corrected": "The yesterday work is POS system development management.",
+                    "metrics": {
+                        "C": 0.48,
+                        "A": 0.19,
+                        "E": {
+                            "critical": 1.71,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "The yesterday work is POS system development management",
+                            "corrected_segment": "The yesterday work is POS system development management",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "critical",
+                                    "error": "Incorrect placement of 'yesterday'",
+                                    "correction": "Yesterday's work"
+                                },
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "critical",
+                                    "error": "Missing verb and unclear subject-verb relationship",
+                                    "correction": "involved developing and managing"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing article before 'POS system'",
+                                    "correction": "the POS system"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Urn. Last weekend... \uc5b4... Christmas present \uc0ac\ub7ec \uac14\uc5b4\uc694.",
+                    "corrected": "Last weekend Christmas present I went to buy.",
+                    "metrics": {
+                        "C": 0.48,
+                        "A": 0.43,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.29,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "Last weekend Christmas present I went to buy",
+                            "corrected_segment": "Last weekend Christmas present I went to buy",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "moderate",
+                                    "error": "Incorrect word order",
+                                    "correction": "Last weekend, I went to buy Christmas presents."
+                                },
+                                {
+                                    "category": "Noun Number",
+                                    "severity": "minor",
+                                    "error": "Incorrect singular 'present'",
+                                    "correction": "presents"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Temporal reference",
+                                    "category": "Pattern",
+                                    "component": "X ago",
+                                    "frequency": 4.5,
+                                    "context": "Common way to refer to a past time period.",
+                                    "note": "More frequent than 'went to buy' in this context."
+                                },
+                                {
+                                    "intention": "Describing an action",
+                                    "category": "Pattern",
+                                    "component": "went to buy",
+                                    "frequency": 4.0,
+                                    "context": "Common way to describe a past action with a purpose.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Oh... children are playing ball... \uadf8\ub9ac\uace0 \ud55c \ub0a8\uc790\uac00 \uae38\uc5d0\uc11c \ub6f0\uace0 \uc788\uc5b4\uc694. \uc5ec\uc790\ub4e4\uc740 \uae38\uc5d0\uc11c \uc598\uae30\ud558\uace0 \uc788\uace0... \uc74c... there are three dogs and cat.",
+                    "corrected": "and one man is running on the street.",
+                    "metrics": {
+                        "C": 0.48,
+                        "A": 0.43,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.29,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "and one man is running on the street",
+                            "corrected_segment": "and one man is running on the street",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article before 'man'",
+                                    "correction": "a man"
+                                },
+                                {
+                                    "category": "Preposition",
+                                    "severity": "minor",
+                                    "error": "Using 'on' instead of 'down' to describe direction",
+                                    "correction": "down"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "And my daughter... \uc5b4... \ud478\uc6b0 \uce90\ub9ad\ud130 \ub0c9\uc7a5\uace0 \uc7a5\ub09c\uac10 \uc6d0\ud574\uc694.",
+                    "corrected": "And my daughter \ud478\uc6b0 \uce90\ub9ad\ud130 \ub0c9\uc7a5\uace0 \uc7a5\ub09c\uac10 wants.",
+                    "metrics": {
+                        "C": 0.48,
+                        "A": 0.34,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.57,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "And my daughter \ud478\uc6b0 \uce90\ub9ad\ud130 \ub0c9\uc7a5\uace0 \uc7a5\ub09c\uac10 wants",
+                            "corrected_segment": "And my daughter \ud478\uc6b0 \uce90\ub9ad\ud130 \ub0c9\uc7a5\uace0 \uc7a5\ub09c\uac10 wants",
+                            "errors": [
+                                {
+                                    "category": "Word Order",
+                                    "severity": "moderate",
+                                    "error": "Incorrect word order of the noun phrase",
+                                    "correction": "a Pooh character refrigerator toy"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article before 'Pooh'",
+                                    "correction": "a"
+                                },
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "minor",
+                                    "error": "Using Korean words instead of English words",
+                                    "correction": "Pooh character refrigerator toy"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Adding information",
+                                    "category": "Sentence_Stem",
+                                    "component": "And my daughter",
+                                    "frequency": 4.5,
+                                    "context": "Common way to add information to a previous statement, especially in narratives.",
+                                    "note": "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."
+                                },
+                                {
+                                    "intention": "Specifying a desired item",
+                                    "category": "Pattern",
+                                    "component": "wants a X Y",
+                                    "frequency": 4.0,
+                                    "context": "Common pattern for expressing desires, where X is the subject and Y is the object.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                },
+                {
+                    "original": "Yeah... \uc81c\uac00 \ud558\ub294 \uc77c\uc740 XXX06 \uc804\uc790 \uacc4\uc0b0\ub300... electrical cash register\uc694.",
+                    "corrected": "what I do is XXX06 electronic cash register.",
+                    "metrics": {
+                        "C": 0.48,
+                        "A": 0.34,
+                        "E": {
+                            "critical": 0.57,
+                            "moderate": 0.57,
+                            "minor": 0.14
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "what I do is XXX06 electronic cash register",
+                            "corrected_segment": "what I do is XXX06 electronic cash register",
+                            "errors": [
+                                {
+                                    "category": "Sentence Structure",
+                                    "severity": "moderate",
+                                    "error": "Incorrect sentence structure; unclear subject and verb relationship",
+                                    "correction": "I work with the XXX06 electronic cash register."
+                                },
+                                {
+                                    "category": "Word Choice (Lexical)",
+                                    "severity": "moderate",
+                                    "error": "Unnatural phrasing using 'what I do is'",
+                                    "correction": "I work with"
+                                },
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "minor",
+                                    "error": "Missing definite article before 'XXX06 electronic cash register'",
+                                    "correction": "the XXX06 electronic cash register"
+                                },
+                                {
+                                    "category": "Korean Vocabulary",
+                                    "severity": "critical",
+                                    "error": "Original segment was Korean (phrase)",
+                                    "correction": "Replaced with English clause"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                }
+            ]
+        },
+        "ZPD+1": {
+            "statistics": {
+                "utterance_count": 1,
+                "complexity_bounds": [
+                    0.5,
+                    0.6799999999999999
+                ],
+                "averages": {
+                    "complexity": 0.64,
+                    "accuracy": 0.79,
+                    "error_rates": {
+                        "critical": 0.0,
+                        "moderate": 0.0,
+                        "minor": 0.0
+                    }
+                }
+            },
+            "proficiency_tier": "Complex Accurate (Article/Preposition/Determiner/Quantifier (1.00))",
+            "utterances": [
+                {
+                    "original": "Oh... children are playing ball... \uadf8\ub9ac\uace0 \ud55c \ub0a8\uc790\uac00 \uae38\uc5d0\uc11c \ub6f0\uace0 \uc788\uc5b4\uc694. \uc5ec\uc790\ub4e4\uc740 \uae38\uc5d0\uc11c \uc598\uae30\ud558\uace0 \uc788\uace0... \uc74c... there are three dogs and cat.",
+                    "corrected": "and there are three dogs and cat.",
+                    "metrics": {
+                        "C": 0.64,
+                        "A": 0.79,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.29,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "there are three dogs",
+                            "corrected_segment": "there are three dogs",
+                            "errors": [],
+                            "pattern_analysis": []
+                        },
+                        {
+                            "text": "and cat",
+                            "corrected_segment": "and cat",
+                            "errors": [
+                                {
+                                    "category": "Article/Preposition/Determiner/Quantifier",
+                                    "severity": "moderate",
+                                    "error": "Missing indefinite article before 'cat'",
+                                    "correction": "a cat"
+                                }
+                            ],
+                            "pattern_analysis": []
+                        }
+                    ],
+                    "pattern_analysis": []
+                }
+            ]
+        },
+        "Filtered": {
+            "statistics": {
+                "utterance_count": 1,
+                "complexity_bounds": [
+                    null,
+                    null
+                ],
+                "averages": {
+                    "complexity": 0.41,
+                    "accuracy": 1.0,
+                    "error_rates": {
+                        "critical": 0.0,
+                        "moderate": 0.0,
+                        "minor": 0.0
+                    }
+                }
+            },
+            "utterances": [
+                {
+                    "original": "\uc774 \uc0ac\uc9c4\uc740... very peaceful\ud574 \ubcf4\uc5ec\uc694.",
+                    "corrected": "This picture looks very peaceful.",
+                    "metrics": {
+                        "C": 0.41,
+                        "A": 1.0,
+                        "E": {
+                            "critical": 0.0,
+                            "moderate": 0.0,
+                            "minor": 0.0
+                        }
+                    },
+                    "clauses": [
+                        {
+                            "text": "This picture looks very peaceful",
+                            "corrected_segment": "This picture looks very peaceful",
+                            "errors": [],
+                            "pattern_analysis": [
+                                {
+                                    "intention": "Describing visual appearance",
+                                    "category": "Pattern",
+                                    "component": "X looks Y",
+                                    "frequency": 4.5,
+                                    "context": "Common pattern for describing the visual impression of something.",
+                                    "note": null
+                                },
+                                {
+                                    "intention": "Expressing a feeling or state",
+                                    "category": "Polyword",
+                                    "component": "very peaceful",
+                                    "frequency": 3.0,
+                                    "context": "Used to describe a calm and tranquil scene or atmosphere.",
+                                    "note": null
+                                }
+                            ]
+                        }
+                    ],
+                    "pattern_analysis": []
+                }
+            ]
+        }
+    }
+}

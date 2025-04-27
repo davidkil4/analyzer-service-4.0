@@ -1,0 +1,1997 @@
+{
+  "version": "1.0.0",
+  "global_stats": {
+    "total_utterances": 29,
+    "feature_averages": {
+      "complexity": {
+        "mean": 0.43,
+        "std": 0.07
+      },
+      "accuracy": {
+        "mean": 0.55,
+        "std": 0.21
+      },
+      "error_distribution": {
+        "critical": {
+          "mean": 0.76,
+          "std": 0.0
+        },
+        "moderate": {
+          "mean": 0.93,
+          "std": 0.0
+        },
+        "minor": {
+          "mean": 0.69,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "tendency_zone": {
+    "zone_id": "0",
+    "size": 8,
+    "distance_from_global_mean": 0.54,
+    "feature_averages": {
+      "complexity": {
+        "mean": 0.41,
+        "std": 0.09
+      },
+      "accuracy": {
+        "mean": 0.84,
+        "std": 0.09
+      },
+      "error_distribution": {
+        "critical": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "moderate": {
+          "mean": 0.14,
+          "std": 0.14
+        },
+        "minor": {
+          "mean": 0.07,
+          "std": 0.07
+        }
+      }
+    }
+  },
+  "clusters": [
+    {
+      "zone_id": "0",
+      "is_tendency_zone": true,
+      "proficiency_tier": "Complex Accurate (Article/Preposition/Determiner/Quantifier (0.38), Punctuation (0.25), Word Order (0.12), Noun Number (0.12))",
+      "size": 8,
+      "distance_from_global_mean": 0.54,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.41,
+          "std": 0.09
+        },
+        "accuracy": {
+          "mean": 0.84,
+          "std": 0.09
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "moderate": {
+            "mean": 0.14,
+            "std": 0.14
+          },
+          "minor": {
+            "mean": 0.07,
+            "std": 0.07
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Ur. My name is XXX02.",
+          "corrected": "My name is XXX02.",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.89,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "My name is XXX02",
+              "aligned_original_clause_segment": "My name is XXX02.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "My name is XXX02.",
+              "errors_found": [
+                {
+                  "category": "Punctuation",
+                  "severity": "minor",
+                  "error": "Missing period at the end of the sentence",
+                  "correction": "."
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+          "corrected": "one I have.",
+          "metrics": {
+            "C": 0.35,
+            "A": 0.79,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "one I have",
+              "aligned_original_clause_segment": "I have...",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "I have one.  (or) I have one sibling. (or)  I have one brother/sister.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "moderate",
+                  "error": "Incorrect word order",
+                  "correction": "I have one"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Providing a concise answer",
+                  "category": "Sentence_Stem",
+                  "component": "I have one",
+                  "frequency_level": 4.5,
+                  "usage_context": "Used as a short, simple response to a question about possession or quantity.",
+                  "relative_note": "More frequent than the elaborated versions in this context."
+                },
+                {
+                  "intention": "Specifying family member",
+                  "category": "Frame",
+                  "component": "I have one ___",
+                  "frequency_level": 3.5,
+                  "usage_context": "Used to specify a single instance of something, often in response to a question."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Providing a concise answer",
+              "category": "Sentence_Stem",
+              "component": "I have one",
+              "frequency_level": 4.5,
+              "usage_context": "Used as a short, simple response to a question about possession or quantity.",
+              "relative_note": "More frequent than the elaborated versions in this context."
+            },
+            {
+              "intention": "Specifying family member",
+              "category": "Frame",
+              "component": "I have one ___",
+              "frequency_level": 3.5,
+              "usage_context": "Used to specify a single instance of something, often in response to a question."
+            }
+          ]
+        },
+        {
+          "original": "Yeah... 그러니까... TV animation character.",
+          "corrected": "so, TV animation character.",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.89,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "so, TV animation character",
+              "aligned_original_clause_segment": "그러니까... TV animation character.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "So, TV animation characters.",
+              "errors_found": [
+                {
+                  "category": "Noun Number",
+                  "severity": "minor",
+                  "error": "Incorrect singular noun 'character'",
+                  "correction": "characters"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Uh... POS는... 그러니까... cash register예요.",
+          "corrected": "So, it's cash register.",
+          "metrics": {
+            "C": 0.35,
+            "A": 0.89,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "it's cash register",
+              "aligned_original_clause_segment": "cash register예요.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "It's a cash register.",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "minor",
+                  "error": "Missing indefinite article before 'cash register'",
+                  "correction": "a"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Hm... This picture... 어... 동네 풍경이에요.",
+          "corrected": "This picture 동네 풍경이에요.",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.79,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "This picture 동네 풍경이에요",
+              "aligned_original_clause_segment": "This picture... 어... 동네 풍경이에요.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "This picture depicts a neighborhood scene.",
+              "errors_found": [
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Use of Korean phrase '동네 풍경이에요' instead of English equivalent",
+                  "correction": "depicts a neighborhood scene"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+          "corrected": "Oh children are playing ball",
+          "metrics": {
+            "C": 0.41,
+            "A": 0.7,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.29,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.29,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "Oh children are playing ball",
+              "aligned_original_clause_segment": "Oh... children are playing ball...",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Oh, some children are playing ball.",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article and quantifier",
+                  "correction": "some"
+                },
+                {
+                  "category": "Punctuation",
+                  "severity": "minor",
+                  "error": "Missing comma after interjection",
+                  "correction": "Oh,"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+          "corrected": "and there are three dogs and cat.",
+          "metrics": {
+            "C": 0.64,
+            "A": 0.79,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "there are three dogs",
+              "aligned_original_clause_segment": "there are three dogs",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "There are three dogs.",
+              "errors_found": [],
+              "pattern_analysis": []
+            },
+            {
+              "clause_text": "and cat",
+              "aligned_original_clause_segment": "and cat.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "and a cat",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article before 'cat'",
+                  "correction": "a cat"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "이 사진은... very peaceful해 보여요.",
+          "corrected": "This picture looks very peaceful.",
+          "metrics": {
+            "C": 0.41,
+            "A": 1.0,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.0,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.0,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "This picture looks very peaceful",
+              "aligned_original_clause_segment": "이 사진은... very peaceful해 보여요.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "This picture looks very peaceful.",
+              "errors_found": [],
+              "pattern_analysis": [
+                {
+                  "intention": "Describing visual appearance",
+                  "category": "Pattern",
+                  "component": "X looks Y",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common pattern for describing the visual impression of something."
+                },
+                {
+                  "intention": "Expressing a feeling or state",
+                  "category": "Polyword",
+                  "component": "very peaceful",
+                  "frequency_level": 3.0,
+                  "usage_context": "Used to describe a calm and tranquil scene or atmosphere."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Describing visual appearance",
+              "category": "Pattern",
+              "component": "X looks Y",
+              "frequency_level": 4.5,
+              "usage_context": "Common pattern for describing the visual impression of something."
+            },
+            {
+              "intention": "Expressing a feeling or state",
+              "category": "Polyword",
+              "component": "very peaceful",
+              "frequency_level": 3.0,
+              "usage_context": "Used to describe a calm and tranquil scene or atmosphere."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zone_id": "1",
+      "is_tendency_zone": false,
+      "proficiency_tier": "Moderate Moderately Accurate (Word Choice (Lexical) (1.00), Sentence Structure (1.00), Article/Preposition/Determiner/Quantifier (0.50))",
+      "size": 2,
+      "distance_from_global_mean": 0.63,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.37,
+          "std": 0.01
+        },
+        "accuracy": {
+          "mean": 0.55,
+          "std": 0.07
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "moderate": {
+            "mean": 0.71,
+            "std": 0.14
+          },
+          "minor": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Yeah. Do you know POS?",
+          "corrected": "Do you know POS?",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.62,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.57,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.57,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "Do you know POS?",
+              "aligned_original_clause_segment": "Do you know POS?",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Are you familiar with POS systems?",
+              "errors_found": [
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Informal and unclear abbreviation 'POS'",
+                  "correction": "POS systems"
+                },
+                {
+                  "category": "Sentence Structure",
+                  "severity": "moderate",
+                  "error": "Grammatically correct but less natural phrasing",
+                  "correction": "Are you familiar with"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Inquiry about knowledge",
+                  "category": "Pattern",
+                  "component": "Are you familiar with X?",
+                  "frequency_level": 4.0,
+                  "usage_context": "Common way to ask if someone knows about something."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Inquiry about knowledge",
+              "category": "Pattern",
+              "component": "Are you familiar with X?",
+              "frequency_level": 4.0,
+              "usage_context": "Common way to ask if someone knows about something."
+            }
+          ]
+        },
+        {
+          "original": "No... 저희 집은 아파트예요... not independent house.",
+          "corrected": "not independent house.",
+          "metrics": {
+            "C": 0.35,
+            "A": 0.49,
+            "E": {
+              "critical": 0.0,
+              "moderate": 0.86,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.0,
+            "moderate": 0.86,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "not independent house",
+              "aligned_original_clause_segment": "not independent house.",
+              "is_korean": false,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "It's not a detached house.",
+              "errors_found": [
+                {
+                  "category": "Sentence Structure",
+                  "severity": "moderate",
+                  "error": "Incomplete sentence; missing subject and verb",
+                  "correction": "It's not a detached house"
+                },
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Use of 'independent house' which is not standard English",
+                  "correction": "detached house"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article",
+                  "correction": "a detached house"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Providing information/contradiction",
+                  "category": "Sentence_Stem",
+                  "component": "It's not a",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to start a negative statement, often used to correct or contradict information."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Providing information/contradiction",
+              "category": "Sentence_Stem",
+              "component": "It's not a",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to start a negative statement, often used to correct or contradict information."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zone_id": "2",
+      "is_tendency_zone": false,
+      "proficiency_tier": "Complex Inaccurate (Sentence Structure (1.00), Article/Preposition/Determiner/Quantifier (1.00), Korean Vocabulary (1.00), Word Order (0.50))",
+      "size": 2,
+      "distance_from_global_mean": 1.07,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.43,
+          "std": 0.05
+        },
+        "accuracy": {
+          "mean": 0.21,
+          "std": 0.03
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 1.43,
+            "std": 0.29
+          },
+          "moderate": {
+            "mean": 0.43,
+            "std": 0.14
+          },
+          "minor": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
+          "corrected": "The yesterday work is POS system development management.",
+          "metrics": {
+            "C": 0.48,
+            "A": 0.19,
+            "E": {
+              "critical": 1.71,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 1.71,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "The yesterday work is POS system development management",
+              "aligned_original_clause_segment": "제 일은... um... POS 시스템 개발 관리예요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Yesterday's work involved developing and managing the POS system.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "critical",
+                  "error": "Incorrect placement of 'yesterday'",
+                  "correction": "Yesterday's work"
+                },
+                {
+                  "category": "Sentence Structure",
+                  "severity": "critical",
+                  "error": "Missing verb and unclear subject-verb relationship",
+                  "correction": "involved developing and managing"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing article before 'POS system'",
+                  "correction": "the POS system"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "No... 저희 집은 아파트예요... not independent house.",
+          "corrected": "Our house is apartment...",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.24,
+            "E": {
+              "critical": 1.14,
+              "moderate": 0.57,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 1.14,
+            "moderate": 0.57,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "Our house is apartment...",
+              "aligned_original_clause_segment": "저희 집은 아파트예요...",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "We live in an apartment.",
+              "errors_found": [
+                {
+                  "category": "Sentence Structure",
+                  "severity": "critical",
+                  "error": "Incomplete and grammatically incorrect sentence structure",
+                  "correction": "We live in an apartment."
+                },
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Incorrect use of 'house' in the context of apartment living",
+                  "correction": "We live in an apartment"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article and preposition",
+                  "correction": "in an apartment"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        }
+      ]
+    },
+    {
+      "zone_id": "3",
+      "is_tendency_zone": false,
+      "proficiency_tier": "Complex Moderately Accurate (Korean Vocabulary (1.00), Article/Preposition/Determiner/Quantifier (0.40), Word Order (0.20), Noun Number (0.20))",
+      "size": 5,
+      "distance_from_global_mean": 0.17,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.46,
+          "std": 0.03
+        },
+        "accuracy": {
+          "mean": 0.45,
+          "std": 0.03
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 0.57,
+            "std": 0.0
+          },
+          "moderate": {
+            "mean": 0.29,
+            "std": 0.0
+          },
+          "minor": {
+            "mean": 0.09,
+            "std": 0.07
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
+          "corrected": "I have wife and son.",
+          "metrics": {
+            "C": 0.41,
+            "A": 0.49,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "I have wife and son",
+              "aligned_original_clause_segment": "아내랑 아들 하나",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "I have a wife and a son.",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite articles before 'wife' and 'son'",
+                  "correction": "a wife and a son"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Urn. Last weekend... 어... Christmas present 사러 갔어요.",
+          "corrected": "Last weekend Christmas present I went to buy.",
+          "metrics": {
+            "C": 0.48,
+            "A": 0.43,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.29,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.29,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "Last weekend Christmas present I went to buy",
+              "aligned_original_clause_segment": "Christmas present 사러 갔어요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Last weekend, I went to buy Christmas presents.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "moderate",
+                  "error": "Incorrect word order",
+                  "correction": "Last weekend, I went to buy Christmas presents."
+                },
+                {
+                  "category": "Noun Number",
+                  "severity": "minor",
+                  "error": "Incorrect singular 'present'",
+                  "correction": "presents"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Temporal reference",
+                  "category": "Pattern",
+                  "component": "X ago",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to refer to a past time period.",
+                  "relative_note": "More frequent than 'went to buy' in this context."
+                },
+                {
+                  "intention": "Describing an action",
+                  "category": "Pattern",
+                  "component": "went to buy",
+                  "frequency_level": 4.0,
+                  "usage_context": "Common way to describe a past action with a purpose."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Temporal reference",
+              "category": "Pattern",
+              "component": "X ago",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to refer to a past time period.",
+              "relative_note": "More frequent than 'went to buy' in this context."
+            },
+            {
+              "intention": "Describing an action",
+              "category": "Pattern",
+              "component": "went to buy",
+              "frequency_level": 4.0,
+              "usage_context": "Common way to describe a past action with a purpose."
+            }
+          ]
+        },
+        {
+          "original": "And 제 아들이... um... 그 캐릭터 피규어를 원해요.",
+          "corrected": "And my son wants that character figure.",
+          "metrics": {
+            "C": 0.46,
+            "A": 0.49,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.29,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.29,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "And my son wants that character figure.",
+              "aligned_original_clause_segment": "제 아들이... um... 그 캐릭터 피규어를 원해요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "And my son wants a figure of that character.",
+              "errors_found": [
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Unnatural phrasing of 'that character figure'",
+                  "correction": "a figure of that character"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Adding information",
+                  "category": "Sentence_Stem",
+                  "component": "And my son",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to add information to a previous statement, especially in narratives.",
+                  "relative_note": "More frequent than the rest in this clause"
+                },
+                {
+                  "intention": "Expressing desire",
+                  "category": "Pattern",
+                  "component": "wants a figure of",
+                  "frequency_level": 3.0,
+                  "usage_context": "Used to express a desire for a specific item."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Adding information",
+              "category": "Sentence_Stem",
+              "component": "And my son",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to add information to a previous statement, especially in narratives.",
+              "relative_note": "More frequent than the rest in this clause"
+            },
+            {
+              "intention": "Expressing desire",
+              "category": "Pattern",
+              "component": "wants a figure of",
+              "frequency_level": 3.0,
+              "usage_context": "Used to express a desire for a specific item."
+            }
+          ]
+        },
+        {
+          "original": "No... 크리스마스 이브에 줄 거예요.",
+          "corrected": "I will give it on Christmas Eve.",
+          "metrics": {
+            "C": 0.46,
+            "A": 0.43,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.29,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.29,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "I will give it on Christmas Eve",
+              "aligned_original_clause_segment": "크리스마스 이브에 줄 거예요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "I'll give them the presents on Christmas Eve.",
+              "errors_found": [
+                {
+                  "category": "Pronoun Reference",
+                  "severity": "moderate",
+                  "error": "Unclear pronoun reference ('it')",
+                  "correction": "them the presents"
+                },
+                {
+                  "category": "Auxiliary/Modal Verbs",
+                  "severity": "minor",
+                  "error": "Full form of 'will' instead of contraction",
+                  "correction": "I'll"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Expressing future action",
+                  "category": "Sentence_Stem",
+                  "component": "I'll give them",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to express a future action involving giving something to someone."
+                },
+                {
+                  "intention": "Specifying a time",
+                  "category": "Polyword",
+                  "component": "Christmas Eve",
+                  "frequency_level": 4.0,
+                  "usage_context": "Specific time of year, commonly used in English-speaking cultures."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Expressing future action",
+              "category": "Sentence_Stem",
+              "component": "I'll give them",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to express a future action involving giving something to someone."
+            },
+            {
+              "intention": "Specifying a time",
+              "category": "Polyword",
+              "component": "Christmas Eve",
+              "frequency_level": 4.0,
+              "usage_context": "Specific time of year, commonly used in English-speaking cultures."
+            }
+          ]
+        },
+        {
+          "original": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+          "corrected": "and one man is running on the street.",
+          "metrics": {
+            "C": 0.48,
+            "A": 0.43,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.29,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.29,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "and one man is running on the street",
+              "aligned_original_clause_segment": "그리고 한 남자가 길에서 뛰고 있어요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "And a man is running down the street.",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article before 'man'",
+                  "correction": "a man"
+                },
+                {
+                  "category": "Preposition",
+                  "severity": "minor",
+                  "error": "Using 'on' instead of 'down' to describe direction",
+                  "correction": "down"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        }
+      ]
+    },
+    {
+      "zone_id": "4",
+      "is_tendency_zone": false,
+      "proficiency_tier": "Complex Inaccurate (Korean Vocabulary (1.20), Word Order (0.60), Sentence Structure (0.60), Article/Preposition/Determiner/Quantifier (0.60))",
+      "size": 5,
+      "distance_from_global_mean": 0.42,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.51,
+          "std": 0.09
+        },
+        "accuracy": {
+          "mean": 0.32,
+          "std": 0.02
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 0.57,
+            "std": 0.0
+          },
+          "moderate": {
+            "mean": 0.57,
+            "std": 0.0
+          },
+          "minor": {
+            "mean": 0.2,
+            "std": 0.07
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Erm... maybe... 삼사년 걸려요.",
+          "corrected": "maybe three four year it takes.",
+          "metrics": {
+            "C": 0.43,
+            "A": 0.3,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.57,
+              "minor": 0.29
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.57,
+            "minor": 0.29
+          },
+          "clauses": [
+            {
+              "clause_text": "maybe three four year it takes",
+              "aligned_original_clause_segment": "삼사년 걸려요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "It takes maybe three or four years.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "moderate",
+                  "error": "Incorrect word order, making the sentence unclear",
+                  "correction": "It takes maybe three or four years"
+                },
+                {
+                  "category": "Sentence Structure",
+                  "severity": "moderate",
+                  "error": "Missing subject and verb structure",
+                  "correction": "It takes maybe three or four years"
+                },
+                {
+                  "category": "Conjunction Usage",
+                  "severity": "minor",
+                  "error": "Incorrect use of 'four' instead of 'or'",
+                  "correction": "or"
+                },
+                {
+                  "category": "Noun Number",
+                  "severity": "minor",
+                  "error": "Incorrect singular 'year'",
+                  "correction": "years"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Expressing duration",
+                  "category": "Sentence_Stem",
+                  "component": "It takes ___",
+                  "frequency_level": 4.0,
+                  "usage_context": "Common way to indicate the time needed for something."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Expressing duration",
+              "category": "Sentence_Stem",
+              "component": "It takes ___",
+              "frequency_level": 4.0,
+              "usage_context": "Common way to indicate the time needed for something."
+            }
+          ]
+        },
+        {
+          "original": "Oh... 어... TV 애니메이션 캐릭터 알아요?",
+          "corrected": "Oh TV animation character do you know?",
+          "metrics": {
+            "C": 0.46,
+            "A": 0.3,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.57,
+              "minor": 0.29
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.57,
+            "minor": 0.29
+          },
+          "clauses": [
+            {
+              "clause_text": "Oh TV animation character do you know?",
+              "aligned_original_clause_segment": "TV 애니메이션 캐릭터 알아요?",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Oh, do you know any TV animation characters?",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "moderate",
+                  "error": "Incorrect word order",
+                  "correction": "do you know any TV animation characters?"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article and quantifier",
+                  "correction": "any"
+                },
+                {
+                  "category": "Noun Number",
+                  "severity": "minor",
+                  "error": "Incorrect singular 'character'",
+                  "correction": "characters"
+                },
+                {
+                  "category": "Punctuation",
+                  "severity": "minor",
+                  "error": "Missing comma after 'Oh'",
+                  "correction": "Oh,"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Expressing surprise or realization",
+                  "category": "Polyword",
+                  "component": "Oh,",
+                  "frequency_level": 5.0,
+                  "usage_context": "Used as an interjection to express a range of emotions, often surprise."
+                },
+                {
+                  "intention": "Requesting information",
+                  "category": "Pattern",
+                  "component": "do you know any X?",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to ask if someone is familiar with something."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Expressing surprise or realization",
+              "category": "Polyword",
+              "component": "Oh,",
+              "frequency_level": 5.0,
+              "usage_context": "Used as an interjection to express a range of emotions, often surprise."
+            },
+            {
+              "intention": "Requesting information",
+              "category": "Pattern",
+              "component": "do you know any X?",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to ask if someone is familiar with something."
+            }
+          ]
+        },
+        {
+          "original": "And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.",
+          "corrected": "And my daughter 푸우 캐릭터 냉장고 장난감 wants.",
+          "metrics": {
+            "C": 0.48,
+            "A": 0.34,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.57,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.57,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "And my daughter 푸우 캐릭터 냉장고 장난감 wants",
+              "aligned_original_clause_segment": "푸우 캐릭터 냉장고 장난감 원해요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "And my daughter wants a Pooh character refrigerator toy.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "moderate",
+                  "error": "Incorrect word order of the noun phrase",
+                  "correction": "a Pooh character refrigerator toy"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "moderate",
+                  "error": "Missing indefinite article before 'Pooh'",
+                  "correction": "a"
+                },
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "minor",
+                  "error": "Using Korean words instead of English words",
+                  "correction": "Pooh character refrigerator toy"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Adding information",
+                  "category": "Sentence_Stem",
+                  "component": "And my daughter",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to add information to a previous statement, especially in narratives.",
+                  "relative_note": "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."
+                },
+                {
+                  "intention": "Specifying a desired item",
+                  "category": "Pattern",
+                  "component": "wants a X Y",
+                  "frequency_level": 4.0,
+                  "usage_context": "Common pattern for expressing desires, where X is the subject and Y is the object."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Adding information",
+              "category": "Sentence_Stem",
+              "component": "And my daughter",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to add information to a previous statement, especially in narratives.",
+              "relative_note": "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."
+            },
+            {
+              "intention": "Specifying a desired item",
+              "category": "Pattern",
+              "component": "wants a X Y",
+              "frequency_level": 4.0,
+              "usage_context": "Common pattern for expressing desires, where X is the subject and Y is the object."
+            }
+          ]
+        },
+        {
+          "original": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+          "corrected": "what I do is XXX06 electronic cash register.",
+          "metrics": {
+            "C": 0.48,
+            "A": 0.34,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.57,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.57,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "what I do is XXX06 electronic cash register",
+              "aligned_original_clause_segment": "제가 하는 일은 XXX06 전자 계산대...",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "I work with the XXX06 electronic cash register.",
+              "errors_found": [
+                {
+                  "category": "Sentence Structure",
+                  "severity": "moderate",
+                  "error": "Incorrect sentence structure; unclear subject and verb relationship",
+                  "correction": "I work with the XXX06 electronic cash register."
+                },
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Unnatural phrasing using 'what I do is'",
+                  "correction": "I work with"
+                },
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "minor",
+                  "error": "Missing definite article before 'XXX06 electronic cash register'",
+                  "correction": "the XXX06 electronic cash register"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "And I think... 좀 부자 동네 같아요.",
+          "corrected": "And I think it looks like a little rich neighborhood.",
+          "metrics": {
+            "C": 0.69,
+            "A": 0.34,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.57,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.57,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "And I think",
+              "aligned_original_clause_segment": "좀",
+              "is_korean": true,
+              "original_clause_type": "word",
+              "corrected_clause_text": "And I think it looks very peaceful.",
+              "errors_found": [
+                {
+                  "category": "Sentence Structure",
+                  "severity": "moderate",
+                  "error": "Incomplete sentence; lacks a predicate",
+                  "correction": "it looks very peaceful"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "minor",
+                  "error": "Original segment was Korean (word)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Adding information",
+                  "category": "Sentence_Stem",
+                  "component": "And I think",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to add a thought or observation to a previous statement.",
+                  "relative_note": "More frequent than 'looks very peaceful' in this context."
+                },
+                {
+                  "intention": "Describing appearance",
+                  "category": "Pattern",
+                  "component": "looks very ADJ",
+                  "frequency_level": 4.0,
+                  "usage_context": "Common pattern for describing the visual appearance of something."
+                }
+              ]
+            },
+            {
+              "clause_text": "it looks like a little rich neighborhood",
+              "aligned_original_clause_segment": "좀 부자 동네 같아요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "It looks like a rather affluent neighborhood.",
+              "errors_found": [
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "moderate",
+                  "error": "Informal and vague 'little rich'",
+                  "correction": "rather affluent"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Describing appearance",
+                  "category": "Pattern",
+                  "component": "It looks like X",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to describe visual impressions."
+                },
+                {
+                  "intention": "Describing socioeconomic status",
+                  "category": "Polyword",
+                  "component": "affluent neighborhood",
+                  "frequency_level": 3.0,
+                  "usage_context": "Used to describe a wealthy residential area."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Adding information",
+              "category": "Sentence_Stem",
+              "component": "And I think",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to add a thought or observation to a previous statement.",
+              "relative_note": "More frequent than 'looks very peaceful' in this context."
+            },
+            {
+              "intention": "Describing appearance",
+              "category": "Pattern",
+              "component": "looks very ADJ",
+              "frequency_level": 4.0,
+              "usage_context": "Common pattern for describing the visual appearance of something."
+            },
+            {
+              "intention": "Describing appearance",
+              "category": "Pattern",
+              "component": "It looks like X",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to describe visual impressions."
+            },
+            {
+              "intention": "Describing socioeconomic status",
+              "category": "Polyword",
+              "component": "affluent neighborhood",
+              "frequency_level": 3.0,
+              "usage_context": "Used to describe a wealthy residential area."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zone_id": "5",
+      "is_tendency_zone": false,
+      "proficiency_tier": "Complex Moderately Accurate (Korean Vocabulary (1.00), Punctuation (0.29), Word Choice (Lexical) (0.14), Word Order (0.14))",
+      "size": 7,
+      "distance_from_global_mean": 0.3,
+      "feature_averages": {
+        "complexity": {
+          "mean": 0.41,
+          "std": 0.03
+        },
+        "accuracy": {
+          "mean": 0.56,
+          "std": 0.02
+        },
+        "error_distribution": {
+          "critical": {
+            "mean": 0.57,
+            "std": 0.0
+          },
+          "moderate": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "minor": {
+            "mean": 0.12,
+            "std": 0.05
+          }
+        }
+      },
+      "utterances": [
+        {
+          "original": "Oh. I... 어... XXX03에 살아요.",
+          "corrected": "I... I live in XXX03.",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "I live in XXX03",
+              "aligned_original_clause_segment": "XXX03에 살아요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "I live in XXX-03.",
+              "errors_found": [
+                {
+                  "category": "Punctuation",
+                  "severity": "minor",
+                  "error": "Missing hyphen between XXX and 03",
+                  "correction": "XXX-03"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "Yeah. Hm. He is 다섯 살이에요.",
+          "corrected": "He is five years old.",
+          "metrics": {
+            "C": 0.41,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "He is five years old",
+              "aligned_original_clause_segment": "다섯 살이에요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "He is five years old.",
+              "errors_found": [
+                {
+                  "category": "Punctuation",
+                  "severity": "minor",
+                  "error": "Missing period at the end of the sentence",
+                  "correction": "."
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Describing age",
+                  "category": "Pattern",
+                  "component": "X years old",
+                  "frequency_level": 5.0,
+                  "usage_context": "Standard way to state someone's age."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Describing age",
+              "category": "Pattern",
+              "component": "X years old",
+              "frequency_level": 5.0,
+              "usage_context": "Standard way to state someone's age."
+            }
+          ]
+        },
+        {
+          "original": "Mm. She is 두 살이에요.",
+          "corrected": "She is two years old.",
+          "metrics": {
+            "C": 0.41,
+            "A": 0.62,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.0
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.0
+          },
+          "clauses": [
+            {
+              "clause_text": "She is two years old",
+              "aligned_original_clause_segment": "두 살이에요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "She is two years old.",
+              "errors_found": [
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Describing age",
+                  "category": "Pattern",
+                  "component": "X years old",
+                  "frequency_level": 5.0,
+                  "usage_context": "Standard way to state someone's age."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Describing age",
+              "category": "Pattern",
+              "component": "X years old",
+              "frequency_level": 5.0,
+              "usage_context": "Standard way to state someone's age."
+            }
+          ]
+        },
+        {
+          "original": "So... 지난주에 선물 샀어요.",
+          "corrected": "So last week, I bought a present.",
+          "metrics": {
+            "C": 0.46,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "So last week, I bought a present",
+              "aligned_original_clause_segment": "지난주에 선물 샀어요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "So last week, I bought a gift.",
+              "errors_found": [
+                {
+                  "category": "Word Choice (Lexical)",
+                  "severity": "minor",
+                  "error": "Using the word 'present' instead of a more natural synonym",
+                  "correction": "gift"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Introducing a narrative",
+                  "category": "Sentence_Stem",
+                  "component": "So last week,",
+                  "frequency_level": 4.5,
+                  "usage_context": "Common way to start a story or anecdote."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Introducing a narrative",
+              "category": "Sentence_Stem",
+              "component": "So last week,",
+              "frequency_level": 4.5,
+              "usage_context": "Common way to start a story or anecdote."
+            }
+          ]
+        },
+        {
+          "original": "Uhm... 음... 그냥 제 일이에요.",
+          "corrected": "Just it's my job.",
+          "metrics": {
+            "C": 0.38,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "Just it's my job",
+              "aligned_original_clause_segment": "그냥 제 일이에요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "It's just my job.",
+              "errors_found": [
+                {
+                  "category": "Word Order",
+                  "severity": "minor",
+                  "error": "Incorrect word order",
+                  "correction": "It's just my job"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Providing a simple explanation or justification",
+                  "category": "Sentence_Stem",
+                  "component": "It's just ___",
+                  "frequency_level": 4.5,
+                  "usage_context": "Used to downplay the significance of something."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Providing a simple explanation or justification",
+              "category": "Sentence_Stem",
+              "component": "It's just ___",
+              "frequency_level": 4.5,
+              "usage_context": "Used to downplay the significance of something."
+            }
+          ]
+        },
+        {
+          "original": "Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.",
+          "corrected": "The women are talking on the street",
+          "metrics": {
+            "C": 0.46,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "The women are talking on the street",
+              "aligned_original_clause_segment": "여자들은 길에서 얘기하고 있고...",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "Women are talking on the street.",
+              "errors_found": [
+                {
+                  "category": "Article/Preposition/Determiner/Quantifier",
+                  "severity": "minor",
+                  "error": "Unnecessary definite article 'The'",
+                  "correction": ""
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": []
+            }
+          ],
+          "pattern_analysis": []
+        },
+        {
+          "original": "And... 마당도 없어요.",
+          "corrected": "there is no yard, either.",
+          "metrics": {
+            "C": 0.41,
+            "A": 0.55,
+            "E": {
+              "critical": 0.57,
+              "moderate": 0.0,
+              "minor": 0.14
+            }
+          },
+          "errors": {
+            "critical": 0.57,
+            "moderate": 0.0,
+            "minor": 0.14
+          },
+          "clauses": [
+            {
+              "clause_text": "there is no yard, either",
+              "aligned_original_clause_segment": "마당도 없어요.",
+              "is_korean": true,
+              "original_clause_type": "phrase",
+              "corrected_clause_text": "There's no yard, either.",
+              "errors_found": [
+                {
+                  "category": "Formality/Register",
+                  "severity": "minor",
+                  "error": "Using full form 'there is' instead of contraction",
+                  "correction": "There's"
+                },
+                {
+                  "category": "Korean Vocabulary",
+                  "severity": "critical",
+                  "error": "Original segment was Korean (phrase)",
+                  "correction": "Replaced with English clause"
+                }
+              ],
+              "pattern_analysis": [
+                {
+                  "intention": "Adding information to a negative statement",
+                  "category": "Polyword",
+                  "component": "either",
+                  "frequency_level": 4.5,
+                  "usage_context": "Used at the end of a negative sentence to emphasize the negativity or add another negative element."
+                }
+              ]
+            }
+          ],
+          "pattern_analysis": [
+            {
+              "intention": "Adding information to a negative statement",
+              "category": "Polyword",
+              "component": "either",
+              "frequency_level": 4.5,
+              "usage_context": "Used at the end of a negative sentence to emphasize the negativity or add another negative element."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+You are an expert in second language acquisition (SLA) and formulaic language analysis.
+
+TASK:
+Your task is to identify and analyze formulaic sequences present in the provided 'Corrected Clause'. Focus on their communicative intentions, structural components, and frequency in natural SPOKEN English usage.
+
+INPUT:
+- Corrected Clause: The grammatically corrected and natural-sounding version of a student's original clause.
+
+#### WHAT ARE FORMULAIC SEQUENCES?
+Formulaic sequences are multi-word units that function as a single semantic/pragmatic unit in discourse. They are characterized by:
+1. Consisting of multiple words that frequently co-occur
+2. Having a specific communicative function
+3. Being processed as a single unit by native speakers
+4. Often having a meaning that extends beyond the sum of their individual words
+
+#### MINIMUM LENGTH REQUIREMENT
+Formulaic sequences should generally consist of at least two words. Single words that function as discourse markers (e.g., "anyway," "well") should only be included if they have special pragmatic functions beyond their literal meanings and are used formulaically.
+
+#### HANDLING OVERLAPPING SEQUENCES
+When formulaic sequences overlap or are nested within each other, identify each distinct sequence separately. For example, in "as far as I know," identify both the full expression and any independent formulaic sub-components if they function independently elsewhere.
+
+#### TREATMENT OF VARIATIONS
+When identifying Frame or Pattern sequences, focus on the core structural formula rather than its specific lexical instantiation. However, note common collocational preferences in the "usage_context" field if applicable.
+
+#### OUTPUT FORMAT
+IMPORTANT:
+Return ONLY a JSON array containing the formulaic sequence objects found in the 'Corrected Clause'. If no patterns are found, return an empty array `[]`. Do not add any explanatory text before or after the JSON array.
+A single clause may contain multiple formulaic sequences. Identify each one separately.
+
+Each object in the array must conform to the following structure (PatternDetail):
+{{
+  "intention": "string (The communicative goal)",
+  "category": "string (The type of formula, see categories below)",
+  "component": "string (The formula with semantic roles or POS tags if applicable)",
+  "frequency_level": "float (Rating from 1.0-5.0 of how common the pattern is)",
+  "usage_context": "string (Brief description of where/when this formula is typically used)",
+  "relative_note": "string | null (Optional brief note explaining relative frequency compared to other formulas in this clause)"
+}}
+
+#### FORMULAIC SEQUENCE CATEGORIES (Based on Nattinger & DeCarrico)
+- Polyword: Fixed multi-word expressions that function as a single lexical item with little or no variation.
+  Examples: "by the way", "as a matter of fact", "in spite of", "nevertheless", "good idea"
+
+- Frame: Expressions with slots that allow for lexical variation within a fixed structure.
+  Examples: "the ___ thing is", "as far as I ___ concerned", "not only ___ but also ___", "a pair of ___"
+
+- Sentence_Stem: Conventionalized sentence beginnings that serve specific discourse functions.
+  Examples: "I think that", "Would you mind if", "I'm sorry to bother you, but", "I guess", "It takes ___"
+
+- Pattern: Productive syntactic patterns with multiple slots that follow specific semantic constraints.
+  Examples: "the more X, the more Y", "X ago", "too X to Y"
+
+#### FREQUENCY RATING INSTRUCTIONS (1.0 - 5.0 scale)
+- 5.0: Extremely common, used constantly in everyday conversation.
+- 4.0: Very common, frequently used.
+- 3.0: Moderately common, used regularly but not constantly.
+- 2.0: Somewhat common, recognizable but not used frequently.
+- 1.0: Relatively uncommon or specialized usage.
+
+When assigning frequency levels:
+1. First consider the formula's general frequency in natural SPOKEN English (1.0-5.0 scale).
+2. If multiple formulas are identified in THIS CLAUSE, compare their relative frequencies.
+3. Adjust the initial ratings slightly (e.g., using decimals like 4.8, 4.2) ONLY IF NEEDED to reflect significant relative frequency differences between formulas *within the same clause*. Add a brief explanation in `relative_note` if you make such an adjustment.
+4. Stick to the 1.0-5.0 range.
+
+#### EXAMPLE
+Input Corrected Clause: "I think that's a good idea, but maybe it takes too long."
+
+Expected JSON Output:
+[
+  {{
+    "intention": "Expressing opinion",
+    "category": "Sentence_Stem",
+    "component": "I think that",
+    "frequency_level": 4.8,
+    "usage_context": "Common way to start sharing personal views.",
+    "relative_note": "Slightly more frequent than 'good idea' in general spoken English."
+  }},
+  {{
+    "intention": "Evaluation",
+    "category": "Polyword",
+    "component": "good idea",
+    "frequency_level": 4.2,
+    "usage_context": "Common phrase to express positive assessment.",
+    "relative_note": null
+  }},
+  {{
+    "intention": "Expressing duration/difficulty",
+    "category": "Sentence_Stem",
+    "component": "it takes ___",
+    "frequency_level": 4.0,
+    "usage_context": "Used to talk about the time required for something.",
+    "relative_note": null
+  }},
+  {{
+    "intention": "Expressing excessiveness",
+    "category": "Pattern",
+    "component": "too X to Y",
+    "frequency_level": 3.5,
+    "usage_context": "Used to indicate something exceeds a necessary limit for a purpose (implicit Y here).",
+    "relative_note": null
+  }}
+]
+
+REMEMBER: ONLY output the JSON array. No other text.

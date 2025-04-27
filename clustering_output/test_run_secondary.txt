@@ -1,0 +1,639 @@
+Global Statistics:
+================
+Total Utterances: 29
+
+Feature Averages:
+  Complexity: mean=0.430, std=0.070
+  Accuracy: mean=0.550, std=0.210
+
+Error Distribution:
+  Critical: mean=0.760, std=0.000
+  Moderate: mean=0.930, std=0.000
+  Minor: mean=0.690, std=0.000
+
+Tendency Zone:
+=============
+Size: 8 utterances
+Distance from global mean: 0.540
+
+Tendency Zone Feature Averages:
+  Complexity: mean=0.410, std=0.090
+  Accuracy: mean=0.840, std=0.090
+
+Tendency Zone Error Distribution:
+  Critical: mean=0.000, std=0.000
+  Moderate: mean=0.140, std=0.140
+  Minor: mean=0.070, std=0.070
+
+ZPD/2 Region Statistics:
+=========================
+  Number of utterances: 0
+
+
+ZPD-1 Region Statistics:
+=========================
+  Number of utterances: 15
+  Average Complexity: 0.384
+  Average Accuracy: 0.641
+  Average Error Rates:
+    Critical: 0.000
+    Moderate: 0.000
+    Minor: 0.000
+
+
+ZPD Region Statistics:
+=======================
+  Number of utterances: 11
+  Average Complexity: 0.466
+  Average Accuracy: 0.395
+  Average Error Rates:
+    Critical: 0.000
+    Moderate: 0.000
+    Minor: 0.000
+
+
+ZPD+1 Region Statistics:
+=========================
+  Number of utterances: 1
+  Average Complexity: 0.640
+  Average Accuracy: 0.790
+  Average Error Rates:
+    Critical: 0.000
+    Moderate: 0.000
+    Minor: 0.000
+
+
+Filtered Region Statistics:
+============================
+  Number of utterances: 1
+  Average Complexity: 0.410
+  Average Accuracy: 1.000
+  Average Error Rates:
+    Critical: 0.000
+    Moderate: 0.000
+    Minor: 0.000
+
+
+ZPD/2 Region Utterances:
+=======================
+
+
+ZPD-1 Region Utterances:
+=======================
+Zone Width: 0.320 <= complexity(0.384) <= 0.410
+
+  Original: Er... I have... 아내랑 아들 하나 딸 하나 있어요.
+  Corrected: one I have.
+  Metrics:
+    C: 0.350, A: 0.790
+  Clauses:
+    Clause 1:
+      Text: one I have
+      Corrected: one I have
+      Pattern Analysis:
+        - Intention: Providing a concise answer
+          Category: Sentence_Stem
+          Component: I have one
+          Frequency: 4.5
+          Context: Used as a short, simple response to a question about possession or quantity.
+          Note: More frequent than the elaborated versions in this context.
+        - Intention: Specifying family member
+          Category: Frame
+          Component: I have one ___
+          Frequency: 3.5
+          Context: Used to specify a single instance of something, often in response to a question.
+      Errors:
+        - Word Order (moderate): Incorrect word order
+          Correction: I have one
+
+  Original: Uh... POS는... 그러니까... cash register예요.
+  Corrected: So, it's cash register.
+  Metrics:
+    C: 0.350, A: 0.890
+  Clauses:
+    Clause 1:
+      Text: it's cash register
+      Corrected: it's cash register
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (minor): Missing indefinite article before 'cash register'
+          Correction: a
+
+  Original: No... 저희 집은 아파트예요... not independent house.
+  Corrected: not independent house.
+  Metrics:
+    C: 0.350, A: 0.490
+  Clauses:
+    Clause 1:
+      Text: not independent house
+      Corrected: not independent house
+      Pattern Analysis:
+        - Intention: Providing information/contradiction
+          Category: Sentence_Stem
+          Component: It's not a
+          Frequency: 4.5
+          Context: Common way to start a negative statement, often used to correct or contradict information.
+      Errors:
+        - Sentence Structure (moderate): Incomplete sentence; missing subject and verb
+          Correction: It's not a detached house
+        - Word Choice (Lexical) (moderate): Use of 'independent house' which is not standard English
+          Correction: detached house
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article
+          Correction: a detached house
+
+  Original: Ur. My name is XXX02.
+  Corrected: My name is XXX02.
+  Metrics:
+    C: 0.380, A: 0.890
+  Clauses:
+    Clause 1:
+      Text: My name is XXX02
+      Corrected: My name is XXX02
+      Errors:
+        - Punctuation (minor): Missing period at the end of the sentence
+          Correction: .
+
+  Original: Yeah... 그러니까... TV animation character.
+  Corrected: so, TV animation character.
+  Metrics:
+    C: 0.380, A: 0.890
+  Clauses:
+    Clause 1:
+      Text: so, TV animation character
+      Corrected: so, TV animation character
+      Errors:
+        - Noun Number (minor): Incorrect singular noun 'character'
+          Correction: characters
+
+  Original: Hm... This picture... 어... 동네 풍경이에요.
+  Corrected: This picture 동네 풍경이에요.
+  Metrics:
+    C: 0.380, A: 0.790
+  Clauses:
+    Clause 1:
+      Text: This picture 동네 풍경이에요
+      Corrected: This picture 동네 풍경이에요
+      Errors:
+        - Word Choice (Lexical) (moderate): Use of Korean phrase '동네 풍경이에요' instead of English equivalent
+          Correction: depicts a neighborhood scene
+
+  Original: Yeah. Do you know POS?
+  Corrected: Do you know POS?
+  Metrics:
+    C: 0.380, A: 0.620
+  Clauses:
+    Clause 1:
+      Text: Do you know POS?
+      Corrected: Do you know POS?
+      Pattern Analysis:
+        - Intention: Inquiry about knowledge
+          Category: Pattern
+          Component: Are you familiar with X?
+          Frequency: 4.0
+          Context: Common way to ask if someone knows about something.
+      Errors:
+        - Word Choice (Lexical) (moderate): Informal and unclear abbreviation 'POS'
+          Correction: POS systems
+        - Sentence Structure (moderate): Grammatically correct but less natural phrasing
+          Correction: Are you familiar with
+
+  Original: No... 저희 집은 아파트예요... not independent house.
+  Corrected: Our house is apartment...
+  Metrics:
+    C: 0.380, A: 0.240
+  Clauses:
+    Clause 1:
+      Text: Our house is apartment...
+      Corrected: Our house is apartment...
+      Errors:
+        - Sentence Structure (critical): Incomplete and grammatically incorrect sentence structure
+          Correction: We live in an apartment.
+        - Word Choice (Lexical) (moderate): Incorrect use of 'house' in the context of apartment living
+          Correction: We live in an apartment
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article and preposition
+          Correction: in an apartment
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Oh. I... 어... XXX03에 살아요.
+  Corrected: I... I live in XXX03.
+  Metrics:
+    C: 0.380, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: I live in XXX03
+      Corrected: I live in XXX03
+      Errors:
+        - Punctuation (minor): Missing hyphen between XXX and 03
+          Correction: XXX-03
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Uhm... 음... 그냥 제 일이에요.
+  Corrected: Just it's my job.
+  Metrics:
+    C: 0.380, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: Just it's my job
+      Corrected: Just it's my job
+      Pattern Analysis:
+        - Intention: Providing a simple explanation or justification
+          Category: Sentence_Stem
+          Component: It's just ___
+          Frequency: 4.5
+          Context: Used to downplay the significance of something.
+      Errors:
+        - Word Order (minor): Incorrect word order
+          Correction: It's just my job
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+  Corrected: Oh children are playing ball
+  Metrics:
+    C: 0.410, A: 0.700
+  Clauses:
+    Clause 1:
+      Text: Oh children are playing ball
+      Corrected: Oh children are playing ball
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article and quantifier
+          Correction: some
+        - Punctuation (minor): Missing comma after interjection
+          Correction: Oh,
+
+  Original: Er... I have... 아내랑 아들 하나 딸 하나 있어요.
+  Corrected: I have wife and son.
+  Metrics:
+    C: 0.410, A: 0.490
+  Clauses:
+    Clause 1:
+      Text: I have wife and son
+      Corrected: I have wife and son
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite articles before 'wife' and 'son'
+          Correction: a wife and a son
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Yeah. Hm. He is 다섯 살이에요.
+  Corrected: He is five years old.
+  Metrics:
+    C: 0.410, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: He is five years old
+      Corrected: He is five years old
+      Pattern Analysis:
+        - Intention: Describing age
+          Category: Pattern
+          Component: X years old
+          Frequency: 5.0
+          Context: Standard way to state someone's age.
+      Errors:
+        - Punctuation (minor): Missing period at the end of the sentence
+          Correction: .
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Mm. She is 두 살이에요.
+  Corrected: She is two years old.
+  Metrics:
+    C: 0.410, A: 0.620
+  Clauses:
+    Clause 1:
+      Text: She is two years old
+      Corrected: She is two years old
+      Pattern Analysis:
+        - Intention: Describing age
+          Category: Pattern
+          Component: X years old
+          Frequency: 5.0
+          Context: Standard way to state someone's age.
+      Errors:
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: And... 마당도 없어요.
+  Corrected: there is no yard, either.
+  Metrics:
+    C: 0.410, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: there is no yard, either
+      Corrected: there is no yard, either
+      Pattern Analysis:
+        - Intention: Adding information to a negative statement
+          Category: Polyword
+          Component: either
+          Frequency: 4.5
+          Context: Used at the end of a negative sentence to emphasize the negativity or add another negative element.
+      Errors:
+        - Formality/Register (minor): Using full form 'there is' instead of contraction
+          Correction: There's
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+
+ZPD Region Utterances:
+=====================
+Zone Width: 0.410 <= complexity(0.466) <= 0.500
+
+  Original: Erm... maybe... 삼사년 걸려요.
+  Corrected: maybe three four year it takes.
+  Metrics:
+    C: 0.430, A: 0.300
+  Clauses:
+    Clause 1:
+      Text: maybe three four year it takes
+      Corrected: maybe three four year it takes
+      Pattern Analysis:
+        - Intention: Expressing duration
+          Category: Sentence_Stem
+          Component: It takes ___
+          Frequency: 4.0
+          Context: Common way to indicate the time needed for something.
+      Errors:
+        - Word Order (moderate): Incorrect word order, making the sentence unclear
+          Correction: It takes maybe three or four years
+        - Sentence Structure (moderate): Missing subject and verb structure
+          Correction: It takes maybe three or four years
+        - Conjunction Usage (minor): Incorrect use of 'four' instead of 'or'
+          Correction: or
+        - Noun Number (minor): Incorrect singular 'year'
+          Correction: years
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: And 제 아들이... um... 그 캐릭터 피규어를 원해요.
+  Corrected: And my son wants that character figure.
+  Metrics:
+    C: 0.460, A: 0.490
+  Clauses:
+    Clause 1:
+      Text: And my son wants that character figure.
+      Corrected: And my son wants that character figure.
+      Pattern Analysis:
+        - Intention: Adding information
+          Category: Sentence_Stem
+          Component: And my son
+          Frequency: 4.5
+          Context: Common way to add information to a previous statement, especially in narratives.
+          Note: More frequent than the rest in this clause
+        - Intention: Expressing desire
+          Category: Pattern
+          Component: wants a figure of
+          Frequency: 3.0
+          Context: Used to express a desire for a specific item.
+      Errors:
+        - Word Choice (Lexical) (moderate): Unnatural phrasing of 'that character figure'
+          Correction: a figure of that character
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: No... 크리스마스 이브에 줄 거예요.
+  Corrected: I will give it on Christmas Eve.
+  Metrics:
+    C: 0.460, A: 0.430
+  Clauses:
+    Clause 1:
+      Text: I will give it on Christmas Eve
+      Corrected: I will give it on Christmas Eve
+      Pattern Analysis:
+        - Intention: Expressing future action
+          Category: Sentence_Stem
+          Component: I'll give them
+          Frequency: 4.5
+          Context: Common way to express a future action involving giving something to someone.
+        - Intention: Specifying a time
+          Category: Polyword
+          Component: Christmas Eve
+          Frequency: 4.0
+          Context: Specific time of year, commonly used in English-speaking cultures.
+      Errors:
+        - Pronoun Reference (moderate): Unclear pronoun reference ('it')
+          Correction: them the presents
+        - Auxiliary/Modal Verbs (minor): Full form of 'will' instead of contraction
+          Correction: I'll
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Oh... 어... TV 애니메이션 캐릭터 알아요?
+  Corrected: Oh TV animation character do you know?
+  Metrics:
+    C: 0.460, A: 0.300
+  Clauses:
+    Clause 1:
+      Text: Oh TV animation character do you know?
+      Corrected: Oh TV animation character do you know?
+      Pattern Analysis:
+        - Intention: Expressing surprise or realization
+          Category: Polyword
+          Component: Oh,
+          Frequency: 5.0
+          Context: Used as an interjection to express a range of emotions, often surprise.
+        - Intention: Requesting information
+          Category: Pattern
+          Component: do you know any X?
+          Frequency: 4.5
+          Context: Common way to ask if someone is familiar with something.
+      Errors:
+        - Word Order (moderate): Incorrect word order
+          Correction: do you know any TV animation characters?
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article and quantifier
+          Correction: any
+        - Noun Number (minor): Incorrect singular 'character'
+          Correction: characters
+        - Punctuation (minor): Missing comma after 'Oh'
+          Correction: Oh,
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: So... 지난주에 선물 샀어요.
+  Corrected: So last week, I bought a present.
+  Metrics:
+    C: 0.460, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: So last week, I bought a present
+      Corrected: So last week, I bought a present
+      Pattern Analysis:
+        - Intention: Introducing a narrative
+          Category: Sentence_Stem
+          Component: So last week,
+          Frequency: 4.5
+          Context: Common way to start a story or anecdote.
+      Errors:
+        - Word Choice (Lexical) (minor): Using the word 'present' instead of a more natural synonym
+          Correction: gift
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+  Corrected: The women are talking on the street
+  Metrics:
+    C: 0.460, A: 0.550
+  Clauses:
+    Clause 1:
+      Text: The women are talking on the street
+      Corrected: The women are talking on the street
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (minor): Unnecessary definite article 'The'
+          Correction: 
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.
+  Corrected: The yesterday work is POS system development management.
+  Metrics:
+    C: 0.480, A: 0.190
+  Clauses:
+    Clause 1:
+      Text: The yesterday work is POS system development management
+      Corrected: The yesterday work is POS system development management
+      Errors:
+        - Word Order (critical): Incorrect placement of 'yesterday'
+          Correction: Yesterday's work
+        - Sentence Structure (critical): Missing verb and unclear subject-verb relationship
+          Correction: involved developing and managing
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing article before 'POS system'
+          Correction: the POS system
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Urn. Last weekend... 어... Christmas present 사러 갔어요.
+  Corrected: Last weekend Christmas present I went to buy.
+  Metrics:
+    C: 0.480, A: 0.430
+  Clauses:
+    Clause 1:
+      Text: Last weekend Christmas present I went to buy
+      Corrected: Last weekend Christmas present I went to buy
+      Pattern Analysis:
+        - Intention: Temporal reference
+          Category: Pattern
+          Component: X ago
+          Frequency: 4.5
+          Context: Common way to refer to a past time period.
+          Note: More frequent than 'went to buy' in this context.
+        - Intention: Describing an action
+          Category: Pattern
+          Component: went to buy
+          Frequency: 4.0
+          Context: Common way to describe a past action with a purpose.
+      Errors:
+        - Word Order (moderate): Incorrect word order
+          Correction: Last weekend, I went to buy Christmas presents.
+        - Noun Number (minor): Incorrect singular 'present'
+          Correction: presents
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+  Corrected: and one man is running on the street.
+  Metrics:
+    C: 0.480, A: 0.430
+  Clauses:
+    Clause 1:
+      Text: and one man is running on the street
+      Corrected: and one man is running on the street
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article before 'man'
+          Correction: a man
+        - Preposition (minor): Using 'on' instead of 'down' to describe direction
+          Correction: down
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.
+  Corrected: And my daughter 푸우 캐릭터 냉장고 장난감 wants.
+  Metrics:
+    C: 0.480, A: 0.340
+  Clauses:
+    Clause 1:
+      Text: And my daughter 푸우 캐릭터 냉장고 장난감 wants
+      Corrected: And my daughter 푸우 캐릭터 냉장고 장난감 wants
+      Pattern Analysis:
+        - Intention: Adding information
+          Category: Sentence_Stem
+          Component: And my daughter
+          Frequency: 4.5
+          Context: Common way to add information to a previous statement, especially in narratives.
+          Note: More frequent than the specific noun phrase 'Pooh character refrigerator toy'.
+        - Intention: Specifying a desired item
+          Category: Pattern
+          Component: wants a X Y
+          Frequency: 4.0
+          Context: Common pattern for expressing desires, where X is the subject and Y is the object.
+      Errors:
+        - Word Order (moderate): Incorrect word order of the noun phrase
+          Correction: a Pooh character refrigerator toy
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article before 'Pooh'
+          Correction: a
+        - Word Choice (Lexical) (minor): Using Korean words instead of English words
+          Correction: Pooh character refrigerator toy
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+  Original: Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.
+  Corrected: what I do is XXX06 electronic cash register.
+  Metrics:
+    C: 0.480, A: 0.340
+  Clauses:
+    Clause 1:
+      Text: what I do is XXX06 electronic cash register
+      Corrected: what I do is XXX06 electronic cash register
+      Errors:
+        - Sentence Structure (moderate): Incorrect sentence structure; unclear subject and verb relationship
+          Correction: I work with the XXX06 electronic cash register.
+        - Word Choice (Lexical) (moderate): Unnatural phrasing using 'what I do is'
+          Correction: I work with
+        - Article/Preposition/Determiner/Quantifier (minor): Missing definite article before 'XXX06 electronic cash register'
+          Correction: the XXX06 electronic cash register
+        - Korean Vocabulary (critical): Original segment was Korean (phrase)
+          Correction: Replaced with English clause
+
+
+ZPD+1 Region Utterances:
+=======================
+Zone Width: 0.500 <= complexity(0.640) <= 0.680
+
+  Original: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+  Corrected: and there are three dogs and cat.
+  Metrics:
+    C: 0.640, A: 0.790
+  Clauses:
+    Clause 1:
+      Text: there are three dogs
+      Corrected: there are three dogs
+    Clause 2:
+      Text: and cat
+      Corrected: and cat
+      Errors:
+        - Article/Preposition/Determiner/Quantifier (moderate): Missing indefinite article before 'cat'
+          Correction: a cat
+
+
+Filtered Region Utterances:
+==========================
+
+  Original: 이 사진은... very peaceful해 보여요.
+  Corrected: This picture looks very peaceful.
+  Metrics:
+    C: 0.410, A: 1.000
+  Clauses:
+    Clause 1:
+      Text: This picture looks very peaceful
+      Corrected: This picture looks very peaceful
+      Pattern Analysis:
+        - Intention: Describing visual appearance
+          Category: Pattern
+          Component: X looks Y
+          Frequency: 4.5
+          Context: Common pattern for describing the visual impression of something.
+        - Intention: Expressing a feeling or state
+          Category: Polyword
+          Component: very peaceful
+          Frequency: 3.0
+          Context: Used to describe a calm and tranquil scene or atmosphere.
+

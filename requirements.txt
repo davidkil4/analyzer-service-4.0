@@ -3,6 +3,13 @@ langchain-google-genai
 python-dotenv
 pydantic
 
+# Clustering dependencies
+numpy==1.26.4
+scipy==1.13.0
+scikit-learn==1.4.2
+kneed==0.8.5
+matplotlib==3.8.4
+
 # Add specific versions if needed, e.g.:
 # langchain==0.1.16
 # langchain-google-genai==0.1.3

@@ -1,0 +1,220 @@
+# Task: Analyze Grammatical Accuracy and Identify Errors
+
+# Objective:
+Compare the 'Original Clause' with the 'Corrected Clause'. Identify **all** grammatical, lexical, and stylistic errors present in the **Original Clause** that were addressed in the **Corrected Clause**. Do NOT identify errors that were *not* corrected.
+
+# Input:
+Original Clause: The student's original English text for a single clause.
+Corrected Clause: The grammatically corrected and more natural version of the original clause.
+
+# Error Identification Rules:
+1.  **Focus on Correction:** Only list errors from the Original Clause that are fixed or improved in the Corrected Clause.
+2.  **Be Specific:** Clearly describe the error and the specific correction made.
+3.  **Categorize:** Assign each error to ONE relevant category from the provided list.
+4.  **Assess Severity:** Assign a severity level ('critical', 'moderate', 'minor') based on the impact on communication, following the guidelines below.
+5.  **No New Errors:** Do not introduce or comment on errors potentially present in the Corrected Clause itself.
+6.  **Handle No Errors:** If the Original Clause was already correct and matches the Corrected Clause (or if the Corrected Clause is identical), output an empty list `[]`.
+
+# Analysis Guidelines:
+
+## STEP 1: DETERMINE SEVERITY
+-------------------------
+### CRITICAL Level:
+- Renders sentence unintelligible WITHOUT context
+- Meaning ambiguous even WITH context (e.g., wrong verb changes key action)
+- Breaks basic grammatical structure
+Examples:
+- "Pizza very much like I" → "I like pizza very much"
+- "Because went store" → "Because I went to the store"
+
+### MODERATE Level:
+- Meaning CLEAR WITH CONTEXT but requires effort to parse
+- Structurally awkward but recoverable (e.g., missing article)
+- Creates unnatural phrasing
+Examples:
+- "my very silent place I like" → "I like my very silent place"
+- "spent my boring time" → "it helps me spend my boring time"
+
+### MINOR Level:
+- Does NOT hinder understanding; affects fluency/style
+- Grammatically incorrect but socially acceptable in informal contexts
+- Has obvious correction from context
+Examples:
+- "tennis elbow by bad golf" → "tennis elbow caused by bad golf"
+- "big rain" → "heavy rain"
+
+## STEP 2: ERROR CATEGORIES AND RULES
+---------------------------------
+-   **Word Order:**
+    -   ONLY use if REORDERING EXISTING WORDS fixes error (no additions/deletions)
+    -   Critical: When word sequence makes meaning unclear
+    -   Moderate: When sequence is non-standard but meaning clear
+    -   Examples:
+        -   Critical: "Pizza very much like I" → "I like pizza very much"
+        -   Moderate: "my very silent place I like" → "I like my very silent place"
+
+-   **Sentence Structure:**
+    -   Use when basic construction/expression wrong, including missing elements
+    -   Critical: When structure makes meaning unclear
+    -   Moderate: When structure awkward but meaning clear
+    -   Examples:
+        -   Critical: "My problem is only one" → "I have only one problem"
+        -   Moderate: "First reason is I said near here" → "The first reason is that I mentioned I live near here"
+
+-   **Conjunction Usage:**
+    -   Use for errors with conjunctions (and/but/because/etc.)
+    -   Critical: When connection between ideas unclear
+    -   Moderate: When connection awkward but understandable
+    -   Examples:
+        -   Critical: "I like coffee by I'm tired" → "I like coffee but I'm tired"
+        -   Moderate: "the reason is not tennis by playing golf" → "But the reason is not tennis, but playing golf"
+
+-   **Compound Formation:**
+    -   Use for errors in forming compound words/phrases
+    -   Critical: When compound structure causes misunderstanding
+    -   Moderate: When structure unnatural but meaning clear
+    -   Examples:
+        -   Critical: "air plane food sick" → "airplane food sickness"
+        -   Moderate: "competition of companies" → "company competitions"
+
+-   **Subject-Verb Agreement:**
+    -   Use for errors/omissions affecting agreement, including missing copula
+    -   Critical: When it causes ambiguity about who does what
+    -   Moderate: When error clear from context
+    -   Examples:
+        -   Critical: "The children is happy and mother sad" → "The children are happy and mother is sad"
+        -   Moderate: "He don't like coffee" → "He doesn't like coffee"
+
+-   **Verb Tense/Aspect:**
+    -   Use for incorrect/missing verb tense markers
+    -   Critical: When time reference unclear
+    -   Moderate: When context clarifies timing
+    -   Examples:
+        -   Critical: "Yesterday I eat pizza" → "Yesterday I ate pizza"
+        -   Moderate: "I study English for 3 years" → "I have been studying English for 3 years"
+
+-   **Auxiliary/Modal Verbs:**
+    -   Use for errors with auxiliaries (do/does/did) or modals
+    -   Moderate: When usage unnatural but understandable
+    -   Minor: When form slightly off
+    -   Examples:
+        -   Moderate: "I will can speak English" → "I will be able to speak English"
+        -   Minor: "Why you not come?" → "Why didn't you come?"
+
+-   **Article/Preposition/Determiner/Quantifier:**
+    -   Use for errors with articles (a, an, the), prepositions (in, on, at, etc.), determiners/quantifiers (this, that, some, any, etc.)
+    -   Critical: When omission breaks sentence structure (e.g., missing mandatory preposition)
+    -   Moderate: When meaning clear despite omission/error
+    -   Examples:
+        -   Critical: "He student" -> "He is a student" (Missing copula AND article, fits S-V agreement OR this rule)
+        -   Moderate: "I go store" -> "I go to the store" (Missing preposition, missing article)
+        -   Minor: "Give me apple" -> "Give me an apple" (Missing article)
+
+-   **Noun Number:**
+    -   Incorrect singular/plural form (e.g., "two apple" vs. "two apples").
+    -   Severity based on clarity/standardness.
+    -   Example:
+        -   Moderate: "I have two dog" -> "I have two dogs"
+
+-   **Pronoun Reference:**
+    -   Incorrect pronoun (he, she, it, they) or unclear antecedent.
+    -   Severity based on clarity.
+    -   Example:
+        -   Moderate: "The dog wagged his tail when it saw the ball" -> "The dog wagged its tail..."
+
+-   **Word Choice (Lexical):**
+    -   Use ONLY for incorrect word choices where meaning inferrable
+    -   Moderate: When word choice unnatural but meaning clear
+    -   Minor: When alternative word choice purely stylistic
+    -   Examples:
+        -   Moderate: "I said near here" → "I mentioned I live near here"
+        -   Minor: "big rain" → "heavy rain"
+
+-   **Spelling:**
+    -   Misspelled words.
+    -   Usually Minor unless it changes the word's meaning significantly (then Word Choice).
+
+-   **Punctuation:**
+    -   Incorrect or missing punctuation relevant to the clause meaning.
+    -   Usually Minor.
+
+-   **Formality/Register:**
+    -   Use of language inappropriate for the conversational context (e.g., too formal/informal).
+    -   Usually Minor.
+
+# Output Format:
+Respond ONLY with a valid JSON list containing error objects. Each object must have the following keys:
+-   `category`: (string) One of the categories listed above.
+-   `severity`: (string) Must be exactly 'critical', 'moderate', or 'minor'.
+-   `error`: (string) A brief description of the specific error in the Original Clause.
+-   `correction`: (string) The specific correction shown in the Corrected Clause.
+
+Do NOT include any introductory text, explanations, or markdown formatting outside the JSON list.
+
+# Example 1:
+Original Clause: "Yesterday I go store buy apple."
+Corrected Clause: "Yesterday I went to the store to buy apples."
+
+Output:
+```json
+[
+  {{
+    "category": "Verb Tense/Aspect",
+    "severity": "critical",
+    "error": "Incorrect past tense 'go'",
+    "correction": "went"
+  }},
+  {{
+    "category": "Preposition",
+    "severity": "moderate",
+    "error": "Missing preposition before 'store'",
+    "correction": "to the store"
+  }},
+  {{
+    "category": "Verb Tense/Aspect",
+    "severity": "moderate",
+    "error": "Missing infinitive marker 'to' before 'buy'",
+    "correction": "to buy"
+  }},
+  {{
+    "category": "Noun Number",
+    "severity": "minor",
+    "error": "Incorrect singular 'apple'",
+    "correction": "apples"
+  }}
+]
+```
+
+# Example 2:
+Original Clause: "He is five years old."
+Corrected Clause: "He's five years old."
+
+Output:
+```json
+[
+  {{
+    "category": "Formality/Register",
+    "severity": "minor",
+    "error": "Using full form 'He is' instead of contraction",
+    "correction": "He's"
+  }}
+]
+```
+
+# Example 3:
+Original Clause: "I live in Seoul."
+Corrected Clause: "I live in Seoul."
+
+Output:
+```json
+[]
+```
+
+# Perform Analysis:
+Original Clause: {{ original_clause }}
+Corrected Clause: {{ corrected_clause }}
+
+Output:
+```json
+
+```

@@ -26,11 +26,16 @@ class CAFClusterAnalyzer:
             with open(json_path, 'r') as f:
                 self.data = json.load(f)
 
-            # Validate required keys
-            if 'analyzed_utterances' not in self.data:
-                raise KeyError("JSON file must contain 'analyzed_utterances' key")
+            # Handle both list input and dict input {"analyzed_utterances": [...]}
+            if isinstance(self.data, list):
+                self.utterances = self.data
+                logger.info(f"Loaded {len(self.utterances)} utterances directly from list.")
+            elif isinstance(self.data, dict) and 'analyzed_utterances' in self.data:
+                self.utterances = self.data['analyzed_utterances']
+                logger.info(f"Loaded {len(self.utterances)} utterances from 'analyzed_utterances' key.")
+            else:
+                raise KeyError("JSON file must contain a list or a dictionary with 'analyzed_utterances' key")
 
-            self.utterances = self.data['analyzed_utterances']
             if not self.utterances:
                 raise ValueError("No utterances found in the input file")
 
@@ -110,12 +115,11 @@ class CAFClusterAnalyzer:
         self.metadata = []
 
         for utterance in self.utterances:
-            logger.debug(f"\nProcessing utterance: {utterance.get('original', '')}")
+            logger.debug(f"\nProcessing utterance: {utterance.get('as_unit_id', 'N/A')}")
 
             # Extract existing features
-            complexity = utterance.get('complexity', {}).get('score', 0.0)
-            accuracy = utterance.get('accuracy', {})
-            accuracy_score = accuracy.get('score', 0.0)  # Direct path to accuracy score
+            complexity = utterance.get('complexity_score', 0.0)
+            accuracy_score = utterance.get('accuracy_score', 0.0)
 
             # Get error counts by severity
             error_counts = {
@@ -140,7 +144,7 @@ class CAFClusterAnalyzer:
                 error_counts['minor'] * self.error_weights['minor'] / max_error_score
             ]
 
-            # Create feature vector (removed fluency score)
+            # Create feature vector
             feature_vector = [
                 complexity,
                 accuracy_score,
@@ -155,12 +159,19 @@ class CAFClusterAnalyzer:
             logger.debug(f"  normalized_errors: {normalized_errors} ({[type(x) for x in normalized_errors]})")
 
             # Store metadata
+            utterance_patterns = []
+            for clause in utterance.get('clauses', []):
+                clause_patterns = clause.get('pattern_analysis')
+                if clause_patterns:
+                    utterance_patterns.extend(clause_patterns)
+
             metadata = {
-                'original': utterance.get('original', ''),
-                'correct': utterance.get('correct', ''),
+                'as_unit_id': utterance.get('as_unit_id', 'N/A'),
+                'original': utterance.get('original_input_text', ''),
+                'correct': utterance.get('as_unit_text', ''),
                 'clauses': utterance.get('clauses', []),
                 'errors': error_counts,
-                'pattern_analysis': utterance.get('pattern_analysis', [])
+                'pattern_analysis': utterance_patterns
             }
 
             self.features.append(feature_vector)
@@ -302,7 +313,10 @@ class CAFClusterAnalyzer:
         error_patterns = {}
         total_utterances = len(group)  # Get total utterances for ratio calculation
 
-        for metadata in group:
+        for i, metadata in enumerate(group):
+            logger.debug(f"DEBUG _analyze_error_patterns: Processing item {i} of type: {type(metadata)}")
+            logger.debug(f"DEBUG _analyze_error_patterns: Item {i} content (first 100 chars): {repr(metadata)[:100]}")
+
             # Analyze clause-level errors
             for clause in metadata.get('clauses', []):
                 if isinstance(clause, dict):

@@ -141,9 +141,36 @@ def write_secondary_analysis(output_file, data, region_utterances, region_bounds
                     f.write("  Clauses:\n")
                     for i, clause in enumerate(utterance['clauses']):
                         f.write(f"    Clause {i+1}:\n")
-                        f.write(f"      Text: {clause['text']}\n")
+                        f.write(f"      Text: {clause.get('clause_text', '')}\n")
                         if not clause.get('is_error_free', False):
-                            f.write(f"      Corrected: {clause.get('corrected_segment', clause['text'])}\n")
+                            f.write(f"      Corrected: {clause.get('corrected_segment', clause.get('clause_text', ''))}\n")
+
+                        # Write pattern analysis from clauses
+                        patterns_source = clause.get('pattern_analysis') # Get potential patterns
+                        if not patterns_source and 'pattern_analysis' in utterance:
+                            # If no pattern analysis in clause, use the utterance-level pattern analysis
+                            patterns_source = utterance.get('pattern_analysis')
+
+                        if patterns_source:
+                            f.write("      Pattern Analysis:\n")
+                            # Check if patterns_source is a dict containing 'patterns' or a list itself
+                            actual_patterns = []
+                            if isinstance(patterns_source, dict):
+                                actual_patterns = patterns_source.get('patterns', [])
+                            elif isinstance(patterns_source, list):
+                                actual_patterns = patterns_source # Assume it's already a list of patterns
+
+                            for pattern in actual_patterns:
+                                if not isinstance(pattern, dict):
+                                    print(f"WARNING in write_secondary_analysis: Found non-dict item in 'patterns' list: {repr(pattern)}")
+                                    continue # Skip this item
+                                f.write(f"        - Intention: {pattern.get('intention', 'N/A')}\n")
+                                f.write(f"          Category: {pattern.get('category', 'N/A')}\n")
+                                f.write(f"          Component: {pattern.get('component', 'N/A')}\n")
+                                f.write(f"          Frequency: {pattern.get('frequency_level', 'N/A')}\n")
+                                f.write(f"          Context: {pattern.get('usage_context', 'N/A')}\n")
+                                if 'relative_note' in pattern:
+                                    f.write(f"          Note: {pattern['relative_note']}\n") # Keep direct access if key presence is checked
 
                         # Write errors from clauses
                         errors = clause.get('errors_found', [])
@@ -153,25 +180,6 @@ def write_secondary_analysis(output_file, data, region_utterances, region_bounds
                                 f.write(f"        - {error['category']} ({error['severity']}): {error['error']}\n")
                                 if error['category'] != 'korean_vocabulary' and 'correction' in error:
                                     f.write(f"          Correction: {error['correction']}\n")
-
-                        # Write pattern analysis from clauses
-                        patterns = clause.get('pattern_analysis', {})
-                        if not patterns and 'pattern_analysis' in utterance:
-                            # If no pattern analysis in clause, use the utterance-level pattern analysis
-                            patterns = utterance.get('pattern_analysis', {})
-                        if patterns:
-                            f.write("      Pattern Analysis:\n")
-                            for pattern in patterns.get('patterns', []):
-                                if not isinstance(pattern, dict):
-                                    print(f"WARNING in write_secondary_analysis_to_text: Found non-dict item in 'patterns' list: {repr(pattern)}")
-                                    continue # Skip this item
-                                f.write(f"        - Intention: {pattern.get('intention', 'N/A')}\n")
-                                f.write(f"          Category: {pattern.get('category', 'N/A')}\n")
-                                f.write(f"          Component: {pattern.get('component', 'N/A')}\n")
-                                f.write(f"          Frequency: {pattern.get('frequency_level', 'N/A')}\n")
-                                f.write(f"          Context: {pattern.get('usage_context', 'N/A')}\n")
-                                if 'relative_note' in pattern:
-                                    f.write(f"          Note: {pattern['relative_note']}\n") # Keep direct access if key presence is checked
 
                 f.write("\n")
 
@@ -262,8 +270,8 @@ def write_secondary_json(output_file, data, region_utterances, region_bounds):
                     ]
                     # Generate proficiency tier with error patterns
                     region_data['proficiency_tier'] = analyzer._generate_zone_name(avg_caf, utterances)
-                except (TypeError, KeyError) as e:
-                    print(f"CRITICAL ERROR generating proficiency tier for region {region_name}: {e}")
+                except (TypeError, KeyError, AttributeError) as e: # Catch AttributeError too
+                    print(f"CRITICAL ERROR generating proficiency tier for region {region_name}: {type(e).__name__}: {e}") # Log specific error
                     print(f"Problematic utterance list sample: {repr(utterances[:2])}")
                     region_data['proficiency_tier'] = "Error Generating Tier"
                     # Optionally continue to next region: continue
@@ -272,68 +280,120 @@ def write_secondary_json(output_file, data, region_utterances, region_bounds):
         region_data['utterances'] = []
 
         # Process individual utterances
-        try:
-            sorted_utterances = sorted(utterances, key=lambda x: x['metrics']['C'])
-        except (TypeError, KeyError) as e:
-            print(f"CRITICAL ERROR sorting utterances in region {region_name}: {e}")
-            print(f"Problematic utterance list sample: {repr(utterances[:2])}") # Print sample
-            continue # Skip this region if sorting fails
-
-        for u in sorted_utterances: # Use the sorted list
+        for i, u in enumerate(utterances):
+            # Ensure 'u' is a dictionary before attempting key access
             if not isinstance(u, dict):
-                print(f"CRITICAL ERROR: Item 'u' in utterance list is not a dict! Type: {type(u)}, Value: {repr(u)}")
+                print(f"CRITICAL ERROR: Utterance item {i} in region {region_name} is not a dict: {type(u)}. Skipping.")
                 continue # Skip this non-dictionary utterance
 
-            required_keys = ['original', 'corrected', 'metrics']
-            if not all(key in u for key in required_keys):
-                print(f"CRITICAL ERROR: Utterance 'u' is missing required keys ({required_keys})! Value: {repr(u)}")
-                continue # Skip this incomplete utterance
-
+            # --- Initialize basic utterance data --- 
             utterance_data = {
                 "original": u.get('original', ''),
                 "corrected": u.get('corrected', ''),
-                "metrics": {k: round(v, 3) if isinstance(v, (int, float)) else v for k, v in u['metrics'].items()},
-                "clauses": [],
+                "metrics": {}, # Initialize empty, populate safely
+                "clauses": [], # Initialize empty, populate in try block
+                # Include utterance-level pattern analysis if available
+                "pattern_analysis": [] 
             }
+            # Safely populate metrics
+            if isinstance(u.get('metrics'), dict):
+                 utterance_data['metrics'] = {k: round(v, 3) if isinstance(v, (int, float)) else v for k, v in u['metrics'].items()}
+            else:
+                 print(f"WARNING: Metrics missing or not a dict for utterance {i} in region {region_name}. Using empty metrics.")
 
-            for clause in u.get('clauses', []):
-                try:
+            # --- Try processing clauses and utterance-level patterns --- 
+            try:
+                # Process clauses
+                for clause in u.get('clauses', []):
+                    # ... (Existing clause processing logic) ...
                     clause_data = {
-                        "text": clause['text'],
-                        **({} if clause.get('is_error_free', False) else {"corrected_segment": clause.get('corrected_segment', clause['text'])}),
-                        "errors": [
-                            {
-                                "category": e['category'],
-                                "severity": e['severity'],
-                                "error": e['error'],
-                                **({'correction': e['correction']} if e['category'] != 'korean_vocabulary' and 'correction' in e else {})
-                            } for e in clause.get('errors_found', [])
-                        ],
-                        "pattern_analysis": [
-                            {
-                                "intention": p['intention'],
-                                "category": p['category'],
-                                "component": p['component'],
-                                "frequency": p['frequency_level'],
-                                "context": p['usage_context'],
-                                "note": p.get('relative_note', '')
-                            } for p in clause.get('pattern_analysis', {}).get('patterns', []) if isinstance(p, dict)
-                        ]
+                        "text": clause.get('clause_text', ''),
+                        **({} if clause.get('is_error_free', False) else {"corrected_segment": clause.get('corrected_segment', clause.get('clause_text', ''))}),
+                        "errors": [],
+                        "pattern_analysis": []
                     }
+                    # Process errors safely
+                    for e in clause.get('errors_found', []):
+                        if isinstance(e, dict):
+                            clause_data['errors'].append({
+                                "category": e.get('category', 'Unknown'),
+                                "severity": e.get('severity', 'Unknown'),
+                                "error": e.get('error', 'Unknown'),
+                                **({'correction': e['correction']} if e.get('category') != 'korean_vocabulary' and 'correction' in e else {})
+                            })
+                        else:
+                            print(f"WARNING: Non-dict item found in errors_found for clause in utterance {i}, region {region_name}: {repr(e)}")
+                    
+                    # Process clause-level pattern analysis safely
+                    clause_patterns_source = clause.get('pattern_analysis')
+                    if clause_patterns_source:
+                        actual_patterns = []
+                        if isinstance(clause_patterns_source, dict):
+                            actual_patterns = clause_patterns_source.get('patterns', [])
+                        elif isinstance(clause_patterns_source, list):
+                             actual_patterns = clause_patterns_source # Assume list contains pattern dicts
+                        else:
+                             print(f"WARNING: Unexpected type for clause pattern_analysis in utterance {i}, region {region_name}: {type(clause_patterns_source)}")
+                        
+                        for p in actual_patterns:
+                             if isinstance(p, dict):
+                                 clause_data['pattern_analysis'].append({
+                                     "intention": p.get('intention', 'N/A'),
+                                     "category": p.get('category', 'N/A'),
+                                     "component": p.get('component', 'N/A'),
+                                     "frequency": p.get('frequency_level', 'N/A'),
+                                     "context": p.get('usage_context', 'N/A'),
+                                     "note": p.get('relative_note', None)
+                                 })
+                             else:
+                                 print(f"WARNING in write_secondary_json: Found non-dict item in clause 'patterns' list: {repr(p)}")
+
                     utterance_data['clauses'].append(clause_data)
 
-                except Exception as e:
-                    print(f"CRITICAL ERROR processing clause: {e}")
-                    print(f"Problematic clause data: {repr(clause)}")
-                    print(f"Originating from utterance: {repr(u.get('original'))}")
-                    continue # Continue to next clause
+                # Process utterance-level pattern analysis safely (if clauses didn't have any)
+                if not any(c.get('pattern_analysis') for c in utterance_data['clauses']): # Check if any clause processed patterns
+                    utterance_patterns_source = u.get('pattern_analysis')
+                    if utterance_patterns_source:
+                        actual_patterns = []
+                        if isinstance(utterance_patterns_source, dict):
+                             actual_patterns = utterance_patterns_source.get('patterns', [])
+                        elif isinstance(utterance_patterns_source, list):
+                             actual_patterns = utterance_patterns_source
+                        else:
+                             print(f"WARNING: Unexpected type for utterance pattern_analysis in utterance {i}, region {region_name}: {type(utterance_patterns_source)}")
+                        
+                        for p in actual_patterns:
+                            if isinstance(p, dict):
+                                utterance_data['pattern_analysis'].append({
+                                    "intention": p.get('intention', 'N/A'),
+                                    "category": p.get('category', 'N/A'),
+                                    "component": p.get('component', 'N/A'),
+                                    "frequency": p.get('frequency_level', 'N/A'),
+                                    "context": p.get('usage_context', 'N/A'),
+                                    "note": p.get('relative_note', None)
+                                })
+                            else:
+                                print(f"WARNING in write_secondary_json: Found non-dict item in utterance 'patterns' list: {repr(p)}")
 
+            except Exception as e:
+                # Catch errors during clause/pattern processing specifically
+                print(f"ERROR processing clauses/patterns for utterance {i} in region {region_name}: {type(e).__name__}: {e}")
+                print(f"Problematic utterance data (first 100 chars): {repr(u)[:100]}")
+                # Don't continue; proceed to append partially processed data
+
+            # --- Append utterance data (always runs) --- 
             region_data['utterances'].append(utterance_data)
 
         analysis['regions'][region_name] = region_data
 
-    with open(output_file, 'w') as f:
-        json.dump(analysis, f, indent=2, ensure_ascii=False)
+    # Write final JSON output
+    try:
+        with open(output_file, 'w') as f:
+            json.dump(analysis, f, indent=4)
+    except Exception as e:
+        print(f"CRITICAL ERROR writing final JSON file {output_file}: {type(e).__name__}: {e}") # Log JSON write error
+
+    print("Debug - Finishing write_secondary_json")
 
 def define_learning_regions(data):
     print("Debug - Starting define_learning_regions")

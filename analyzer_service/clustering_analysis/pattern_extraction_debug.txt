@@ -1,0 +1,217 @@
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Er... I have... 아내랑 아들 하나 딸 하나 있어요.
+Pattern analysis list: [{'intention': 'Providing a concise answer', 'category': 'Sentence_Stem', 'component': 'I have one', 'frequency': 4.5, 'context': 'Used as a short, simple response to a question about possession or quantity.', 'note': 'More frequent than the elaborated versions in this context.'}, {'intention': 'Specifying family member', 'category': 'Frame', 'component': 'I have one ___', 'frequency': 3.5, 'context': 'Used to specify a single instance of something, often in response to a question.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Providing a concise answer', 'category': 'Sentence_Stem', 'component': 'I have one', 'frequency': 4.5, 'context': 'Used as a short, simple response to a question about possession or quantity.', 'note': 'More frequent than the elaborated versions in this context.'}, {'intention': 'Specifying family member', 'category': 'Frame', 'component': 'I have one ___', 'frequency': 3.5, 'context': 'Used to specify a single instance of something, often in response to a question.', 'note': None}]
+Final patterns extracted: [{'intention': 'Providing a concise answer', 'category': 'Sentence_Stem', 'component': 'I have one', 'frequency': 4.5, 'context': 'Used as a short, simple response to a question about possession or quantity.', 'note': 'More frequent than the elaborated versions in this context.'}, {'intention': 'Specifying family member', 'category': 'Frame', 'component': 'I have one ___', 'frequency': 3.5, 'context': 'Used to specify a single instance of something, often in response to a question.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Uh... POS는... 그러니까... cash register예요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: No... 저희 집은 아파트예요... not independent house.
+Pattern analysis list: [{'intention': 'Providing information/contradiction', 'category': 'Sentence_Stem', 'component': "It's not a", 'frequency': 4.5, 'context': 'Common way to start a negative statement, often used to correct or contradict information.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Providing information/contradiction', 'category': 'Sentence_Stem', 'component': "It's not a", 'frequency': 4.5, 'context': 'Common way to start a negative statement, often used to correct or contradict information.', 'note': None}]
+Final patterns extracted: [{'intention': 'Providing information/contradiction', 'category': 'Sentence_Stem', 'component': "It's not a", 'frequency': 4.5, 'context': 'Common way to start a negative statement, often used to correct or contradict information.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Ur. My name is XXX02.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Yeah... 그러니까... TV animation character.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Hm... This picture... 어... 동네 풍경이에요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Yeah. Do you know POS?
+Pattern analysis list: [{'intention': 'Inquiry about knowledge', 'category': 'Pattern', 'component': 'Are you familiar with X?', 'frequency': 4.0, 'context': 'Common way to ask if someone knows about something.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Inquiry about knowledge', 'category': 'Pattern', 'component': 'Are you familiar with X?', 'frequency': 4.0, 'context': 'Common way to ask if someone knows about something.', 'note': None}]
+Final patterns extracted: [{'intention': 'Inquiry about knowledge', 'category': 'Pattern', 'component': 'Are you familiar with X?', 'frequency': 4.0, 'context': 'Common way to ask if someone knows about something.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: No... 저희 집은 아파트예요... not independent house.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh. I... 어... XXX03에 살아요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Uhm... 음... 그냥 제 일이에요.
+Pattern analysis list: [{'intention': 'Providing a simple explanation or justification', 'category': 'Sentence_Stem', 'component': "It's just ___", 'frequency': 4.5, 'context': 'Used to downplay the significance of something.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Providing a simple explanation or justification', 'category': 'Sentence_Stem', 'component': "It's just ___", 'frequency': 4.5, 'context': 'Used to downplay the significance of something.', 'note': None}]
+Final patterns extracted: [{'intention': 'Providing a simple explanation or justification', 'category': 'Sentence_Stem', 'component': "It's just ___", 'frequency': 4.5, 'context': 'Used to downplay the significance of something.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Er... I have... 아내랑 아들 하나 딸 하나 있어요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Yeah. Hm. He is 다섯 살이에요.
+Pattern analysis list: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+Final patterns extracted: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Mm. She is 두 살이에요.
+Pattern analysis list: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+Final patterns extracted: [{'intention': 'Describing age', 'category': 'Pattern', 'component': 'X years old', 'frequency': 5.0, 'context': "Standard way to state someone's age.", 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: And... 마당도 없어요.
+Pattern analysis list: [{'intention': 'Adding information to a negative statement', 'category': 'Polyword', 'component': 'either', 'frequency': 4.5, 'context': 'Used at the end of a negative sentence to emphasize the negativity or add another negative element.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Adding information to a negative statement', 'category': 'Polyword', 'component': 'either', 'frequency': 4.5, 'context': 'Used at the end of a negative sentence to emphasize the negativity or add another negative element.', 'note': None}]
+Final patterns extracted: [{'intention': 'Adding information to a negative statement', 'category': 'Polyword', 'component': 'either', 'frequency': 4.5, 'context': 'Used at the end of a negative sentence to emphasize the negativity or add another negative element.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Erm... maybe... 삼사년 걸려요.
+Pattern analysis list: [{'intention': 'Expressing duration', 'category': 'Sentence_Stem', 'component': 'It takes ___', 'frequency': 4.0, 'context': 'Common way to indicate the time needed for something.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Expressing duration', 'category': 'Sentence_Stem', 'component': 'It takes ___', 'frequency': 4.0, 'context': 'Common way to indicate the time needed for something.', 'note': None}]
+Final patterns extracted: [{'intention': 'Expressing duration', 'category': 'Sentence_Stem', 'component': 'It takes ___', 'frequency': 4.0, 'context': 'Common way to indicate the time needed for something.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: And 제 아들이... um... 그 캐릭터 피규어를 원해요.
+Pattern analysis list: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my son', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': 'More frequent than the rest in this clause'}, {'intention': 'Expressing desire', 'category': 'Pattern', 'component': 'wants a figure of', 'frequency': 3.0, 'context': 'Used to express a desire for a specific item.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my son', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': 'More frequent than the rest in this clause'}, {'intention': 'Expressing desire', 'category': 'Pattern', 'component': 'wants a figure of', 'frequency': 3.0, 'context': 'Used to express a desire for a specific item.', 'note': None}]
+Final patterns extracted: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my son', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': 'More frequent than the rest in this clause'}, {'intention': 'Expressing desire', 'category': 'Pattern', 'component': 'wants a figure of', 'frequency': 3.0, 'context': 'Used to express a desire for a specific item.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: No... 크리스마스 이브에 줄 거예요.
+Pattern analysis list: [{'intention': 'Expressing future action', 'category': 'Sentence_Stem', 'component': "I'll give them", 'frequency': 4.5, 'context': 'Common way to express a future action involving giving something to someone.', 'note': None}, {'intention': 'Specifying a time', 'category': 'Polyword', 'component': 'Christmas Eve', 'frequency': 4.0, 'context': 'Specific time of year, commonly used in English-speaking cultures.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Expressing future action', 'category': 'Sentence_Stem', 'component': "I'll give them", 'frequency': 4.5, 'context': 'Common way to express a future action involving giving something to someone.', 'note': None}, {'intention': 'Specifying a time', 'category': 'Polyword', 'component': 'Christmas Eve', 'frequency': 4.0, 'context': 'Specific time of year, commonly used in English-speaking cultures.', 'note': None}]
+Final patterns extracted: [{'intention': 'Expressing future action', 'category': 'Sentence_Stem', 'component': "I'll give them", 'frequency': 4.5, 'context': 'Common way to express a future action involving giving something to someone.', 'note': None}, {'intention': 'Specifying a time', 'category': 'Polyword', 'component': 'Christmas Eve', 'frequency': 4.0, 'context': 'Specific time of year, commonly used in English-speaking cultures.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh... 어... TV 애니메이션 캐릭터 알아요?
+Pattern analysis list: [{'intention': 'Expressing surprise or realization', 'category': 'Polyword', 'component': 'Oh,', 'frequency': 5.0, 'context': 'Used as an interjection to express a range of emotions, often surprise.', 'note': None}, {'intention': 'Requesting information', 'category': 'Pattern', 'component': 'do you know any X?', 'frequency': 4.5, 'context': 'Common way to ask if someone is familiar with something.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Expressing surprise or realization', 'category': 'Polyword', 'component': 'Oh,', 'frequency': 5.0, 'context': 'Used as an interjection to express a range of emotions, often surprise.', 'note': None}, {'intention': 'Requesting information', 'category': 'Pattern', 'component': 'do you know any X?', 'frequency': 4.5, 'context': 'Common way to ask if someone is familiar with something.', 'note': None}]
+Final patterns extracted: [{'intention': 'Expressing surprise or realization', 'category': 'Polyword', 'component': 'Oh,', 'frequency': 5.0, 'context': 'Used as an interjection to express a range of emotions, often surprise.', 'note': None}, {'intention': 'Requesting information', 'category': 'Pattern', 'component': 'do you know any X?', 'frequency': 4.5, 'context': 'Common way to ask if someone is familiar with something.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: So... 지난주에 선물 샀어요.
+Pattern analysis list: [{'intention': 'Introducing a narrative', 'category': 'Sentence_Stem', 'component': 'So last week,', 'frequency': 4.5, 'context': 'Common way to start a story or anecdote.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Introducing a narrative', 'category': 'Sentence_Stem', 'component': 'So last week,', 'frequency': 4.5, 'context': 'Common way to start a story or anecdote.', 'note': None}]
+Final patterns extracted: [{'intention': 'Introducing a narrative', 'category': 'Sentence_Stem', 'component': 'So last week,', 'frequency': 4.5, 'context': 'Common way to start a story or anecdote.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Urn. Last weekend... 어... Christmas present 사러 갔어요.
+Pattern analysis list: [{'intention': 'Temporal reference', 'category': 'Pattern', 'component': 'X ago', 'frequency': 4.5, 'context': 'Common way to refer to a past time period.', 'note': "More frequent than 'went to buy' in this context."}, {'intention': 'Describing an action', 'category': 'Pattern', 'component': 'went to buy', 'frequency': 4.0, 'context': 'Common way to describe a past action with a purpose.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Temporal reference', 'category': 'Pattern', 'component': 'X ago', 'frequency': 4.5, 'context': 'Common way to refer to a past time period.', 'note': "More frequent than 'went to buy' in this context."}, {'intention': 'Describing an action', 'category': 'Pattern', 'component': 'went to buy', 'frequency': 4.0, 'context': 'Common way to describe a past action with a purpose.', 'note': None}]
+Final patterns extracted: [{'intention': 'Temporal reference', 'category': 'Pattern', 'component': 'X ago', 'frequency': 4.5, 'context': 'Common way to refer to a past time period.', 'note': "More frequent than 'went to buy' in this context."}, {'intention': 'Describing an action', 'category': 'Pattern', 'component': 'went to buy', 'frequency': 4.0, 'context': 'Common way to describe a past action with a purpose.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: And my daughter... 어... 푸우 캐릭터 냉장고 장난감 원해요.
+Pattern analysis list: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my daughter', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."}, {'intention': 'Specifying a desired item', 'category': 'Pattern', 'component': 'wants a X Y', 'frequency': 4.0, 'context': 'Common pattern for expressing desires, where X is the subject and Y is the object.', 'note': None}]
+Clauses count: 1
+Clause 0 pattern_analysis: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my daughter', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."}, {'intention': 'Specifying a desired item', 'category': 'Pattern', 'component': 'wants a X Y', 'frequency': 4.0, 'context': 'Common pattern for expressing desires, where X is the subject and Y is the object.', 'note': None}]
+Final patterns extracted: [{'intention': 'Adding information', 'category': 'Sentence_Stem', 'component': 'And my daughter', 'frequency': 4.5, 'context': 'Common way to add information to a previous statement, especially in narratives.', 'note': "More frequent than the specific noun phrase 'Pooh character refrigerator toy'."}, {'intention': 'Specifying a desired item', 'category': 'Pattern', 'component': 'wants a X Y', 'frequency': 4.0, 'context': 'Common pattern for expressing desires, where X is the subject and Y is the object.', 'note': None}]
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.
+Pattern analysis list: []
+Clauses count: 1
+Clause 0 pattern_analysis: []
+Final patterns extracted: []
+
+
+==== PATTERN EXTRACTION ====
+Utterance: Oh... children are playing ball... 그리고 한 남자가 길에서 뛰고 있어요. 여자들은 길에서 얘기하고 있고... 음... there are three dogs and cat.
+Pattern analysis list: []
+Clauses count: 2
+Clause 0 pattern_analysis: []
+Clause 1 pattern_analysis: []
+Final patterns extracted: []

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import annotations
 """Complexity and accuracy scoring component for the analyzer service.
 
 This module calculates syntactic complexity and accuracy scores for analyzed utterances,
@@ -9,34 +7,11 @@ import json
 import logging
 from pathlib import Path
 import argparse
-from typing import Dict, Any, List, Optional, Union, TYPE_CHECKING
+from typing import Dict, Any, List
 import math
-import sys
 
-# --- Third-Party Imports --- 
-from pydantic import BaseModel, Field, parse_obj_as, ValidationError, TypeAdapter
-from langchain_core.runnables import RunnableLambda
+from analyzer_service.analysis_components.complexity_analyzer import ComplexityAnalyzer  # pylint: disable=import-error,no-name-in-module
 
-# --- First-Party Imports --- 
-from analyzer_service.analysis_components.complexity_analyzer import ComplexityAnalyzer
-# Import the error item schema directly from korean_analysis
-from .korean_analysis import KoreanErrorItem
-# Import pattern schema directly from recognizer_refactored
-from .recognizer_refactored import FormulaicPattern
-
-# Import schemas needed at RUNTIME
-from .schemas import ComplexityScoredUtterance, ComplexityResult
-
-# Import shared pipeline schemas from the new central file using TYPE_CHECKING
-if TYPE_CHECKING:
-    from .schemas import (
-        SegmentationOutputUtterance, 
-        AccuracyAnalyzedUtterance,
-        KoreanVocabAnalyzedUtterance, 
-        AccuracyAnalyzedASUnit, 
-        AccuracyAnalyzedClause, 
-        GrammarError 
-    )
 
 def configure_logging():
     """Configure logging for the script."""
@@ -45,62 +20,83 @@ def configure_logging():
         level=logging.INFO
     )
 
-def add_complexity_score(utterance: AccuracyAnalyzedUtterance) -> ComplexityScoredUtterance:
-    """Calculate complexity score and add it to the utterance data."""
-    try:
-        utterance_dict_for_complexity = {
-            "clauses": [
-                clause.model_dump() 
-                for unit in utterance.as_units 
-                for clause in unit.clauses
-            ]
+
+def calculate_error_counts(all_errors: List[Dict]) -> Dict:
+    """Calculate error counts by severity."""
+    severity_counts = {"critical": 0, "moderate": 0, "minor": 0}
+    for error in all_errors:
+        severity = error.get("severity", "minor")
+        severity_counts[severity] += 1
+    return severity_counts
+
+
+def calculate_accuracy_score(utterance: Dict) -> Dict:
+    """Calculate accuracy scores using the same formula as accuracy_analyzer."""
+    lambda_factor = 1.2
+    severity_weights = {"critical": 0.4, "moderate": 0.2, "minor": 0.1}
+
+    # Collect all errors from all clauses
+    all_errors = []
+    clause_analyses = utterance.get('clauses', [])
+    for clause in clause_analyses:
+        all_errors.extend(clause.get('errors_found', []))
+
+    # Calculate error impact
+    total_impact = sum(severity_weights[e["severity"]] for e in all_errors)
+    accuracy_score = math.exp(-lambda_factor * total_impact)
+
+    # Get error counts by severity
+    severity_counts = calculate_error_counts(all_errors)
+
+    # Calculate error-free ratios and errors per unit
+    error_free_asunit = 1.0 if len(all_errors) == 0 else 0.0
+    errors_per_asunit = len(all_errors)
+
+    # Calculate clause-level metrics
+    if clause_analyses:
+        error_free_clauses = sum(1 for c in clause_analyses if c.get("is_error_free", False))
+        error_free_clause_ratio = error_free_clauses / len(clause_analyses)
+        errors_per_clause = len(all_errors) / len(clause_analyses)
+    else:
+        error_free_clause_ratio = 1.0
+        errors_per_clause = 0.0
+
+    return {
+        "score": round(accuracy_score, 2),
+        "breakdown": {
+            "error_free_asunit_ratio": error_free_asunit,
+            "errors_per_asunit": errors_per_asunit,
+            "error_free_clause_ratio": error_free_clause_ratio,
+            "errors_per_clause": errors_per_clause,
+            "severity_counts": severity_counts
         }
-        
-        complexity_result_dict = ComplexityAnalyzer.analyze(utterance_data=utterance_dict_for_complexity)
-        complexity_result = ComplexityResult(**complexity_result_dict)
-        
-        return ComplexityScoredUtterance(
-            **utterance.model_dump(),
-            complexity=complexity_result
-        )
-    except Exception as e: 
-        logging.error("Error calculating complexity for utterance %s: %s", utterance.n, str(e))
-        return ComplexityScoredUtterance(
-            **utterance.model_dump(),
-            analysis_error=f"Complexity calculation failed: {str(e)}"
-        )
+    }
 
-# --- LCEL Refactoring --- 
-# Wrap the complexity scoring logic in a RunnableLambda
-# Input type: AccuracyAnalyzedUtterance (Imported from schemas)
-# Output type: ComplexityScoredUtterance (Imported from schemas)
-complexity_scoring_runnable: RunnableLambda[AccuracyAnalyzedUtterance, ComplexityScoredUtterance] = RunnableLambda(add_complexity_score)
-# --- End LCEL Refactoring ---
 
-def read_accuracy_analyzed_json(file_path: str) -> List[AccuracyAnalyzedUtterance]:
-    """Read accuracy-analyzed utterances from JSON file."""
+def process_utterance(utterance: Dict[str, Any]) -> Dict[str, Any]:
+    """Process single utterance with both complexity and accuracy analysis."""
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        utterance_dicts = data.get("analyzed_utterances", []) 
-        return parse_obj_as(List[AccuracyAnalyzedUtterance], utterance_dicts)
-    except FileNotFoundError:
-        logging.error(f"Error: Input file not found at {file_path}")
-        sys.exit(1)
-    except json.JSONDecodeError:
-        logging.error(f"Error: Could not decode JSON from {file_path}")
-        sys.exit(1)
-    except Exception as e:
-        logging.error(f"An unexpected error occurred while reading {file_path}: {e}")
-        sys.exit(1)
+        complexity_result = ComplexityAnalyzer.analyze(utterance_data=utterance)
+        accuracy_result = calculate_accuracy_score(utterance)
+
+        return {
+            **utterance,
+            "complexity": complexity_result,
+            "accuracy": accuracy_result
+        }
+    except Exception as e:  # pylint: disable=broad-exception-caught
+        logging.error("Error processing utterance %s: %s", utterance.get('n', 'unknown'), str(e))
+        return {
+            **utterance,
+            "analysis_error": str(e)
+        }
+
 
 async def main():
-    """Main entry point for the script.
-       Reads accuracy-analyzed data, adds complexity scores, and saves.
-    """
+    """Main entry point for the script."""
     configure_logging()
-    parser = argparse.ArgumentParser(description='Calculate complexity scores for accuracy-analyzed utterances')
-    parser.add_argument('input_file', help='Path to input JSON file (output of accuracy analysis)')
+    parser = argparse.ArgumentParser(description='Calculate complexity and accuracy scores')
+    parser.add_argument('input_file', help='Path to input JSON file')
     parser.add_argument('--output-file', '-o', help='Path to output file (default: auto-generated)')
     args = parser.parse_args()
 
@@ -108,21 +104,20 @@ async def main():
     output_file = args.output_file
     
     if not output_file:
-        output_file = str(input_path.parent / f"{input_path.stem}_complexity_scored.json")
+        output_file = str(input_path.parent / f"{input_path.stem}_complexity_accuracy.json")
     
-    logging.info(f"Loading accuracy-analyzed utterances from {input_path}")
-    analyzed_utterances = read_accuracy_analyzed_json(str(input_path))
+    logging.info(f"Loading utterances from {input_path}")
+    with open(input_path, 'r', encoding='utf-8') as f:
+        input_data = json.load(f)
 
-    # Use the runnable's batch method for efficiency
-    scored_utterances: List[ComplexityScoredUtterance] = complexity_scoring_runnable.batch(analyzed_utterances)
+    processed = [process_utterance(u) for u in input_data['preprocessed_utterances']]
 
     logging.info(f"Saving results to {output_file}")
-    output_data = {"scored_utterances": [u.model_dump(exclude_none=True) for u in scored_utterances]}
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
+        json.dump({"analyzed_utterances": processed}, f, indent=2, ensure_ascii=False)
 
-    logging.info(f"Successfully processed {len(scored_utterances)} utterances")
-    print(f"\nComplexity scoring complete!")
+    logging.info(f"Successfully processed {len(processed)} utterances")
+    print(f"\nComplexity and accuracy scoring complete!")
     print(f"Results saved to: {output_file}")
 
 
