@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any, Literal
+from enum import Enum
 
 # --- Raw Input Schema --- 
 class InputUtterance(BaseModel):
@@ -120,3 +121,57 @@ class FinalOutput(BaseModel):
     analysis_results: List[AnalysisResult]
     # Include original or preprocessed data for reference?
     # source_data: Optional[AnalysisInput] = None
+
+# ==========================
+# Main Analysis Output Schemas
+# ==========================
+
+class Severity(str, Enum):
+    CRITICAL = "critical"
+    MODERATE = "moderate"
+    MINOR = "minor"
+
+class ErrorDetail(BaseModel):
+    category: str
+    severity: Severity
+    error: str
+    correction: str
+
+class ClauseAnalysis(BaseModel):
+    clause_text: str
+    corrected_clause_text: Optional[str] = None
+    errors_found: List[ErrorDetail]
+    clause_pattern_analysis: Optional[Dict[str, Any]] = None # Structure TBD
+
+class MainAnalysisOutput(BaseModel):
+    as_unit_id: str
+    original_text: str
+    corrected_text: Optional[str] = None
+    complexity_score: float
+    accuracy_score: float
+    clauses: List[ClauseAnalysis]
+    as_unit_pattern_analysis: Optional[Dict[str, Any]] = None # Structure TBD
+
+# ================================
+# Schemas for Adding Context
+# ================================
+
+class ContextUtterance(BaseModel):
+    speaker: str
+    text: str
+
+class AnalysisInputItem(PreprocessedASUnit):
+    """Input schema for the main analysis chain, including prior utterance context."""
+    context: Optional[List[ContextUtterance]] = None
+
+# =============================
+# Placeholder for Analysis Results (If needed later)
+# =============================
+# class AnalysisResult(BaseModel):
+#     # Combine MainAnalysisOutput with teaching content?
+#     analysis_output: MainAnalysisOutput
+#     teaching_content: Optional[str] = None # Placeholder
+#
+# class FullPipelineOutput(BaseModel):
+#     # Represents the final output after all chains (Preproc -> Analysis -> Teaching)
+#     final_results: List[AnalysisResult]

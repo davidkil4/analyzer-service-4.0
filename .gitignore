@@ -98,9 +98,8 @@ venv.bak/
 # Output files
 *.log
 *.out
-*.output
-*.json
 *.xml
+preprocessing_output.json
 
 # macOS
 .DS_Store

@@ -499,9 +499,3 @@ def _run_full_preprocessing_step(
     logger.info(f"Finished processing all {len(processed_units_output)} segments for utterance {input_utterance.id}")
     return PreprocessingOutput(processed_utterances=processed_units_output)
 
-# --- Main Analysis Chain (Placeholder) ---
-def get_main_analysis_chain() -> Runnable:
-    logger.warning("Main analysis chain is not implemented yet.")
-    # Placeholder: Just passes the input through
-    chain = RunnablePassthrough()
-    return chain

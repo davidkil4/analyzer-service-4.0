@@ -3,7 +3,7 @@ import os
 import time
 import sys
 from dotenv import load_dotenv
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import logging
 
 # Print diagnostic at start
@@ -13,7 +13,7 @@ print("[DIAG] Running run_preprocessing_test.py...", file=sys.stderr)
 INPUT_FILE = "input_files/600_son_converted.json"
 OUTPUT_FILE = "preprocessing_output.json" # Define output file
 BATCH_SIZE = 10
-SPEAKER_TO_PROCESS = "student"
+TARGET_SPEAKER = "student"
 
 # --- Environment Setup ---
 # Load environment variables from .env file
@@ -35,15 +35,37 @@ logger = logging.getLogger(__name__) # Get a logger for this script if needed
 
 # --- Imports (after dotenv) ---
 # It's crucial to import modules using the API key *after* loading the .env file
-from analyzer_service.schemas import InputUtterance, PreprocessingOutput, PreprocessedASUnit
-from analyzer_service.chains import get_preprocessing_chain
+from analyzer_service.schemas import InputUtterance, PreprocessingOutput, PreprocessedASUnit, ContextUtterance, AnalysisInputItem
+from analyzer_service.preprocessing_chains import get_preprocessing_chain
 
 # --- Helper Functions ---
-def load_and_filter_utterances(filepath: str, speaker: str) -> List[InputUtterance]:
-    """Loads utterances from JSON and filters by speaker."""
+def load_and_filter_utterances(filepath: str) -> List[Dict]:
+    """Loads utterances from JSON."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            loaded_json_data: Dict = json.load(f) # Load the whole JSON object
+        
+        # Get the list of utterances from the loaded data
+        all_utterances_list: List[Dict] = loaded_json_data.get('utterances', [])
+        if not all_utterances_list:
+             logger.warning(f"No 'utterances' list found or list is empty in {filepath}")
+             return []
+
+        # Create map for context lookup from the list
+        utterance_map = {utt['utterance_id']: utt for utt in all_utterances_list if 'utterance_id' in utt}
+
+        # Filter for the target speaker from the list
+        student_utterances = [
+            utt for utt in all_utterances_list 
+            if utt.get("speaker") == TARGET_SPEAKER and utt.get("text")
+        ]
+        logger.info(f"Loaded {len(all_utterances_list)} total utterances, filtered {len(student_utterances)} utterances for speaker '{TARGET_SPEAKER}'.")
+
+        if not student_utterances:
+            return []
+
+        return student_utterances
+
     except FileNotFoundError:
         print(f"Error: Input file not found at {filepath}")
         return []
@@ -51,44 +73,89 @@ def load_and_filter_utterances(filepath: str, speaker: str) -> List[InputUtteran
         print(f"Error: Could not decode JSON from {filepath}")
         return []
 
-    student_utterances = []
-    utterance_list = data.get('utterances', [])
-    if not isinstance(utterance_list, list):
-        print(f"Error: 'utterances' key does not contain a list in {filepath}")
-        return []
-        
-    for item in utterance_list: 
-        if isinstance(item, dict) and item.get("speaker") == speaker:
-            try:
-                student_utterances.append(InputUtterance(**item))
-            except Exception as e:
-                print(f"Warning: Skipping item due to validation error: {item}. Error: {e}")
-
-    print(f"Loaded {len(data)} items, filtered {len(student_utterances)} utterances for speaker '{speaker}'.")
-    return student_utterances
-
 def create_batches(data: List[Any], batch_size: int) -> List[List[Any]]:
     """Creates batches from a list of items."""
     return [data[i:i + batch_size] for i in range(0, len(data), batch_size)]
 
+def find_context(target_utterance_id: str, utterance_map: Dict[str, Dict], all_utterances: List[Dict]) -> Optional[List[ContextUtterance]]:
+    """Finds the 3 utterances preceding the target utterance."""
+    try:
+        # Find the index of the target utterance in the original list
+        target_index = -1
+        for i, utt in enumerate(all_utterances):
+            if utt.get('id') == target_utterance_id: # <<< Use 'id' key here
+                target_index = i
+                break
+
+        if target_index == -1:
+            logger.warning(f"Could not find original index for utterance_id: {target_utterance_id}")
+            return []
+
+        # Determine the start index for the context (up to 3 previous)
+        start_index = max(0, target_index - 3)
+        
+        # Extract the preceding utterances
+        context_utterances_raw = all_utterances[start_index:target_index]
+        
+        # Format into ContextUtterance objects
+        context = [
+            ContextUtterance(speaker=utt.get('speaker', 'UNKNOWN'), text=utt.get('text', ''))
+            for utt in context_utterances_raw
+        ]
+        return context
+    except Exception as e:
+        logger.error(f"Error finding context for {target_utterance_id}: {e}")
+        return []
+
 # --- Main Test Logic ---
-if __name__ == "__main__":
-    print("Starting preprocessing chain test...")
+def main():
+    logger.info("Starting preprocessing chain test...")
 
-    # 1. Load and filter data
-    utterances = load_and_filter_utterances(INPUT_FILE, SPEAKER_TO_PROCESS)
+    # --- Load and Prepare Data ---
+    try:
+        with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+            loaded_json_data: Dict = json.load(f) # Load the whole JSON object
+        
+        # Get the list of utterances from the loaded data
+        all_utterances_list: List[Dict] = loaded_json_data.get('utterances', [])
+        if not all_utterances_list:
+             logger.warning(f"No 'utterances' list found or list is empty in {INPUT_FILE}")
+             return
+        logger.info(f"Loaded {len(all_utterances_list)} total utterances from the 'utterances' list.")
 
-    if not utterances:
-        print("No utterances to process. Exiting.")
-        exit()
+        # Create map for context lookup from the full list
+        utterance_map = {utt['utterance_id']: utt for utt in all_utterances_list if 'utterance_id' in utt}
 
-    # 2. Create batches
-    batches = create_batches(utterances, BATCH_SIZE)
-    print(f"Created {len(batches)} batches of size up to {BATCH_SIZE}.")
+        # Filter for the target speaker from the full list, using the correct key 'text'
+        student_utterances_dicts = [
+            utt for utt in all_utterances_list 
+            if utt.get("speaker") == TARGET_SPEAKER and utt.get("text") # Use 'text' key
+        ]
+        logger.info(f"Filtered {len(student_utterances_dicts)} utterances for speaker '{TARGET_SPEAKER}'.")
 
-    if not batches:
-        print("No batches created. Exiting.")
-        exit()
+        if not student_utterances_dicts:
+            logger.warning(f"No utterances found for speaker '{TARGET_SPEAKER}' with non-empty text. Exiting.")
+            return
+
+        # Convert filtered raw dicts to InputUtterance objects for the chain, using 'text'
+        input_utterances_for_chain = [
+            InputUtterance(
+                id=utt.get("id", f"unknown_{i}"), 
+                speaker=utt.get("speaker"), 
+                text=utt.get("text") # Use 'text' key
+            ) for i, utt in enumerate(student_utterances_dicts) # Use the filtered list
+        ]
+
+        # Create batches from the filtered chain inputs
+        batches = [input_utterances_for_chain[i:i + BATCH_SIZE] for i in range(0, len(input_utterances_for_chain), BATCH_SIZE)]
+        logger.info(f"Created {len(batches)} batches of size up to {BATCH_SIZE}.")
+
+    except FileNotFoundError:
+        print(f"Error: Input file not found at {INPUT_FILE}")
+        return []
+    except json.JSONDecodeError:
+        print(f"Error: Could not decode JSON from {INPUT_FILE}")
+        return []
 
     # 4. Get the preprocessing chain
     # Ensure API key is loaded if chain requires it implicitly
@@ -104,9 +171,9 @@ if __name__ == "__main__":
         exit()
 
     # 5. Run the chain on ALL batches and collect results
-    all_results: List[PreprocessingOutput] = [] 
+    all_results: List[List[PreprocessedASUnit]] = [] 
     start_time = time.time()
-    print(f"Processing {len(utterances)} utterances in {len(batches)} batches...")
+    print(f"Processing {len(input_utterances_for_chain)} utterances in {len(batches)} batches...")
 
     for i, batch in enumerate(batches):
         print(f"  Processing batch {i+1}/{len(batches)} ({len(batch)} items)...", end="", flush=True)
@@ -145,28 +212,63 @@ if __name__ == "__main__":
                     logger.info(f"Dropping output for utterance (originally {first_original_unit_id}) as all AS units were filtered.")
             
             # Append the filtered PreprocessingOutput objects for this batch to the main list
-            all_results.extend(filtered_batch_outputs) 
-            # --- End Filtering Step --- 
-
-            batch_end_time = time.time()
-            print(f" done in {batch_end_time - batch_start_time:.2f}s")
+            all_results.extend([output_obj.processed_utterances for output_obj in filtered_batch_outputs]) 
 
         except Exception as e:
             print(f"\nError processing batch {i+1}: {e}")
             # continue
 
+        batch_end_time = time.time()
+        print(f" done in {batch_end_time - batch_start_time:.2f}s")
+
     end_time = time.time()
     print(f"Finished processing all batches in {end_time - start_time:.2f} seconds.")
 
-    # 6. Write ALL collected and filtered results to the output file
-    print(f"Writing {len(all_results)} filtered utterance results to {OUTPUT_FILE}...") # Corrected description
+    # --- Process Results and Add Context ---
+    final_results_with_context: List[AnalysisInputItem] = []
+    processed_count = 0
+    skipped_count = 0
+
+    for result_list in all_results: 
+        for preprocessed_unit in result_list:
+            # Filter based on word count after preprocessing
+            word_count = len(preprocessed_unit.as_unit_text.split()) # Use as_unit_text
+            if word_count < 3:
+                logger.info(f"Filtering out AS unit {preprocessed_unit.as_unit_id} due to word count < 3: '{preprocessed_unit.as_unit_text[:20]}...'") # Also use as_unit_text in log
+                skipped_count += 1
+                continue
+
+            # Find context for the original utterance ID
+            context = find_context(preprocessed_unit.original_utterance_id, utterance_map, all_utterances_list)
+            if context is None:
+                 # Log if context couldn't be found (shouldn't happen with the fix)
+                 logger.warning(f"Could not find context for original utterance ID: {preprocessed_unit.original_utterance_id}")
+                 context = [] # Assign empty list if lookup failed
+
+            # Create the final AnalysisInputItem
+            analysis_input = AnalysisInputItem(
+                **preprocessed_unit.model_dump(), # Copy fields from PreprocessedASUnit
+                context=context # Add the found context
+            )
+            final_results_with_context.append(analysis_input)
+            processed_count += 1
+
+    logger.info(f"Finished processing all batches. Processed {processed_count} AS units, skipped {skipped_count} AS units due to word count.")
+
+    # --- Write Output --- 
+    output_path = os.path.join(os.path.dirname(__file__), OUTPUT_FILE)
+    logger.info(f"Writing {len(final_results_with_context)} final results with context to {output_path}...")
     try:
-        # Convert Pydantic models to dicts for JSON serialization
-        output_data = [result.model_dump() for result in all_results]
-        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        # Use Pydantic's serialization helper for robust JSON export
+        output_data = [item.model_dump(mode='json') for item in final_results_with_context]
+        with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(output_data, f, ensure_ascii=False, indent=4)
-        print(f"Successfully wrote results to file.")
+        logger.info(f"Successfully wrote results to file.")
     except Exception as e:
-        print(f"Error writing results to {OUTPUT_FILE}: {e}")
+        logger.error(f"Error writing output file: {e}")
+        sys.exit(1)
 
     print("Preprocessing chain test finished.")
+
+if __name__ == "__main__":
+    main()

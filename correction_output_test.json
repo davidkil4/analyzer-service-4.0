@@ -1,0 +1,340 @@
+[
+  {
+    "as_unit_id": "u4-as1",
+    "original_as_unit_text": "My name is XXX02.",
+    "corrected_as_unit_text_IMPLIED": "My name is XXX02.",
+    "clauses": [
+      {
+        "original_clause_text": "My name is XXX02",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u8-as2",
+    "original_as_unit_text": "I... I live in XXX03.",
+    "corrected_as_unit_text_IMPLIED": "I... I live in XXX03.",
+    "clauses": [
+      {
+        "original_clause_text": "I live in XXX03",
+        "corrected_clause_text": "Please provide the clause you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u16-as1",
+    "original_as_unit_text": "maybe three four year it takes.",
+    "corrected_as_unit_text_IMPLIED": "maybe three four year it takes.",
+    "clauses": [
+      {
+        "original_clause_text": "maybe three four year it takes",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as1",
+    "original_as_unit_text": "I have wife and son.",
+    "corrected_as_unit_text_IMPLIED": "I have wife and son.",
+    "clauses": [
+      {
+        "original_clause_text": "I have wife and son",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u22-as3",
+    "original_as_unit_text": "one I have.",
+    "corrected_as_unit_text_IMPLIED": "one I have.",
+    "clauses": [
+      {
+        "original_clause_text": "one I have",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u24-as2",
+    "original_as_unit_text": "He is five years old.",
+    "corrected_as_unit_text_IMPLIED": "He is five years old.",
+    "clauses": [
+      {
+        "original_clause_text": "He is five years old",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u26-as1",
+    "original_as_unit_text": "She is two years old.",
+    "corrected_as_unit_text_IMPLIED": "She is two years old.",
+    "clauses": [
+      {
+        "original_clause_text": "She is two years old",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u28-as1",
+    "original_as_unit_text": "Last weekend Christmas present I went to buy.",
+    "corrected_as_unit_text_IMPLIED": "Last weekend Christmas present I went to buy.",
+    "clauses": [
+      {
+        "original_clause_text": "Last weekend Christmas present I went to buy",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u30-as1",
+    "original_as_unit_text": "Oh TV animation character do you know?",
+    "corrected_as_unit_text_IMPLIED": "Oh TV animation character do you know?",
+    "clauses": [
+      {
+        "original_clause_text": "Oh TV animation character do you know?",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u32-as2",
+    "original_as_unit_text": "so, TV animation character.",
+    "corrected_as_unit_text_IMPLIED": "so, TV animation character.",
+    "clauses": [
+      {
+        "original_clause_text": "so, TV animation character",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u34-as1",
+    "original_as_unit_text": "And my son wants that character figure.",
+    "corrected_as_unit_text_IMPLIED": "And my son wants that character figure.",
+    "clauses": [
+      {
+        "original_clause_text": "And my son wants that character figure.",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u38-as1",
+    "original_as_unit_text": "And my daughter 푸우 캐릭터 냉장고 장난감 wants.",
+    "corrected_as_unit_text_IMPLIED": "And my daughter 푸우 캐릭터 냉장고 장난감 wants.",
+    "clauses": [
+      {
+        "original_clause_text": "And my daughter 푸우 캐릭터 냉장고 장난감 wants",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u42-as1",
+    "original_as_unit_text": "So last week, I bought a present.",
+    "corrected_as_unit_text_IMPLIED": "So last week, I bought a present.",
+    "clauses": [
+      {
+        "original_clause_text": "So last week, I bought a present",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u46-as2",
+    "original_as_unit_text": "I will give it on Christmas Eve.",
+    "corrected_as_unit_text_IMPLIED": "I will give it on Christmas Eve.",
+    "clauses": [
+      {
+        "original_clause_text": "I will give it on Christmas Eve",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u48-as1",
+    "original_as_unit_text": "Yeah the yesterday work is POS system development management.",
+    "corrected_as_unit_text_IMPLIED": "Yeah the yesterday work is POS system development management.",
+    "clauses": [
+      {
+        "original_clause_text": "Yeah the yesterday work is POS system development management",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u50-as2",
+    "original_as_unit_text": "Do you know POS?",
+    "corrected_as_unit_text_IMPLIED": "Do you know POS?",
+    "clauses": [
+      {
+        "original_clause_text": "Do you know POS?",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u52-as2",
+    "original_as_unit_text": "So, it's cash register.",
+    "corrected_as_unit_text_IMPLIED": "So, it's cash register.",
+    "clauses": [
+      {
+        "original_clause_text": "it's cash register",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as2",
+    "original_as_unit_text": "what I do is XXX06 전자 계산대...",
+    "corrected_as_unit_text_IMPLIED": "what I do is XXX06 전자 계산대...",
+    "clauses": [
+      {
+        "original_clause_text": "what I do is XXX06 전자 계산대",
+        "corrected_clause_text": "Please provide the clause you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u54-as3",
+    "original_as_unit_text": "electrical cash register.",
+    "corrected_as_unit_text_IMPLIED": "electrical cash register.",
+    "clauses": [
+      {
+        "original_clause_text": "electrical cash register",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u56-as1",
+    "original_as_unit_text": "Just it's my work.",
+    "corrected_as_unit_text_IMPLIED": "Just it's my work.",
+    "clauses": [
+      {
+        "original_clause_text": "Just it's my work",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u61-as1",
+    "original_as_unit_text": "This picture 동네 풍경이에요.",
+    "corrected_as_unit_text_IMPLIED": "This picture 동네 풍경이에요.",
+    "clauses": [
+      {
+        "original_clause_text": "This picture 동네 풍경이에요",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as1",
+    "original_as_unit_text": "Oh children are playing ball",
+    "corrected_as_unit_text_IMPLIED": "Oh children are playing ball",
+    "clauses": [
+      {
+        "original_clause_text": "Oh children are playing ball",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as2",
+    "original_as_unit_text": "and one man is running on the street.",
+    "corrected_as_unit_text_IMPLIED": "and one man is running on the street.",
+    "clauses": [
+      {
+        "original_clause_text": "and one man is running on the street",
+        "corrected_clause_text": "Please provide the clause you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as3",
+    "original_as_unit_text": "The women are talking on the street",
+    "corrected_as_unit_text_IMPLIED": "The women are talking on the street",
+    "clauses": [
+      {
+        "original_clause_text": "The women are talking on the street",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u63-as4",
+    "original_as_unit_text": "and there are three dogs and cat.",
+    "corrected_as_unit_text_IMPLIED": "and there are three dogs and cat.",
+    "clauses": [
+      {
+        "original_clause_text": "there are three dogs",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      },
+      {
+        "original_clause_text": "and cat",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u65-as1",
+    "original_as_unit_text": "This picture looks very peaceful.",
+    "corrected_as_unit_text_IMPLIED": "This picture looks very peaceful.",
+    "clauses": [
+      {
+        "original_clause_text": "This picture looks very peaceful",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u67-as1",
+    "original_as_unit_text": "And I think it looks like a little rich neighborhood.",
+    "corrected_as_unit_text_IMPLIED": "And I think it looks like a little rich neighborhood.",
+    "clauses": [
+      {
+        "original_clause_text": "And I think",
+        "corrected_clause_text": "Please provide the clause you would like me to correct."
+      },
+      {
+        "original_clause_text": "it looks like a little rich neighborhood",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u70-as2",
+    "original_as_unit_text": "Our house is apartment...",
+    "corrected_as_unit_text_IMPLIED": "Our house is apartment...",
+    "clauses": [
+      {
+        "original_clause_text": "Our house is apartment...",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u70-as3",
+    "original_as_unit_text": "not independent house.",
+    "corrected_as_unit_text_IMPLIED": "not independent house.",
+    "clauses": [
+      {
+        "original_clause_text": "not independent house",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  },
+  {
+    "as_unit_id": "u72-as2",
+    "original_as_unit_text": "there is no yard, either.",
+    "corrected_as_unit_text_IMPLIED": "there is no yard, either.",
+    "clauses": [
+      {
+        "original_clause_text": "there is no yard, either",
+        "corrected_clause_text": "Please provide the clause text you would like me to correct."
+      }
+    ]
+  }
+]
