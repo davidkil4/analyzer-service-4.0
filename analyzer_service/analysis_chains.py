@@ -400,7 +400,7 @@ async def process_pattern_analysis_for_unit(analysis_input_item: AnalysisInputIt
         else:
             logger.debug(f"  Skipping pattern analysis for clause {i+1} in {analysis_input_item.as_unit_id} (no valid corrected text).")
             # Ensure pattern_analysis is initialized or remains None/empty
-            clause.pattern_analysis = clause.pattern_analysis or [] # Or None, depending on desired default
+            clause.clause_pattern_analysis = clause.clause_pattern_analysis or [] # Or None, depending on desired default
 
     if not batch_input:
         logger.info(f"No clauses eligible for pattern analysis in {analysis_input_item.as_unit_id}.")
@@ -421,7 +421,7 @@ async def process_pattern_analysis_for_unit(analysis_input_item: AnalysisInputIt
             frequency_level=0.0, usage_context="Error during LLM call", relative_note=str(e)
         )
         for i in clauses_to_process_indices:
-            analysis_input_item.clauses[i].pattern_analysis = [error_pattern]
+            analysis_input_item.clauses[i].clause_pattern_analysis = [error_pattern]
         proc_time = time.time() - start_time
         logger.info(f"Finished pattern analysis for {analysis_input_item.as_unit_id} in {proc_time:.2f} seconds (with errors).")
         return analysis_input_item
@@ -435,7 +435,7 @@ async def process_pattern_analysis_for_unit(analysis_input_item: AnalysisInputIt
             frequency_level=0.0, usage_context="Mismatch in batch processing results", relative_note=None
         )
         for i in clauses_to_process_indices:
-             analysis_input_item.clauses[i].pattern_analysis = [error_pattern]
+             analysis_input_item.clauses[i].clause_pattern_analysis = [error_pattern]
     else:
         for i, result_list in enumerate(results):
             clause_index = clauses_to_process_indices[i]
@@ -443,11 +443,11 @@ async def process_pattern_analysis_for_unit(analysis_input_item: AnalysisInputIt
             try:
                 # Result should be the list of PatternDetail dicts from JsonOutputParser
                 pattern_details = [PatternDetail(**pattern) for pattern in result_list]
-                target_clause.pattern_analysis = pattern_details
+                target_clause.clause_pattern_analysis = pattern_details
                 logger.debug(f"  Assigned {len(pattern_details)} patterns to clause {clause_index + 1} for {analysis_input_item.as_unit_id}")
             except Exception as e:
                 logger.error(f"Error parsing/assigning pattern result for clause {clause_index + 1} in {analysis_input_item.as_unit_id}: {e}. Result: {result_list}", exc_info=True)
-                target_clause.pattern_analysis = [
+                target_clause.clause_pattern_analysis = [
                     PatternDetail(
                         intention="Analysis Error", category="System", component="Result Parsing Failed",
                         frequency_level=0.0, usage_context="Error parsing LLM JSON output", relative_note=str(e)

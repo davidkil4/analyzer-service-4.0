@@ -104,7 +104,7 @@ class AlignedClause(Clause):
     )
     corrected_clause_text: Optional[str] = Field(None, description="Corrected version of the clause text.")
     errors_found: List[ErrorDetail] = Field([], description="List of errors found in the clause.")
-    pattern_analysis: Optional[List[PatternDetail]] = None # Populated by pattern analysis
+    clause_pattern_analysis: Optional[List[PatternDetail]] = Field([], description="List of patterns found in the clause.") # Populated by pattern analysis
 
 class PreprocessedASUnit(BaseModel): 
     """Final structure for a single AS unit after all pre-processing.
