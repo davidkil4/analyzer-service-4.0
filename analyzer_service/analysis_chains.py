@@ -82,7 +82,7 @@ def get_correction_chain() -> Runnable:
     Output: Modified AnalysisInputItem (with corrected_clause_text populated)
     """
     logger.info("Initializing Clause-Level Correction Chain...")
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.1)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.1)
 
     # --- Define Prompt using System/Human Messages (Updated with new instructions) --- 
     system_instruction = ( "# INSTRUCTIONS:\n\n"
@@ -238,7 +238,7 @@ def get_accuracy_analysis_chain() -> Runnable:
     Output: ErrorList (Pydantic object)
     """
     logger.info("Initializing Accuracy Analysis Chain...")
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.0) # Low temp for deterministic analysis
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0) # Low temp for deterministic analysis
 
     # Load the prompt from file
     try:
@@ -376,7 +376,7 @@ def get_pattern_analysis_chain() -> Runnable:
         ("human", "Corrected Clause: {corrected_clause}") # Input variable for the clause text
     ])
 
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
 
     chain = prompt_template | llm | json_parser
     logger.info("Pattern Analysis Chain Initialized Successfully.")

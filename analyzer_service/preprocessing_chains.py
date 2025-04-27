@@ -265,9 +265,9 @@ def get_preprocessing_chain() -> Runnable:
     LLM_MODEL_NAME = "gemini-2.0-flash" 
     try:
         llm = ChatGoogleGenerativeAI(
-            model=LLM_MODEL_NAME,
-            temperature=0,
-            google_api_key=os.getenv("GOOGLE_API_KEY")
+            model="gemini-2.0-flash", # Explicitly set the model
+            temperature=0.1, # Low temp for more deterministic translation
+            # convert_system_message_to_human=True # Might be needed depending on Gemini version
         )
         logger.info(f"Initialized LLM within get_preprocessing_chain: {LLM_MODEL_NAME}")
     except Exception as e:
@@ -498,4 +498,3 @@ def _run_full_preprocessing_step(
     # After processing all segments for the utterance, return the aggregated result
     logger.info(f"Finished processing all {len(processed_units_output)} segments for utterance {input_utterance.id}")
     return PreprocessingOutput(processed_utterances=processed_units_output)
-

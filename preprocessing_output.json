@@ -10,7 +10,10 @@
                 "clause_text": "My name is XXX02",
                 "aligned_original_clause_segment": "My name is XXX02.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -26,7 +29,9 @@
                 "speaker": "interviewer",
                 "text": "My name is XXX01. Can I have your name, please?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u8-as2",
@@ -39,7 +44,10 @@
                 "clause_text": "I live in XXX03",
                 "aligned_original_clause_segment": "XXX03에 살아요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -55,7 +63,9 @@
                 "speaker": "interviewer",
                 "text": "Yes. Fine, thank you. Where do you live?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u16-as1",
@@ -68,7 +78,10 @@
                 "clause_text": "maybe three four year it takes",
                 "aligned_original_clause_segment": "삼사년 걸려요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -84,20 +97,34 @@
                 "speaker": "interviewer",
                 "text": "Yes."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u22-as1",
         "original_utterance_id": "u22",
         "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
-        "as_unit_text": "I have wife and son.",
+        "as_unit_text": "I have wife and one son, one daughter 있어요.",
         "aligned_original_text": "아내랑 아들 하나 딸 하나 있어요.",
         "clauses": [
             {
-                "clause_text": "I have wife and son",
-                "aligned_original_clause_segment": "아내랑 아들 하나",
+                "clause_text": "I have wife and one son, one daughter",
+                "aligned_original_clause_segment": "아내랑 아들 하나 딸 하나 있어요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
+            },
+            {
+                "clause_text": "있어요",
+                "aligned_original_clause_segment": "있어요.",
+                "is_korean": true,
+                "original_clause_type": "word",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -113,36 +140,9 @@
                 "speaker": "interviewer",
                 "text": "Uhm. Tell me about your family."
             }
-        ]
-    },
-    {
-        "as_unit_id": "u22-as3",
-        "original_utterance_id": "u22",
-        "original_input_text": "Er... I have... 아내랑 아들 하나 딸 하나 있어요.",
-        "as_unit_text": "one I have.",
-        "aligned_original_text": null,
-        "clauses": [
-            {
-                "clause_text": "one I have",
-                "aligned_original_clause_segment": "I have...",
-                "is_korean": false,
-                "original_clause_type": "phrase"
-            }
         ],
-        "context": [
-            {
-                "speaker": "interviewer",
-                "text": "Hm. O K. Does your family also live in XXX04?"
-            },
-            {
-                "speaker": "student",
-                "text": "Yes."
-            },
-            {
-                "speaker": "interviewer",
-                "text": "Uhm. Tell me about your family."
-            }
-        ]
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u24-as2",
@@ -155,7 +155,10 @@
                 "clause_text": "He is five years old",
                 "aligned_original_clause_segment": "다섯 살이에요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -171,7 +174,9 @@
                 "speaker": "interviewer",
                 "text": "I see. How old is your son?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u26-as1",
@@ -184,7 +189,10 @@
                 "clause_text": "She is two years old",
                 "aligned_original_clause_segment": "두 살이에요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -200,7 +208,9 @@
                 "speaker": "interviewer",
                 "text": "And, how was your daughter?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u28-as1",
@@ -213,7 +223,10 @@
                 "clause_text": "Last weekend Christmas present I went to buy",
                 "aligned_original_clause_segment": "Christmas present 사러 갔어요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -229,7 +242,9 @@
                 "speaker": "interviewer",
                 "text": "I see. O K. So, what do you do with them on weekends?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u30-as1",
@@ -242,7 +257,10 @@
                 "clause_text": "Oh TV animation character do you know?",
                 "aligned_original_clause_segment": "TV 애니메이션 캐릭터 알아요?",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -258,7 +276,9 @@
                 "speaker": "interviewer",
                 "text": "Oh. And so, what did you buy?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u32-as2",
@@ -271,7 +291,10 @@
                 "clause_text": "so, TV animation character",
                 "aligned_original_clause_segment": "그러니까... TV animation character.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -287,7 +310,9 @@
                 "speaker": "interviewer",
                 "text": "\"Zoi\"? laughter"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u34-as1",
@@ -300,7 +325,10 @@
                 "clause_text": "And my son wants that character figure.",
                 "aligned_original_clause_segment": "제 아들이... um... 그 캐릭터 피규어를 원해요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -316,7 +344,9 @@
                 "speaker": "interviewer",
                 "text": "I see. Mh-hmm."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u38-as1",
@@ -329,7 +359,10 @@
                 "clause_text": "And my daughter 푸우 캐릭터 냉장고 장난감 wants",
                 "aligned_original_clause_segment": "푸우 캐릭터 냉장고 장난감 원해요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -345,7 +378,9 @@
                 "speaker": "interviewer",
                 "text": "I see."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u42-as1",
@@ -358,7 +393,10 @@
                 "clause_text": "So last week, I bought a present",
                 "aligned_original_clause_segment": "지난주에 선물 샀어요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -374,7 +412,9 @@
                 "speaker": "interviewer",
                 "text": "Really?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u46-as2",
@@ -387,7 +427,10 @@
                 "clause_text": "I will give it on Christmas Eve",
                 "aligned_original_clause_segment": "크리스마스 이브에 줄 거예요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -403,20 +446,25 @@
                 "speaker": "interviewer",
                 "text": "Or, have you already given the present to them?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
-        "as_unit_id": "u48-as2",
+        "as_unit_id": "u48-as1",
         "original_utterance_id": "u48",
         "original_input_text": "Yeah... 어... 제 일은... um... POS 시스템 개발 관리예요.",
-        "as_unit_text": "The yesterday work is POS system development management.",
+        "as_unit_text": "Yeah the yesterday work is POS system development management.",
         "aligned_original_text": null,
         "clauses": [
             {
-                "clause_text": "The yesterday work is POS system development management",
-                "aligned_original_clause_segment": "제 일은... um... POS 시스템 개발 관리예요.",
+                "clause_text": "Yeah the yesterday work is POS system development management",
+                "aligned_original_clause_segment": "어... 제 일은... um... POS 시스템 개발 관리예요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -432,7 +480,9 @@
                 "speaker": "interviewer",
                 "text": "I see. O K. Next, please tell me about your job."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u50-as2",
@@ -445,7 +495,10 @@
                 "clause_text": "Do you know POS?",
                 "aligned_original_clause_segment": "Do you know POS?",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -461,20 +514,25 @@
                 "speaker": "interviewer",
                 "text": "Hm."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
-        "as_unit_id": "u52-as2",
+        "as_unit_id": "u52-as1",
         "original_utterance_id": "u52",
         "original_input_text": "Uh... POS는... 그러니까... cash register예요.",
-        "as_unit_text": "So, it's cash register.",
-        "aligned_original_text": "그러니까... cash register예요.",
+        "as_unit_text": "POS is cash register.",
+        "aligned_original_text": "POS는... 그러니까... cash register예요.",
         "clauses": [
             {
-                "clause_text": "it's cash register",
-                "aligned_original_clause_segment": "cash register예요.",
+                "clause_text": "POS is cash register",
+                "aligned_original_clause_segment": "POS는... cash register예요.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -490,20 +548,25 @@
                 "speaker": "interviewer",
                 "text": "Uh I don't know P O S."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u54-as2",
         "original_utterance_id": "u54",
         "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
-        "as_unit_text": "what I do is XXX06 electronic cash register.",
-        "aligned_original_text": "제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+        "as_unit_text": "what I do is XXX06 전자 계산대...",
+        "aligned_original_text": "제가 하는 일은 XXX06 전자 계산대...",
         "clauses": [
             {
-                "clause_text": "what I do is XXX06 electronic cash register",
+                "clause_text": "what I do is XXX06 전자 계산대",
                 "aligned_original_clause_segment": "제가 하는 일은 XXX06 전자 계산대...",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -519,20 +582,59 @@
                 "speaker": "interviewer",
                 "text": "Yeah."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
+    },
+    {
+        "as_unit_id": "u54-as3",
+        "original_utterance_id": "u54",
+        "original_input_text": "Yeah... 제가 하는 일은 XXX06 전자 계산대... electrical cash register요.",
+        "as_unit_text": "electrical cash register.",
+        "aligned_original_text": "electrical cash register요.",
+        "clauses": [
+            {
+                "clause_text": "electrical cash register",
+                "aligned_original_clause_segment": "electrical cash register요.",
+                "is_korean": false,
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
+            }
+        ],
+        "context": [
+            {
+                "speaker": "interviewer",
+                "text": "Uh I don't know P O S."
+            },
+            {
+                "speaker": "student",
+                "text": "Uh... POS는... 그러니까... cash register예요."
+            },
+            {
+                "speaker": "interviewer",
+                "text": "Yeah."
+            }
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u56-as1",
         "original_utterance_id": "u56",
         "original_input_text": "Uhm... 음... 그냥 제 일이에요.",
-        "as_unit_text": "Just it's my job.",
+        "as_unit_text": "Just it's my work.",
         "aligned_original_text": "그냥 제 일이에요.",
         "clauses": [
             {
-                "clause_text": "Just it's my job",
+                "clause_text": "Just it's my work",
                 "aligned_original_clause_segment": "그냥 제 일이에요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -548,7 +650,9 @@
                 "speaker": "interviewer",
                 "text": "I see. Do you like your job?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u61-as1",
@@ -561,7 +665,10 @@
                 "clause_text": "This picture 동네 풍경이에요",
                 "aligned_original_clause_segment": "This picture... 어... 동네 풍경이에요.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -577,7 +684,9 @@
                 "speaker": "interviewer",
                 "text": "O K. Please tell me about this picture."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u63-as1",
@@ -590,7 +699,10 @@
                 "clause_text": "Oh children are playing ball",
                 "aligned_original_clause_segment": "Oh... children are playing ball...",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -606,7 +718,9 @@
                 "speaker": "interviewer",
                 "text": "Mh-hmm. What are there in this picture?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u63-as2",
@@ -619,7 +733,10 @@
                 "clause_text": "and one man is running on the street",
                 "aligned_original_clause_segment": "그리고 한 남자가 길에서 뛰고 있어요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -635,7 +752,9 @@
                 "speaker": "interviewer",
                 "text": "Mh-hmm. What are there in this picture?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u63-as3",
@@ -648,7 +767,10 @@
                 "clause_text": "The women are talking on the street",
                 "aligned_original_clause_segment": "여자들은 길에서 얘기하고 있고...",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -664,7 +786,9 @@
                 "speaker": "interviewer",
                 "text": "Mh-hmm. What are there in this picture?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u63-as4",
@@ -677,13 +801,19 @@
                 "clause_text": "there are three dogs",
                 "aligned_original_clause_segment": "there are three dogs",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             },
             {
                 "clause_text": "and cat",
                 "aligned_original_clause_segment": "and cat.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -699,7 +829,9 @@
                 "speaker": "interviewer",
                 "text": "Mh-hmm. What are there in this picture?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u65-as1",
@@ -712,7 +844,10 @@
                 "clause_text": "This picture looks very peaceful",
                 "aligned_original_clause_segment": "이 사진은... very peaceful해 보여요.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -728,7 +863,9 @@
                 "speaker": "interviewer",
                 "text": "Hm."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u67-as1",
@@ -741,13 +878,19 @@
                 "clause_text": "And I think",
                 "aligned_original_clause_segment": "좀",
                 "is_korean": true,
-                "original_clause_type": "word"
+                "original_clause_type": "word",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             },
             {
                 "clause_text": "it looks like a little rich neighborhood",
                 "aligned_original_clause_segment": "좀 부자 동네 같아요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -763,7 +906,9 @@
                 "speaker": "interviewer",
                 "text": "Hm."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u70-as2",
@@ -776,7 +921,10 @@
                 "clause_text": "Our house is apartment...",
                 "aligned_original_clause_segment": "저희 집은 아파트예요...",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -792,7 +940,9 @@
                 "speaker": "interviewer",
                 "text": "O K. So, is this picture similar to your house?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u70-as3",
@@ -805,7 +955,10 @@
                 "clause_text": "not independent house",
                 "aligned_original_clause_segment": "not independent house.",
                 "is_korean": false,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -821,7 +974,9 @@
                 "speaker": "interviewer",
                 "text": "O K. So, is this picture similar to your house?"
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     },
     {
         "as_unit_id": "u72-as2",
@@ -834,7 +989,10 @@
                 "clause_text": "there is no yard, either",
                 "aligned_original_clause_segment": "마당도 없어요.",
                 "is_korean": true,
-                "original_clause_type": "phrase"
+                "original_clause_type": "phrase",
+                "corrected_clause_text": null,
+                "errors_found": [],
+                "clause_pattern_analysis": []
             }
         ],
         "context": [
@@ -850,6 +1008,8 @@
                 "speaker": "interviewer",
                 "text": "Mh-hmm."
             }
-        ]
+        ],
+        "complexity_score": null,
+        "accuracy_score": null
     }
 ]
