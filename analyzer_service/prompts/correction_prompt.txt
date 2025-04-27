@@ -3,7 +3,7 @@
 # PRIOR CONVERSATION CONTEXT:
 {{ prior_context }}
 
-# LEARNER UTTERANCE TO CORRECT:
+# CLAUSE TO CORRECT:
 {{ utterance_to_correct }}
 
 # INSTRUCTIONS:
@@ -19,23 +19,65 @@
   * Article/preposition challenges specific to Korean speakers
 
 ## STEP 2: MAKE GRAMMATICAL CORRECTIONS
-- Correct all clear grammatical errors in:
-  * Verb tense/aspect
-  * Articles
-  * Prepositions
-  * Noun number
-  * Pronoun reference
-  * Quantifiers
-  * Parallel structure
-  * Subject-verb agreement
-  * Word order in questions and statements
-  * Spelling and punctuation
+After understanding the intent, perform the following steps:
 
-## STEP 3: APPLY NATURAL LANGUAGE PATTERNS
-- Transform awkward but grammatically correct phrases into natural English
-- Apply appropriate formulaic sequences (collocations, institutionalized phrases)
-- Consider what a native speaker would naturally say in the same context
+1. Grammatical Corrections
+- Correct **all clear grammatical errors** in:
+  • Verb tense/aspect • Articles • Prepositions
+  • Noun number • Pronoun reference
+  • Quantifiers ("minimum three" → "a minimum of three")
+  • Parallel structure ("knowledge and skill of..." → "knowledge of... and skills in")
+  • Subject-verb agreement
+  • Word order in questions and statements
+
+2. Natural Expression Transformations
+- Transform awkward but grammatically correct phrases:
+  • "My problem is only one" → "I have only one problem"
+  • "This is tennis elbow by bad golf" → "This tennis elbow is from playing golf badly"
+  • "So, now, I use the many times" → "So now, I use it frequently"
+- When the original structure is fundamentally unnatural but grammatical, reconstruct the sentence
+- Pay special attention to sentence structures that follow Korean patterns rather than English ones
+
+## STEP 3: APPLY FORMULAIC LANGUAGE PATTERNS
+If the utterance remains unclear or non-native-like after grammatical corrections:
+
+1. Identify Appropriate Formulaic Sequences
+- Apply common formulaic sequences including:
+  • Polywords (e.g., "by the way", "of course", "as well as")
+  • Collocations (e.g., "make a decision", "strong opinion", "take responsibility")
+  • Institutionalized phrases (e.g., "if you don't mind", "in other words", "to be honest")
+  • Lexical bundles (e.g., "as a result of", "on the other hand", "in terms of")
+  • Greetings and discourse markers: "Well", "You know", "I mean"
+  • Fixed expressions: "as a matter of fact", "to tell you the truth"
+
+2. Apply Pattern-Based Corrections
+- Replace non-native expressions with equivalent formulaic sequences
 - Maintain the learner's intended meaning and vocabulary level
+- Only add sequences that are contextually appropriate
+- Consider what a native speaker would naturally say in the same context
 
-# OUTPUT FORMAT:
-Return ONLY the corrected version of the learner utterance. Do not include explanations, labels, or the original text. If the utterance is already grammatically correct and natural-sounding, output it unchanged.
+## CORRECTION PRIORITIES:
+1. Errors that impede understanding
+2. Systematic grammatical errors
+3. Unnatural expressions that are technically correct
+4. Minor stylistic improvements (only if other issues are addressed)
+
+## IMPORTANT NOTE ON APPROPRIATE CORRECTION:
+- The goal is to create natural, fluent English that preserves the learner's intended meaning
+- Use conversation context to resolve ambiguities and determine implied meanings
+- When the literal translation is awkward but grammatically correct, prioritize creating a response that fits naturally in the conversation flow
+
+## OUTPUT FORMAT:
+- First provide the fully corrected utterance
+- Then list key changes made (maximum 3) with brief explanations
+- If appropriate, offer one alternative expression that could also work
+
+# EXAMPLE:
+Original: "Yesterday I go to store and buying three apple."
+Corrected: "Yesterday I went to the store and bought three apples."
+Key changes:
+- Past tense correction: "go" → "went", "buying" → "bought"
+- Added article: "the store"
+- Plural noun: "apple" → "apples"
+
+# CORRECTED CLAUSE:

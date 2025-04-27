@@ -99,7 +99,7 @@ venv.bak/
 *.log
 *.out
 *.xml
-preprocessing_output.json
+correction_output.json
 
 # macOS
 .DS_Store
